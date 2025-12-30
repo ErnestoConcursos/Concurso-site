@@ -434,6 +434,81 @@ export const QUESTOES_EXEMPLO: Questao[] = [
     ],
     indiceCorreto: 1,
     explicacao: 'I. Correta (majoritária). II. Incorreta (a corrente minoritária). III. Correta. IV. Correta (art. 34-A estabelece que a concordância na imissão implica aquisição da propriedade, embora o preço possa ser questionado).'
+  },
+    {
+    id: '22',
+    materia: 'Direito Constitucional',
+    assunto: '2.4 Organização dos Poderes',
+    enunciado: 'A Constituição Federal estabelece garantias institucionais e funcionais para os membros do Poder Judiciário, visando assegurar sua independência. Sobre essas garantias, analise as assertivas a seguir:\n\nI. Os juízes togados, após três anos de exercício, adquirem a vitaliciedade, podendo perder o cargo apenas por sentença judicial transitada em julgado.\nII. A inamovibilidade dos magistrados não é absoluta, admitindo-se remoção, disponibilidade e aposentadoria por interesse público, mediante deliberação do respectivo tribunal.\nIII. A irredutibilidade de subsídios é garantia assegurada apenas aos membros do Poder Judiciário em sentido estrito, não se estendendo aos servidores da Justiça Militar.\nIV. Os Ministros do Supremo Tribunal Federal, além das garantias de vitaliciedade e inamovibilidade, têm assegurada a irredutibilidade de subsídio, mas não gozam de foro por prerrogativa de função.',
+    alternativas: [
+      'A) I e II.',
+      'B) II e III.',
+      'C) II e IV.',
+      'D) I, II e III.',
+      'E) III e IV.'
+    ],
+    indiceCorreto: 0,
+    explicacao: 'I. Correta (art. 95, I, CF). II. Correta (art. 95, II, CF). III. Incorreta (a irredutibilidade se estende a todos os membros do Judiciário, incluída a Justiça Militar). IV. Incorreta (Ministros do STF têm foro por prerrogativa de função perante o Senado Federal).'
+  },
+  {
+    id: '23',
+    materia: 'Direito Constitucional',
+    assunto: '2.4 Organização dos Poderes',
+    enunciado: 'Durante sessão do Tribunal de Justiça de determinado Estado, um Desembargador proferiu voto contundente contra projeto de lei recentemente aprovado pela Assembleia Legislativa, criticando abertamente os parlamentares e qualificando a norma como "inconstitucional e autoritária". Os parlamentares ofendidos ingressaram com representação perante o Conselho Nacional de Justiça, alegando abuso de autoridade e exercício ilegal da liberdade de expressão pelo magistrado, que deveria manter estrita neutralidade política. À luz das garantias e deveres funcionais dos magistrados, assinale a alternativa correta.',
+    alternativas: [
+      'A) O magistrado cometeu infração disciplinar grave, pois sua manifestação política viola o dever de imparcialidade e pode configurar ato de improbidade administrativa por desvio de finalidade.',
+      'B) A liberdade de expressão do magistrado é plena, não se admitindo qualquer censura ou responsabilização por suas opiniões, mesmo quando proferidas no exercício da função jurisdicional.',
+      'C) O magistrado goza de liberdade de expressão, mas está sujeito aos limites éticos e disciplinares inerentes à função, podendo ser responsabilizado se suas declarações ultrapassarem a crítica técnica e configurarem ataque pessoal ou desmoralização de outros Poderes.',
+      'D) A representação deve ser rejeitada de plano, pois compete exclusivamente ao respectivo Tribunal de Justiça disciplinar a conduta de seus membros, sendo vedada a atuação do CNJ nesses casos.',
+      'E) A crítica pública a ato do Poder Legislativo por membro do Judiciário configura violação ao princípio da separação dos Poderes, sendo cabível a remoção compulsória do magistrado por interesse público.'
+    ],
+    indiceCorreto: 2,
+    explicacao: 'Os magistrados têm liberdade de expressão, mas esta não é ilimitada. Deve ser exercida com moderação e respeito às instituições. A jurisprudência do CNJ e do STF entende que críticas que ultrapassem o debate técnico-jurídico e configurem ataque pessoal ou desmoralização de outros Poderes podem sujeitar o magistrado a processo disciplinar.'
+  },
+  {
+    id: '24',
+    materia: 'Direito Constitucional',
+    assunto: '2.4 Organização dos Poderes',
+    enunciado: 'Sobre a competência e a composição do Superior Tribunal de Justiça, assinale a alternativa INCORRETA.',
+    alternativas: [
+      'A) Compete ao STJ processar e julgar, originariamente, os mandados de segurança e os habeas data contra ato de Ministro de Estado, dos Comandantes da Marinha, do Exército e da Aeronáutica.',
+      'B) O STJ é composto por, no mínimo, 33 Ministros, sendo um terço dentre juízes dos Tribunais Regionais Federais, um terço dentre desembargadores dos Tribunais de Justiça e um terço, em partes iguais, dentre advogados e membros do Ministério Público.',
+      'C) O recurso especial, instrumento de uniformização da interpretação da lei federal, é julgado pelo STJ quando a decisão recorrida contrariar tratado ou lei federal, ou negar-lhes vigência.',
+      'D) Compete ao STJ a homologação de sentenças estrangeiras e a concessão de exequatur às cartas rogatórias, excetuadas as matérias de competência originária do Supremo Tribunal Federal.',
+      'E) Os Ministros do STJ são nomeados pelo Presidente da República, depois de aprovada a escolha pela maioria absoluta do Senado Federal, sendo vitalícios após dois anos de exercício.'
+    ],
+    indiceCorreto: 4,
+    explicacao: 'Os Ministros do STJ são vitalícios após nomeação e posse, não havendo prazo de exercício para aquisição da vitaliciedade. O art. 94 da CF estabelece que os Ministros dos tribunais superiores adquirem a vitaliciedade após nomeação, diferentemente dos juízes de primeiro grau (art. 95, I).'
+  },
+  {
+    id: '25',
+    materia: 'Direito Constitucional',
+    assunto: '2.4 Organização dos Poderes',
+    enunciado: 'A Emenda Constitucional n° 45/2004 instituiu significativas alterações na estrutura do Poder Judiciário. Sobre essas modificações, é correto afirmar:',
+    alternativas: [
+      'A) Criou o Conselho Nacional de Justiça como órgão de cúpula administrativa e correicional do Judiciário, com competência para expedir atos regulamentares com força de lei sobre organização judiciária.',
+      'B) Estabeleceu a competência originária do Supremo Tribunal Federal para o julgamento de ações diretas de inconstitucionalidade interpostas por partido político com representação no Congresso Nacional.',
+      'C) Introduziu a súmula vinculante, que confere eficácia erga omnes e efeito vinculante às decisões do STF sobre matéria constitucional, após reiteradas decisões e aprovação por dois terços de seus membros.',
+      'D) Ampliou a competência do Superior Tribunal de Justiça para incluir o julgamento, em recurso ordinário, dos habeas corpus decididos em única instância pelos Tribunais Regionais Federais.',
+      'E) Determinou a criação dos Juizados Especiais da Fazenda Pública em todas as unidades da Federação, com competência para causas de menor complexidade contra a União, Estados e Municípios.'
+    ],
+    indiceCorreto: 2,
+    explicacao: 'A EC 45/2004 acrescentou o art. 103-A à CF, disciplinando a súmula vinculante. As demais alternativas estão incorretas: A) O CNJ não tem competência legislativa; B) Essa competência já existia; D) O recurso de habeas corpus ao STJ é extraordinário; E) A EC 45 não criou Juizados da Fazenda Pública.'
+  },
+  {
+    id: '26',
+    materia: 'Direito Constitucional',
+    assunto: '2.4 Organização dos Poderes',
+    enunciado: 'Um advogado ajuizou mandado de segurança contra ato de juiz de direito de primeira instância que, ao conceder tutela de urgência em ação de desapropriação, determinou a imissão provisória na posse do imóvel sem a realização do depósito prévio previsto em lei. O advogado argumenta violação do devido processo legal. Sobre a competência para processar e julgar esse mandado de segurança, assinale a alternativa correta.',
+    alternativas: [
+      'A) Compete originariamente ao Supremo Tribunal Federal, por envolver ato de magistrado no exercício da função jurisdicional.',
+      'B) Compete originariamente ao Superior Tribunal de Justiça, pois o ato coator foi praticado por juiz de primeira instância.',
+      'C) Compete ao Tribunal de Justiça do Estado, em razão da hierarquia funcional sobre o juízo de primeira instância.',
+      'D) Compete ao próprio juízo de primeira instância, por tratar-se de correição parcial para revisão de ato processual.',
+      'E) Compete originariamente ao Tribunal Regional Federal da região, por se tratar de matéria que envolve interpretação de lei federal.'
+    ],
+    indiceCorreto: 2,
+    explicacao: 'Conforme o art. 105, I, "a", da CF, compete ao STJ processar e julgar, originariamente, o mandado de segurança contra ato de Ministro de Estado. Para atos de juízes de primeira instância, a competência é do Tribunal de Justiça, por força do princípio do juízo natural (art. 102, I, "d", c/c art. 105, I, CF e jurisprudência do STF).'
   }
 ];
 
