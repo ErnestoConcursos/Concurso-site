@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { SessaoResposta, Questao } from "./types";
 import { TOPICOS_POR_MATERIA } from "./constants";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 
 export async function obterDiagnostico(
   sessoes: SessaoResposta[], 
@@ -48,7 +48,11 @@ export async function obterDiagnostico(
       }
     });
 
-    return JSON.parse(response.text);
+    const responseText = response.text;
+    if (!responseText) {
+      throw new Error("Resposta vazia da IA");
+    }
+    return JSON.parse(responseText);
   } catch (error) {
     console.error("Erro no Gemini:", error);
     return null;
@@ -96,7 +100,11 @@ export async function processarQuestoesLote(textoBruto: string): Promise<Questao
       }
     });
 
-    const parsed = JSON.parse(response.text);
+    const responseText = response.text;
+    if (!responseText) {
+      throw new Error("Resposta vazia da IA");
+    }
+    const parsed = JSON.parse(responseText);
     return parsed.map((q: any) => ({
       ...q,
       id: Math.random().toString(36).substr(2, 9) + Date.now().toString()
