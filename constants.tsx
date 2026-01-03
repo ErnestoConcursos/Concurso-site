@@ -776,7 +776,10 @@ export const QUESTOES_EXEMPLO: Questao[] = [
       'E) Tanto as condições objetivas quanto as negativas de punibilidade são causas pessoais que, se verificadas em relação a um dos agentes, beneficiam a todos os coautores e partícipes.'
     ],
     indiceCorreto: 3,
-    explicacao: 'D) Correta. Condições objetivas de punibilidade são requisitos extrínsecos ao crime (ex: autorização para proceder, representação) cuja ausência impede a punição, mas não descaracteriza o crime em si. A) é condição de procedibilidade. B) há divergência (elemento normativo ou condição).
+    explicacao: 'D) Correta. Condições objetivas de punibilidade são requisitos extrínsecos ao crime (ex: autorização para proceder, representação) cuja ausência impede a punição, mas não descaracteriza o crime em si. A) é condição de procedibilidade. B) há divergência (elemento normativo ou condição)'
+
+  }
+
 ];
 
 export const CORES_TEMA = {
