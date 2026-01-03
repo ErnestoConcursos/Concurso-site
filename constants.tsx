@@ -523,6 +523,260 @@ export const QUESTOES_EXEMPLO: Questao[] = [
     indiceCorreto: 2,
     explicacao: 'Conforme o art. 105, I, "a", da CF, compete ao STJ processar e julgar, originariamente, o mandado de segurança contra ato de Ministro de Estado. Para atos de juízes de primeira instância, a competência é do Tribunal de Justiça, por força do princípio do juízo natural (art. 102, I, "d", c/c art. 105, I, CF e jurisprudência do STF).'
   },
+  {
+    id: '27',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'O Ministério Público ofereceu denúncia contra "A" pela prática de furto qualificado, cuja pena máxima cominada é de 8 anos. Após o recebimento da inicial acusatória, o magistrado, ao analisar os elementos constantes dos autos, concluiu que a conduta narrada se amolda perfeitamente ao tipo do furto simples, cuja pena máxima é de 4 anos. Considerando que entre a data da suposta consumação do delito e o recebimento da denúncia já haviam transcorrido mais de 8 anos, o defensor arguiu a ocorrência da prescrição da pretensão punitiva. Diante do exposto, assinale a alternativa que indica o correto entendimento jurisprudencial acerca do prazo prescricional aplicável ao caso.',
+    alternativas: [
+      'A) O prazo prescricional deve ser calculado com base na pena máxima cominada para o crime de furto qualificado (8 anos), pois foi este o delito descrito na denúncia, não tendo ocorrido prescrição.',
+      'B) O prazo prescricional deve ser calculado com base na pena máxima do crime que efetivamente corresponde à conduta narrada na denúncia, qual seja, o furto simples (4 anos), tendo ocorrido a prescrição da pretensão punitiva.',
+      'C) Deve ser aplicada a prescrição retroativa, regulando-se o prazo pela pena aplicada na sentença, uma vez que houve alteração substancial na definição jurídica do fato.',
+      'D) O prazo prescricional fica suspenso até que seja solucionada a questão prejudicial relativa à correta tipificação da conduta, nos termos do art. 116, I, do CP.',
+      'E) A prescrição deve ser calculada com base na pena do furto simples, mas o prazo será aumentado de um terço, pois a alteração do enquadramento por emendatio libelli constitui causa interruptiva.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'A jurisprudência pacífica do STF e STJ estabelece que o prazo prescricional deve ser calculado conforme a classificação que se deva dar aos fatos imputados na denúncia, e não segundo a capitulação eventualmente incorreta nela contida (HC 77.928/STF).'
+  },
+
+  {
+    id: '28',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Analise as assertivas abaixo acerca das causas extintivas da punibilidade e assinale a alternativa que indica aquelas que estão corretas. I. A morte do agente extingue a punibilidade, inclusive em relação à pena de multa, em observância ao princípio da pessoalidade das penas. No entanto, os efeitos civis da sentença condenatória subsistem, podendo a reparação do dano ser executada contra os herdeiros, até o limite do patrimônio transferido. II. A decadência, por consistir na perda do direito de ação do ofendido, aplica-se apenas aos crimes de ação penal privada e pública condicionada à representação, iniciando-se o prazo decadencial do dia em que o ofendido veio a saber quem é o autor do crime. III. O perdão judicial, quando concedido, importa em sentença absolutória imprópria, não gerando reincidência e extinguindo a punibilidade do agente. IV. A anistia possui efeitos ex tunc, extinguindo tanto os efeitos penais principais quanto os secundários da sentença condenatória, mas não alcança a obrigação de reparar o dano, que permanece executável.',
+    alternativas: [
+      'A) Apenas as assertivas I e II estão corretas.',
+      'B) Apenas as assertivas I e IV estão corretas.',
+      'C) Apenas as assertivas II e III estão corretas.',
+      'D) Apenas as assertivas I, II e IV estão corretas.',
+      'E) Apenas as assertivas II, III e IV estão corretas.'
+    ],
+    indiceCorreto: 3,
+    explicacao: 'I - Correta (art. 5º, XLV, CF e art. 91, CP). II - Correta (art. 103, CP). III - Incorreta: conforme Súmula 18 do STJ, o perdão judicial tem natureza de sentença declaratória de extinção da punibilidade, não sendo absolutória. IV - Correta: a anistia extingue os efeitos penais, mas não os civis (reparação do dano).'
+  },
+
+  {
+    id: '29',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"B" foi condenado definitivamente pela prática de tráfico de drogas, na modalidade privilegiada do art. 33, § 4º, da Lei 11.343/2006, a uma pena de 5 anos de reclusão. Após o trânsito em julgado, "B" requereu ao Presidente da República a comutação de sua pena. Diante do caso concreto, assinale a alternativa que apresenta a análise correta sobre a possibilidade de concessão do benefício.',
+    alternativas: [
+      'A) É vedada a concessão de qualquer benefício de graça ou indulto, pois o crime de tráfico de drogas, em qualquer modalidade, é considerado hediondo e, portanto, insuscetível de clemência.',
+      'B) É possível a concessão de comutação da pena, uma vez que o tráfico privilegiado, conforme entendimento do STF, não possui natureza hedionda, não estando alcançado pela vedação constitucional e legal.',
+      'C) A competência para a concessão de graça ou indulto, após o trânsito em julgado, é exclusiva do Congresso Nacional, sendo inviável o pleito dirigido ao Presidente da República.',
+      'D) A comutação de pena é uma espécie de anistia imprópria, que somente pode ser concedida por lei, tornando inviável o pleito administrativo.',
+      'E) Embora o tráfico privilegiado não seja hediondo, a vedação ao indulto e à graça para crimes de tráfico é absoluta, conforme disposto no art. 44 da Lei de Drogas, impedindo o benefício.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'Conforme julgamento do HC 118.533/STF, o tráfico privilegiado não possui natureza hedionda. Assim, não se aplicam as vedações da Lei 8.072/90 (hediondos) nem do art. 44 da Lei de Drogas, que se refere ao tráfico em sua forma simples.'
+  },
+
+  {
+    id: '30',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Em relação às causas interruptivas e suspensivas da prescrição da pretensão punitiva, assinale a alternativa INCORRETA.',
+    alternativas: [
+      'A) O recebimento de aditamento à denúncia que inclui novo corréu interrompe a prescrição em relação a este, mas a interrupção não se comunica aos demais já denunciados, por tratar-se de ato personalíssimo.',
+      'B) A pronúncia, ainda que posteriormente o Tribunal do Júri venha a desclassificar o crime, constitui causa interruptiva da prescrição, conforme entendimento sumulado pelo STJ.',
+      'C) O curso da prescrição fica suspenso durante a pendência de questão prejudicial de natureza civil, cujo reconhecimento da existência do crime dela dependa.',
+      'D) Nos termos da Súmula 415 do STJ, nos casos de citação por edital com não comparecimento do acusado (art. 366 do CPP), o período de suspensão do prazo prescricional é regulado pelo máximo da pena cominada.',
+      'E) A publicação de acórdão condenatório recorrível, em processo de competência originária de Tribunal, interrompe o curso da prescrição.'
+    ],
+    indiceCorreto: 0,
+    explicacao: 'A) INCORRETA. Segundo o art. 117, § 1º, do CP, a interrupção da prescrição produz efeitos relativamente a todos os autores do crime, comunicando-se inclusive em caso de inclusão de novo corréu por aditamento.'
+  },
+
+  {
+    id: '31',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"C", com 68 anos de idade, foi denunciado pela prática de um crime cuja pena máxima é de 6 anos. O recebimento da denúncia ocorreu em 10/01/2015. A sentença condenatória, aplicando pena de 4 anos, foi publicada em 15/03/2020. O Ministério Público não recorreu. Considerando que a defesa interpôs recurso de apelação, o qual ainda não foi julgado, e com base na sistemática da prescrição da pretensão punitiva, assinale a alternativa correta. (Desconsidere causas interruptivas ou suspensivas não mencionadas).',
+    alternativas: [
+      'A) Considerando que "C" tinha mais de 70 anos na data da sentença, aplica-se a redução de metade dos prazos prescricionais, ocorrendo a prescrição superveniente.',
+      'B) Não ocorreu prescrição retroativa, pois o prazo entre o recebimento da denúncia (2015) e a publicação da sentença (2020) é inferior a 8 anos, prazo prescricional para pena de 4 anos.',
+      'C) Ocorreu prescrição superveniente, pois o prazo entre a publicação da sentença (2020) e a data atual, sem o julgamento do recurso, já supera 8 anos, que é o prazo para a pena aplicada.',
+      'D) A prescrição não pode ser reconhecida, pois o recurso de apelação pendente impede a verificação do trânsito em julgado para a acusação, pressuposto necessário para o cálculo da prescrição superveniente ou retroativa.',
+      'E) A prescrição deve ser calculada com base na pena máxima (6 anos), cujo prazo é de 12 anos. Como entre a consumação e a data atual não transcorreu esse período, não houve prescrição.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'Para ocorrer prescrição retroativa ou superveniente, é necessário trânsito em julgado para a acusação (art. 110, § 1º, CP). O prazo entre denúncia (2015) e sentença (2020) é de 5 anos, inferior aos 8 anos do prazo prescricional para pena de 4 anos (art. 109, IV, CP). Não há redução por idade, pois "C" tinha 68 anos na sentença (art. 115 exige >70 anos).'
+  },
+
+  {
+    id: '32',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Sobre a extinção da punibilidade, analise as assertivas e assinale a alternativa que indica aquelas que estão corretas. I. A retratação nos crimes de calúnia e difamação, quando a ofensa foi veiculada por meio de comunicação social, poderá, a pedido do ofendido, ser realizada pelo mesmo veículo, conforme previsão legal introduzida pela Lei 13.188/2015. II. A renúncia ao direito de queixa, nos crimes de ação penal privada, deve ser aceita pelo querelado para produzir efeitos extintivos, à semelhança do perdão do ofendido. III. O acordo de não persecução penal (ANPP) suspende o curso da prescrição da pretensão punitiva enquanto não for rescindido ou integralmente cumprido. IV. A abolitio criminis, decorrente da revogação de uma portaria da Anvisa que retirou determinada substância da lista de entorpecentes, retroage para beneficiar os agentes que praticaram o fato na vigência da portaria anterior, configurando hipótese de retroatividade benéfica do complemento de norma penal em branco.',
+    alternativas: [
+      'A) Apenas as assertivas I e III estão corretas.',
+      'B) Apenas as assertivas I, III e IV estão corretas.',
+      'C) Apenas as assertivas II e IV estão corretas.',
+      'D) Apenas as assertivas I, II e III estão corretas.',
+      'E) Todas as assertivas estão corretas.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'I - Correta (art. 143, § único, CP). II - Incorreta: a renúncia é ato unilateral do ofendido, não dependendo de aceitação (art. 104, CP). III - Correta (art. 116, IV, CP). IV - Correta: alteração benéfica do complemento de norma penal em branco sem caráter temporário retroage (abolitio criminis).'
+  },
+
+  {
+    id: '33',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"D" foi condenado definitivamente por um crime hediondo praticado em 1989, antes do advento da Lei 8.072/1990. Em 2015, por ocasião da análise de decreto presidencial de indulto natalino, sua pretensão ao benefício foi indeferida com base na vedação contida na Lei de Crimes Hediondos. "D" alega violação ao princípio da irretroatividade da lei mais gravosa. Com base na jurisprudência dos Tribunais Superiores, assinale a alternativa correta.',
+    alternativas: [
+      'A) O indeferimento é ilegal, pois a vedação ao indulto só se aplica a crimes cometidos após a vigência da Lei 8.072/1990, em observância ao princípio da anterioridade.',
+      'B) O indeferimento é correto, pois a concessão do indulto é ato discricionário e a aferição da natureza do crime, para seus efeitos, deve ser feita na data do decreto, e não na do cometimento do delito.',
+      'C) A vedação ao indulto para crimes hediondos é inconstitucional, pois a Constituição veda apenas a anistia e a graça, devendo o benefício ser concedido.',
+      'D) O indeferimento é ilegal, pois o STJ possui entendimento consolidado de que os benefícios de indulto e comutação são possíveis para crimes hediondos praticados antes da vigência da lei que os definiu.',
+      'E) O indeferimento é correto apenas se o crime for também de tortura, pois a Lei 9.455/97, posterior, veda expressamente o indulto para este delito.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'Conforme entendimento do STF (HC 117.938), a aferição da natureza do crime para concessão do indulto há de se fazer na data da edição do decreto presidencial respectivo, não na do cometimento do delito, não configurando violação à irretroatividade.'
+  },
+
+  {
+    id: '34',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Assinale a alternativa que descreve corretamente uma diferença essencial entre anistia, graça e indulto.',
+    alternativas: [
+      'A) A anistia extingue a punibilidade, a graça extingue apenas a execução da pena, e o indulto pode ser concedido antes do trânsito em julgado.',
+      'B) A anistia é concedida por lei e refere-se a fatos, a graça é concedida por decreto a pessoa determinada, e o indulto é concedido por decreto de forma coletiva.',
+      'C) A anistia e o indulto extinguem os efeitos penais principais e secundários, enquanto a graça extingue apenas a pretensão executória.',
+      'D) Tanto a anistia quanto a graça dependem de provocação do interessado, enquanto o indulto é concedido de ofício.',
+      'E) A anistia impede a reincidência, a graça não impede, e o indulto só pode ser concedido para crimes comuns, nunca para políticos.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'A anistia é concedida por lei (art. 48, VIII, CF) e atinge fatos; a graça é indulto individual por decreto a pessoa certa; o indulto é concedido por decreto de forma coletiva (art. 84, XII, CF).'
+  },
+
+  {
+    id: '35',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"E", maior de 70 anos, foi denunciado pela prática de um crime cuja pena máxima é de 2 anos. O recebimento da denúncia se deu em 02/03/2018. Em 10/10/2023, ainda sem que houvesse sentença, sua defesa arguiu a prescrição da pretensão punitiva. Considerando apenas as regras de prazo, termo inicial e causas de redução, assinale a alternativa correta.',
+    alternativas: [
+      'A) Não ocorreu prescrição, pois o prazo é de 4 anos (para pena máxima de 2 anos) e entre o recebimento da denúncia (2018) e a arguição (2023) não se passaram 4 anos completos.',
+      'B) Ocorreu prescrição, pois o prazo, considerando a redução pela metade em razão da idade (art. 115, CP), é de 2 anos, e desde o recebimento da denúncia já se passaram mais de 2 anos.',
+      'C) Não ocorreu prescrição, pois o termo inicial é a consumação do crime, data que não foi informada e que pode ser anterior ao recebimento da denúncia.',
+      'D) Ocorreu prescrição retroativa, pois o prazo reduzido pela metade (2 anos) já se esgotou entre a data da denúncia e a arguição.',
+      'E) A redução de prazo do art. 115 do CP só se aplica se o agente era maior de 70 anos na data do fato, o que não está demonstrado, devendo-se aplicar o prazo integral de 4 anos, não ocorrendo prescrição.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'Para pena máxima de 2 anos, o prazo prescricional é de 4 anos (art. 109, V). Com a redução pela metade (art. 115) por ser maior de 70 anos na data da sentença (presume-se, pois a questão não indica), o prazo fica em 2 anos. Desde o recebimento da denúncia (2018) até a arguição (2023) já se passaram mais de 2 anos.'
+  },
+
+  {
+    id: '36',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Em relação ao perdão judicial, analise as assertivas abaixo e assinale a alternativa correta. I. Conforme entendimento sumulado pelo STJ, a sentença que concede o perdão judicial tem natureza declaratória de extinção da punibilidade. II. O perdão judicial extingue a punibilidade e, consequentemente, todos os efeitos da condenação, inclusive a possibilidade de reincidência. III. O perdão judicial pode ser concedido mesmo após o trânsito em julgado da sentença condenatória, desde que preenchidos os requisitos legais. IV. Trata-se de causa extintiva de natureza objetiva, aplicável a qualquer coautor ou partícipe do crime, independentemente de suas condições pessoais.',
+    alternativas: [
+      'A) Apenas a assertiva I está correta.',
+      'B) Apenas as assertivas I e III estão corretas.',
+      'C) Apenas as assertivas II e IV estão corretas.',
+      'D) Apenas as assertivas I, II e III estão corretas.',
+      'E) Todas as assertivas estão corretas.'
+    ],
+    indiceCorreto: 0,
+    explicacao: 'I - Correta (Súmula 18 STJ). II - Incorreta: conforme art. 120 do CP, o condenado que recebe perdão judicial não é reincidente, mas outros efeitos secundários podem persistir. III - Incorreta: o perdão judicial deve ser concedido na sentença, não após o trânsito em julgado. IV - Incorreta: é causa pessoal que não se comunica a outros agentes.'
+  },
+
+  {
+    id: '37',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"F", condenado definitivamente a uma pena de 3 anos de reclusão por crime comum, evadiu-se do estabelecimento penal após cumprir 1 ano da pena. A evasão ocorreu em 05/05/2018. Em 2023, ainda foragido, foi preso. Seu defensor alega que a pretensão executória prescreveu. Com base no art. 113 do CP e nos prazos do art. 109, assinale a alternativa correta sobre o tempo restante para prescrição a partir da evasão.',
+    alternativas: [
+      'A) A prescrição da pretensão executória já ocorreu, pois o prazo para a pena total de 3 anos é de 8 anos, contados do trânsito em julgado, o qual certamente é anterior a 2015.',
+      'B) Não ocorreu prescrição. O tempo restante da pena é de 2 anos, cujo prazo prescricional é de 4 anos. Contando da evasão (2018), em 2023 ainda não se completaram 4 anos.',
+      'C) A prescrição é regulada pelo tempo total da pena aplicada (3 anos), não pelo restante, portanto o prazo é de 8 anos a partir da evasão, não tendo ocorrido.',
+      'D) O prazo prescricional, na hipótese de evasão, é sempre de 20 anos, por se tratar de situação de interrupção da execução que penaliza o condenado.',
+      'E) A prescrição da pretensão executória só começa a correr após a recaptura, sendo inaplicável o art. 113 do CP enquanto o condenado está foragido.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'Conforme art. 113 do CP, na evasão a prescrição é regulada pelo tempo que resta da pena. Restam 2 anos (3 - 1), cujo prazo prescricional é de 4 anos (art. 109, V). Da evasão (05/2018) até 2023 não se passaram 4 anos completos.'
+  },
+
+  {
+    id: '38',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Assinale a alternativa que indica uma situação na qual NÃO ocorre a extinção da punibilidade.',
+    alternativas: [
+      'A) Concessão de anistia por lei federal a agentes públicos responsabilizados por crimes previstos em legislação previdenciária revogada.',
+      'B) Retratação irrestrita do agente nos autos do processo por crime de falsa perícia, antes do trânsito em julgado.',
+      'C) Morte do agente após o trânsito em julgado da sentença condenatória que aplicou, cumulativamente, pena privativa de liberdade e pena de multa.',
+      'D) Perdão do ofendido, aceito pelo querelado, em ação penal privada por crime de ameaça, antes da prolação da sentença.',
+      'E) Decurso de 6 meses, sem representação, da data em que o ofendido tomou conhecimento da autoria, em crime de lesão corporal leve de ação pública condicionada.'
+    ],
+    indiceCorreto: 2,
+    explicacao: 'C) A morte do agente extingue a punibilidade, mas não extingue a pena de multa, que pode ser executada contra os herdeiros até o limite da herança, conforme entendimento majoritário da doutrina e jurisprudência (art. 5º, XLV, CF).'
+  },
+
+  {
+    id: '39',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"G" foi denunciado como incurso nas penas do art. 171, § 3º, do CP (estelionato previdenciário), por haver, em conluio com servidor, fornecido declarações falsas que permitiram a terceiro obter benefício indevido, recebido mensalmente entre 2010 e 2015. A denúncia foi oferecida em 2017. Em preliminar, a defesa alegou a prescrição da pretensão punitiva, argumentando que o crime é permanente, tendo cessado a permanência em 2015, e que o prazo prescricional para a pena máxima (5 anos) de 12 anos já teria transcorrido. Com base na jurisprudência dos Tribunais Superiores, assinale a alternativa correta.',
+    alternativas: [
+      'A) A prescrição não ocorreu, pois o crime é permanente e o prazo só começou a correr em 2015, sendo a denúncia de 2017 interruptiva do prazo de 12 anos.',
+      'B) O crime praticado por "G" é instantâneo de efeitos permanentes, iniciando-se a prescrição da data do primeiro pagamento indevido (2010), tendo portanto ocorrido a prescrição antes da denúncia de 2017.',
+      'C) Trata-se de crime permanente, cuja prescrição só se inicia com a cessação da permanência (2015), mas o prazo é de 16 anos, por tratar-se de estelionato qualificado, não tendo ocorrido a prescrição.',
+      'D) A prescrição deve ser calculada com base na pena aplicada na sentença, na modalidade retroativa, sendo prematuro qualquer juízo na fase atual.',
+      'E) O prazo prescricional para crimes contra a previdência social é especial, de 20 anos, não tendo ocorrido a prescrição.'
+    ],
+    indiceCorreto: 1,
+    explicacao: 'Conforme STJ (AgRg no REsp 1.347.082), o estelionato previdenciário praticado por terceiro (não pelo próprio beneficiário) é crime instantâneo de efeitos permanentes. A prescrição inicia-se da consumação (primeiro pagamento indevido - 2010). Pena máxima de 5 anos tem prazo de 12 anos, que já transcorreu até 2017.'
+  },
+
+  {
+    id: '40',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'Sobre a prescrição no concurso de crimes e nas hipóteses do art. 108 do CP, assinale a alternativa INCORRETA.',
+    alternativas: [
+      'A) No crime continuado, a prescrição regula-se pela pena de cada crime isoladamente, não se computando o acréscimo decorrente da continuação.',
+      'B) A prescrição da pretensão punitiva do crime de receptação não se vê afetada pela prescrição ou pela morte do autor do crime antecedente (furto), salvo se a extinção decorrer de abolitio criminis ou anistia.',
+      'C) Se um crime funciona como elementar de outro (crime complexo), a prescrição do primeiro impede a persecução do segundo, por força do princípio da consunção.',
+      'D) Nos crimes conexos processados juntos, a interrupção da prescrição relativa a qualquer deles estende-se aos demais.',
+      'E) A extinção da punibilidade de uma circunstância agravante que também constitui crime autônomo (ex: dano qualificador do furto) não se estende ao crime agravado.'
+    ],
+    indiceCorreto: 2,
+    explicacao: 'C) INCORRETA. Conforme art. 108, CP, a extinção da punibilidade de elemento componente de um crime (crime complexo) não se estende a este. São infrações autônomas. A consunção trata da absorção na dosimetria, não na extinção da punibilidade.'
+  },
+
+  {
+    id: '41',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: '"H", já condenado definitivamente por um crime e em liberdade aguardando o início do cumprimento da pena, pratica novo crime. Sobre os efeitos da nova conduta na prescrição da pretensão executória da primeira condenação, assinale a alternativa correta.',
+    alternativas: [
+      'A) A prática do novo crime interrompe imediatamente a prescrição da pretensão executória do primeiro, independentemente de condenação, nos termos do art. 117, VI, do CP.',
+      'B) A prescrição da pretensão executória do primeiro crime terá seu prazo aumentado em um terço, uma vez configurada a reincidência.',
+      'C) A interrupção da prescrição da pretensão executória do primeiro crime ocorre a partir da data do trânsito em julgado da sentença condenatória pelo novo crime, quando então se reconhece a reincidência.',
+      'D) A prática do novo crime é irrelevante para a prescrição da pretensão executória do primeiro, pois a reincidência como causa interruptiva só se aplica à pretensão punitiva.',
+      'E) A prescrição da pretensão executória do primeiro crime é suspensa enquanto pende a ação penal relativa ao novo delito.'
+    ],
+    indiceCorreto: 2,
+    explicacao: 'A reincidência como causa interruptiva (art. 117, VI) aplica-se à PPE. A jurisprudência majoritária entende que a interrupção se dá na data da prática do novo crime, mas seu reconhecimento depende de condenação transitada em julgado por este.'
+  },
+
+  {
+    id: '42',
+    materia: 'Direito Penal',
+    assunto: 'Extinção da Punibilidade/Prescrição',
+    enunciado: 'A respeito das condições objetivas de punibilidade e das condições negativas de punibilidade (causas absolutórias), assinale a alternativa correta.',
+    alternativas: [
+      'A) A existência de representação do ofendido, nos crimes de ação pública condicionada, é exemplo de condição objetiva de punibilidade.',
+      'B) O lançamento definitivo do crédito tributário, para os crimes contra a ordem tributária, é pacificamente entendido pela doutrina e jurisprudência como condição objetiva de punibilidade.',
+      'C) As causas absolutórias, como o furto de pai contra filho, excluem a antijuridicidade do fato, tornando-o atípico.',
+      'D) Condições objetivas de punibilidade referem-se a requisitos anteriores à conduta, cuja ausência impede o exercício da ação penal, mas não afeta a existência do crime.',
+      'E) Tanto as condições objetivas quanto as negativas de punibilidade são causas pessoais que, se verificadas em relação a um dos agentes, beneficiam a todos os coautores e partícipes.'
+    ],
+    indiceCorreto: 3,
+    explicacao: 'D) Correta. Condições objetivas de punibilidade são requisitos extrínsecos ao crime (ex: autorização para proceder, representação) cuja ausência impede a punição, mas não descaracteriza o crime em si. A) é condição de procedibilidade. B) há divergência (elemento normativo ou condição).
 ];
 
 export const CORES_TEMA = {
