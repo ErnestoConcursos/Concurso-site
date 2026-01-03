@@ -29,16 +29,29 @@ export const TOPICOS_POR_MATERIA: Record<string, string[]> = {
     "2.8 Ordem Social"
   ],
   "Direito Penal": [
-    "3.1 Princípios e Aplicação da Lei Penal",
-    "3.2 Teoria do Crime",
-    "3.3 Culpabilidade e Erro",
-    "3.4 Concurso de Pessoas e de Crimes",
-    "3.5 Teoria da Pena e Extinção da Punibilidade",
-    "3.6 Crimes contra a Pessoa",
-    "3.7 Crimes contra o Patrimônio",
-    "3.8 Crimes contra a Dignidade Sexual",
-    "3.9 Crimes contra a Administração Pública",
-    "3.10 Legislação Penal Especial"
+    "1. Conceito de Direito Penal",
+    "2. Funções do Direito Penal",
+    "3. Bem jurídico-penal",
+    "4. Princípios penais",
+    "5. Direito Penal na sociedade do risco",
+    "6. Lei penal",
+    "7. Teoria do crime",
+    "8. Conduta",
+    "9. Tipicidade",
+    "10. Ilicitude",
+    "11. Culpabilidade",
+    "12. Erro de tipo",
+    "13. Erro de proibição",
+    "14. Concurso de pessoas",
+    "15. Penas privativas de liberdade",
+    "16. Aplicação da pena",
+    "17. Penas restritivas de direito",
+    "18. Pena de multa",
+    "19. Concurso de crimes",
+    "20. Suspensão condicional da pena",
+    "21. Livramento condicional",
+    "22. Medidas de segurança",
+    "23. Extinção da punibilidade"
   ],
   "Direito Processual Penal": [
     "4.1 Princípios e Sistemas Processuais",
@@ -509,7 +522,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
     ],
     indiceCorreto: 2,
     explicacao: 'Conforme o art. 105, I, "a", da CF, compete ao STJ processar e julgar, originariamente, o mandado de segurança contra ato de Ministro de Estado. Para atos de juízes de primeira instância, a competência é do Tribunal de Justiça, por força do princípio do juízo natural (art. 102, I, "d", c/c art. 105, I, CF e jurisprudência do STF).'
-  }
+  },
 ];
 
 export const CORES_TEMA = {
