@@ -793,7 +793,307 @@ export const QUESTOES_EXEMPLO: Questao[] = [
     indiceCorreto: 3,
     explicacao: 'D) Correta. Condições objetivas de punibilidade são requisitos extrínsecos ao crime (ex: autorização para proceder, representação) cuja ausência impede a punição, mas não descaracteriza o crime em si. A) é condição de procedibilidade. B) há divergência (elemento normativo ou condição)'
 
-  }
+  },{
+  id: '43',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'No procedimento do Tribunal do Júri, sobre a fase de instrução preliminar (art. 411, CPP), o juiz, encerrada a instrução probatória, verifica que os elementos colhidos sugerem a ocorrência de um crime diverso do descrito na denúncia, sendo este também da competência do Júri. Diante disso, considerando a possibilidade de mutatio libelli, assinale a alternativa que indica a providência legal cabível ao magistrado.',
+  alternativas: [
+    'A) Deve impronunciar o acusado, determinando o arquivamento dos autos, por falta de justa causa para a ação penal em relação ao crime apurado.',
+    'B) Deve prosseguir com o julgamento nos termos da denúncia oferecida, ficando a nova tipificação a ser discutida apenas em plenário de julgamento.',
+    'C) Poderá dar ao fato definição jurídica diversa da constante da acusação, nos termos do art. 418 do CPP, ainda que sujeite o acusado a pena mais grave.',
+    'D) Deve absolver sumariamente o acusado, por não estar convencido da materialidade do fato tal como descrito na inicial.',
+    'E) Deve remeter os autos ao juiz competente, nos termos do art. 419, caput, do CPP, uma vez que se convencer da existência de crime diverso.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. O art. 418 do CPP autoriza o juiz, ao proferir a decisão de pronúncia, a dar ao fato definição jurídica diversa da constante da acusação, mesmo que mais grave. A hipótese do art. 419 aplica-se apenas quando o juiz se convencer da existência de crime diverso NÃO da competência do Júri.'
+},
+{
+  id: '44',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Sobre a formação da lista anual de jurados e o alistamento, conforme arts. 425 e 426 do CPP, considere as seguintes assertivas: I. A lista geral dos jurados, com indicação das respectivas profissões, deve ser publicada pela imprensa e divulgada em editais até o dia 10 de outubro de cada ano. II. O jurado que tiver integrado o Conselho de Sentença nos doze meses anteriores à publicação da lista geral fica automaticamente excluído dela. III. É vedada a alteração da lista geral após sua publicação definitiva no dia 10 de novembro, mesmo que se descubra vício no alistamento. IV. O sorteio dos nomes para compor a urna deve ser realizado na presença do Ministério Público, de advogado indicado pela OAB e de defensor público, conforme o § 3º do art. 426.',
+  alternativas: [
+    'A) I e II.',
+    'B) I e IV.',
+    'C) II e III.',
+    'D) I, II e IV.',
+    'E) II, III e IV.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. I está correta conforme art. 426. II é incorreta: a exclusão é do alistamento, não da lista já publicada, e refere-se aos 12 meses anteriores à publicação (§4º, art. 426). III é incorreta: a lista pode ser alterada até 10 de novembro (§1º, art. 426). IV está correta conforme §3º do art. 426.'
+},
+{
+  id: '45',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Em um processo perante o Tribunal do Júri, após o trânsito em julgado da pronúncia, o acusado, que está preso preventivamente há oito meses, requer ao Tribunal de Justiça o desaforamento do julgamento, alegando excesso de serviço na comarca de origem, o que impossibilitaria a realização do julgamento no prazo legal. O Ministério Público contesta, alegando que o prazo de seis meses, previsto no art. 428 do CPP, não foi ultrapassado. Analise a situação à luz da legislação processual penal e assinale a alternativa INCORRETA.',
+  alternativas: [
+    'A) O prazo para a realização do julgamento, para fins de desaforamento por excesso de serviço, conta-se a partir do trânsito em julgado da decisão de pronúncia.',
+    'B) Para a contagem do prazo referido no art. 428, não se computa o tempo decorrido de adiamentos, diligências ou incidentes de interesse da defesa.',
+    'C) A comprovação do excesso de serviço que impossibilite o julgamento no prazo de seis meses é condição necessária para o desaforamento nessa hipótese.',
+    'D) O desaforamento por excesso de serviço depende de requerimento da parte, não podendo ser decretado de ofício pelo Tribunal, mesmo representado pelo juiz presidente.',
+    'E) Caso não haja excesso de serviço, o acusado poderá requerer ao Tribunal que determine a imediata realização do julgamento.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) INCORRETA. O art. 428 do CPP prevê que o desaforamento por excesso de serviço poderá ser determinado "ouvidos o juiz presidente e a parte contrária", não exigindo requerimento da parte. Pode ser de ofício ou por provocação. As demais alternativas estão corretas conforme o dispositivo legal.'
+},
+{
+  id: '46',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Durante a fase de preparação para o julgamento em plenário (Seção III, Capítulo II, Título VIII do CPP), o juiz presidente do Tribunal do Júri determina a intimação das partes para, no prazo de cinco dias, apresentarem o rol de testemunhas que irão depor em plenário. Sobre essa fase, é correto afirmar:',
+  alternativas: [
+    'A) Cada parte poderá arrolar até oito testemunhas para o julgamento em plenário, reproduzindo o mesmo limite da fase de instrução preliminar.',
+    'B) O assistente do Ministério Público, se já habilitado, tem direito próprio e autônomo para arrolar testemunhas, independentemente da manifestação do Parquet.',
+    'C) O número máximo de testemunhas que cada parte pode arrolar para depor em plenário é de cinco, nos termos do art. 422 do CPP.',
+    'D) A ausência de intimação para a apresentação do rol de testemunhas de plenário gera nulidade absoluta do julgamento, por ofensa ao contraditório.',
+    'E) As testemunhas arroladas nesta fase são as únicas que poderão ser inquiridas, sendo defeso às partes requerer a oitiva de qualquer outra, mesmo que já tenha deposto na instrução preliminar.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. O art. 422 do CPP estabelece expressamente o limite de até cinco testemunhas para depor em plenário. A) incorreta: na fase preliminar são oito (art. 406), no plenário são cinco. B) incorreta: o assistente não tem rol autônomo. D) incorreta: seria nulidade relativa. E) incorreta: testemunhas da instrução preliminar podem ser reouvidas em plenário.'
+},
+{
+  id: '47',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'No curso de uma sessão de julgamento pelo Tribunal do Júri, durante os debates orais, o advogado de defesa, em sua sustentação, faz reiteradas referências à decisão de pronúncia, argumentando que ela foi prolatada com base em provas frágeis e que, portanto, o Conselho de Sentença deveria absolver seu cliente. O Ministério Público, imediatamente, levanta protesto contra a conduta. Analisando a situação à luz do art. 478 do CPP, assinale a alternativa que descreve a consequência legal e processual adequada.',
+  alternativas: [
+    'A) A referência é permitida, pois a pronúncia é peça fundamental do processo e pode ser criticada pela defesa como estratégia para demonstrar a fragilidade da acusação.',
+    'B) Configura nulidade relativa, devendo o juiz presidente apenas advertir o orador para que se abstenha de tais referências, sob pena de ter seu tempo de fala reduzido.',
+    'C) Configura nulidade absoluta do julgamento, por ofensa direta ao princípio do livre convencimento do júri, determinando a dissolução do Conselho e o marcamento de nova data.',
+    'D) A conduta é vedada pelo art. 478, I, do CPP, podendo caracterizar nulidade, a critério do juiz presidente, que deverá intervir para coibir o abuso.',
+    'E) A referência é irrelevante, pois os jurados já tiveram acesso à pronúncia, sendo natural que as partes a comentem durante seus argumentos.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) Correta. O art. 478, I, do CPP veda, sob pena de nulidade, referências à decisão de pronúncia como argumento de autoridade que beneficiem ou prejudiquem o acusado. Cabe ao juiz presidente intervir e coibir a prática, sob pena de caracterização de nulidade.'
+},
+{
+  id: '48',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Sobre as hipóteses de absolvição sumária no procedimento do Tribunal do Júri, previstas no art. 415 do CPP, assinale a alternativa CORRETA.',
+  alternativas: [
+    'A) A absolvição sumária por causa de isenção de pena aplica-se inclusive à inimputabilidade por doença mental, ainda que não seja a única tese defensiva.',
+    'B) Provada a inexistência material do fato, o juiz proferirá sentença de impronúncia, determinando o arquivamento dos autos.',
+    'C) Demonstrada, durante a instrução preliminar, causa excludente de ilicitude, como a legítima defesa, o juiz deverá absolver sumariamente o acusado.',
+    'D) A absolvição sumária é cabível quando o juiz, analisando a matéria de fato e de direito, concluir pela não ocorrência do crime ou pela não participação do acusado.',
+    'E) Da sentença que decreta a absolvição sumária cabe recurso em sentido estrito, e não apelação.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) Correta. A absolvição sumária ocorre nas hipóteses do art. 415, que incluem a prova da inexistência do fato, não ser autor ou partícipe, fato atípico ou causa de exclusão do crime. A) incorreta: há exceção para inimputabilidade se não for única tese. B) incorreta: é absolvição, não impronúncia. C) incorreta: excludentes de ilicitude são discutidas em plenário. E) incorreta: cabe apelação (art. 416).'
+},
+{
+  id: '49',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Após a formação do Conselho de Sentença e prestado o compromisso, inicia-se a instrução em plenário. Sobre a ordem de inquirição, de acordo com o art. 473 do CPP, é correto afirmar que:',
+  alternativas: [
+    'A) O defensor inquirirá primeiro as testemunhas arroladas pela acusação, seguido pelo Ministério Público e pelo querelante.',
+    'B) O Ministério Público, o assistente e o querelante inquirirão as testemunhas da acusação, nesta ordem, sucedidos pelo defensor, que inquirirá as testemunhas da defesa.',
+    'C) O juiz presidente é o responsável por toda a inquirição, colhendo as informações que as partes lhe sugerirem por escrito.',
+    'D) As testemunhas arroladas pela defesa são inquiridas primeiro pelo defensor, mantida, para as testemunhas da acusação, a ordem do caput do art. 473.',
+    'E) As partes não podem interrogarem diretamente as testemunhas, devendo todas as perguntas serem dirigidas ao juiz presidente, que as formula.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) Correta. Conforme §1º do art. 473, para as testemunhas da defesa, o defensor pergunta primeiro. Para as da acusação, mantém-se a ordem do caput (MP, assistente, querelante). B) incorreta: inverte a ordem para as testemunhas da defesa. C) e E) incorretas: as partes inquiriem diretamente.'
+},
+{
+  id: '50',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'No tocante aos quesitos obrigatórios que devem ser submetidos à votação do Conselho de Sentença, conforme o art. 483 do CPP, considere as seguintes afirmações: I. A resposta negativa, de mais de três jurados, ao quesito sobre a materialidade do fato implica a absolvição do acusado, encerrando-se a votação. II. O quesito sobre a existência de causa de diminuição de pena só será formulado se os jurados, após votarem pela condenação, assim o requererem. III. Sustentada a desclassificação para infração de competência do juiz singular, o quesito respectivo será respondido após o segundo ou terceiro quesito. IV. O questionário sempre será iniciado com a indagação sobre se o acusado deve ser absolvido, para respeitar o princípio da presunção de inocência.',
+  alternativas: [
+    'A) I e III.',
+    'B) II e IV.',
+    'C) I, II e III.',
+    'D) II, III e IV.',
+    'E) I, III e IV.'
+  ],
+  indiceCorreto: 0,
+  explicacao: 'A) Correta. I está correta conforme §1º do art. 483. II está incorreta: o quesito sobre causa de diminuição é obrigatório se alegado pela defesa. III está correta conforme §4º do art. 483. IV está incorreta: a ordem dos quesitos segue a do art. 483, começando pela materialidade.'
+},
+{
+  id: '51',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Durante a sessão de julgamento, após a leitura dos quesitos, o juiz presidente, os jurados e as partes se dirigem à sala especial para a votação. Sobre o procedimento de votação, de acordo com os arts. 486 a 489 do CPP, assinale a alternativa INCORRETA.',
+  alternativas: [
+    'A) Antes da votação de cada quesito, são distribuídas aos jurados cédulas de papel opaco contendo a palavra "sim" ou "não".',
+    'B) Para assegurar o sigilo do voto, o oficial de justiça recolhe em urnas separadas as cédulas correspondentes aos votos e as não utilizadas.',
+    'C) As decisões do Tribunal do Júri são tomadas por maioria de votos, considerando-se o total de jurados que compõem o Conselho de Sentença.',
+    'D) Se a resposta a um quesito estiver em contradição com outra já dada, o presidente deve explicar a contradição e submeter novamente à votação os quesitos envolvidos.',
+    'E) O resultado da votação de cada quesito é registrado em termo pelo escrivão, constando também a conferência das cédulas não utilizadas.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) INCORRETA. A maioria é de votos dos jurados presentes na votação de cada quesito (art. 489), não do total que compõe o Conselho. As demais alternativas estão corretas: A) art. 486; B) art. 487; D) art. 490; E) art. 488.'
+},
+{
+  id: '52',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Um acusado, pronunciado por homicídio qualificado, está preso cautelarmente. Na fase de preparação do processo para julgamento em plenário, seu defensor requer a produção de prova pericial suplementar, alegando que a já existente nos autos é insuficiente. O juiz presidente indeferiu o requerimento, por considerar protelatório. O defensor então alega violação ao direito à ampla defesa. À luz do regramento do CPP sobre o Tribunal do Júri, a atitude do juiz presidente foi:',
+  alternativas: [
+    'A) Ilegal, pois o direito à produção de provas é amplo na fase de preparação para o plenário, sendo nulo o julgamento se realizado sem a perícia requerida.',
+    'B) Legal, pois a fase de produção de provas periciais é própria da instrução preliminar, não cabendo sua repetição ou complementação na fase de preparação para o plenário, salvo para sanar nulidade.',
+    'C) Legal, pois compete ao juiz presidente, nos termos do art. 422, § 1º, c/c art. 423, indeferir diligências consideradas irrelevantes, impertinentes ou protelatórias.',
+    'D) Ilegal, pois a defesa tem o direito constitucional de produzir todas as provas necessárias a qualquer tempo, sendo nula qualquer restrição imposta pelo juiz.',
+    'E) Legal, apenas se o Ministério Público também tiver se manifestado pelo indeferimento, respeitando-se o princípio do contraditório.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. A fase de produção de provas é na instrução preliminar (arts. 410-411). Na fase de preparação para o plenário (art. 422), o objetivo é sanar nulidades ou esclarecer fatos (art. 423, I), não produzir provas novas. C) incorreta: esses dispositivos não se referem a produção de prova nova.'
+},
+{
+  id: '53',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Sobre as recusas de jurados durante a formação do Conselho de Sentença, conforme art. 468 do CPP, é correto afirmar que:',
+  alternativas: [
+    'A) Cada parte pode recusar, sem necessidade de motivação, até três jurados sorteados, e as recusas são sempre feitas após o sorteio de todos os sete jurados.',
+    'B) A defesa e o Ministério Público podem recusar, justificadamente, quantos jurados entenderem necessários, sem qualquer limite numérico.',
+    'C) As partes podem recusar jurados de forma motivada ou imotivada, mas o número máximo de recusas imotivadas, por parte, é de três.',
+    'D) O jurado recusado imotivadamente por uma das partes fica excluído apenas daquele processo, podendo compor o Conselho em julgamentos subsequentes no mesmo dia.',
+    'E) Em caso de recusa motivada por impedimento, a parte que a arguir deve apresentar provas pré-constituídas da existência do vício.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. O art. 468 estabelece que as partes podem recusar até três jurados cada, sem motivar a recusa (imotivada). Para recusas motivadas (impedimento, suspeição), não há limite numérico. A) incorreta: as recusas são feitas à medida que as cédulas são sorteadas.'
+},
+{
+  id: '54',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Após o julgamento pelo Tribunal do Júri que resultou na condenação do réu a pena de 18 anos de reclusão, a defesa interpôs apelação. Sobre os efeitos e o processamento desse recurso, à luz das alterações promovidas pela Lei nº 13.964/2019 (Pacote Anticrime), analise as assertivas: I. A apelação não terá efeito suspensivo, devendo o acusado iniciar o cumprimento da pena de imediato. II. Excepcionalmente, o tribunal ad quem pode atribuir efeito suspensivo à apelação, se o recurso não for protelatório e levantar questão substancial que possa resultar em redução da pena para patamar inferior a 15 anos. III. A execução provisória da pena é mandatória em caso de condenação igual ou superior a 15 anos, não havendo qualquer margem de discricionariedade para o juiz presidente. IV. O pedido de concessão de efeito suspensivo pode ser feito incidentemente na apelação ou por meio de petição em separado dirigida diretamente ao relator.',
+  alternativas: [
+    'A) I e II.',
+    'B) II e IV.',
+    'C) I, II e IV.',
+    'D) I, III e IV.',
+    'E) II, III e IV.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. II e IV estão corretas conforme arts. 492, §5º e §6º, do CPP. I está incorreta: a regra é a inexistência de efeito suspensivo (§4º), mas há exceção (§5º). III está incorreta: o juiz presidente pode, excepcionalmente, deixar de autorizar a execução provisória (§3º).'
+},
+{
+  id: '55',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Na fase de instrução preliminar do procedimento do Júri, o juiz, ao analisar a resposta do acusado, verifica que ele arguiu a incompetência do juízo por prerrogativa de função. De acordo com o art. 407 do CPP, como deve ser processada essa arguição?',
+  alternativas: [
+    'A) Deve ser decidida de plano pelo juiz, antes de qualquer ato instrutório, sob pena de preclusão.',
+    'B) Deve ser processada em apartado, nos termos dos arts. 95 a 112 do CPP, suspendendo-se o curso do processo principal.',
+    'C) Deve ser analisada apenas após o encerramento de toda a instrução probatória, juntamente com o mérito.',
+    'D) Por se tratar de questão prejudicial, deve ser remetida imediatamente ao tribunal competente, independentemente de processamento em apartado.',
+    'E) Por ser matéria de defesa, sua arguição na resposta é intempestiva, devendo ser rejeitada liminarmente.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. O art. 407 do CPP remete expressamente ao processamento em apartado das exceções, nos termos dos arts. 95 a 112. A incompetência por prerrogativa de função é exceção que se processa em apartado.'
+},
+{
+  id: '56',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Sobre a publicidade e o sigilo no Tribunal do Júri, considere as seguintes situações: I. Os trabalhos de votação do Conselho de Sentença na sala especial. II. O conteúdo das cédulas de votação individual de cada jurado. III. A sessão de instrução e julgamento em plenário. IV. O sorteio dos nomes dos jurados que comporão a urna, para a reunião periódica.',
+  alternativas: [
+    'A) I e II.',
+    'B) III e IV.',
+    'C) I, III e IV.',
+    'D) II e III.',
+    'E) I e IV.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. III e IV são atos públicos: a sessão de instrução e julgamento (art. 793, CPP) e o sorteio (art. 433 - "a portas abertas"). I e II são sigilosos: a votação na sala especial e o voto individual são secretos (arts. 485-487).'
+},
+{
+  id: '57',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Em relação às atribuições do juiz presidente do Tribunal do Júri, previstas no art. 497 do CPP, assinale a alternativa que indica uma conduta que ele NÃO está autorizado a praticar.',
+  alternativas: [
+    'A) Regular a polícia das sessões e prender os desobedientes.',
+    'B) Nomear defensor ao acusado, quando o considerar indefeso, podendo dissolver o Conselho e designar nova data.',
+    'C) Decretar, de ofício, a prisão preventiva do acusado durante os debates, caso ele profira ameaças contra a vítima.',
+    'D) Suspender a sessão pelo tempo indispensável à realização de diligências, mantida a incomunicabilidade dos jurados.',
+    'E) Mandar retirar da sala o acusado que dificultar a realização do julgamento, o qual prosseguirá sem sua presença.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) INCORRETA/NÃO AUTORIZADA. O art. 497 não atribui ao presidente a competência para decretar prisão preventiva. Essa é decisão que deve seguir o rito próprio do Título IX do Livro I do CPP. As demais estão previstas: A) inciso I; B) inciso V; D) inciso VII; E) inciso VI.'
+},
+{
+  id: '58',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Durante os debates no plenário do Júri, o representante do Ministério Público, em sua sustentação, exibe um vídeo contendo entrevista com uma testemunha que não foi arrolada e não consta dos autos. A defesa opõe-se veementemente. Com base no art. 479 do CPP, assinale a alternativa que exprime a consequência legal adequada.',
+  alternativas: [
+    'A) A exibição é permitida, desde que a testemunha tenha sido ouvida em inquérito policial e o vídeo seja fiel ao seu depoimento.',
+    'B) A exibição é vedada, pois a prova não foi juntada aos autos com a antecedência mínima de três dias úteis, dando-se ciência à outra parte.',
+    'C) A exibição é permitida a critério do juiz presidente, desde que considere a prova relevante para a formação da convicção dos jurados.',
+    'D) A exibição gera nulidade absoluta da sessão, obrigando a dissolução do Conselho de Sentença e o marcamento de novo julgamento.',
+    'E) A exibição é permitida apenas se a defesa concordar expressamente com a sua utilização, renunciando ao direito de prévia ciência.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. O art. 479 do CPP veda, durante o julgamento, a leitura de documento ou exibição de objeto não juntado aos autos com antecedência mínima de 3 dias úteis, com ciência à outra parte. O parágrafo único especifica que a proibição inclui vídeos.'
+},
+{
+  id: '59',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Sobre a resposta à acusação no procedimento do Tribunal do Júri (art. 406, CPP), é INCORRETO afirmar que:',
+  alternativas: [
+    'A) O prazo para resposta é de dez dias, contado a partir do efetivo cumprimento do mandado de citação ou do comparecimento espontâneo.',
+    'B) Na resposta, o acusado pode arguir preliminares, alegar fatos, oferecer documentos e arrolar até oito testemunhas.',
+    'C) Não apresentada a resposta no prazo, o juiz nomeará defensor para oferecê-la em até dez dias, concedendo-lhe vista dos autos.',
+    'D) A apresentação da resposta é condição de procedibilidade para a continuidade do processo, sendo sua falta causa para a absolvição sumária.',
+    'E) O acusado pode, na resposta, especificar as provas pretendidas e requerer a intimação das testemunhas arroladas.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) INCORRETA. A falta de resposta não gera absolvição sumária, mas sim a nomeação de defensor para oferecê-la (art. 408). As demais estão corretas: A) art. 406 e §1º; B) e E) art. 406, §3º; C) art. 408.'
+},
+{
+  id: '60',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Um cidadão convocado para servir como jurado alega, por motivo de convicção filosófica profundamente arraigada, ser contrário à ideia de julgar seu semelhante, recusando-se a integrar o Conselho de Sentença. Diante disso, de acordo com o art. 438 do CPP, assinale a alternativa que descreve o procedimento legal.',
+  alternativas: [
+    'A) A recusa importará na aplicação de multa de 1 a 10 salários mínimos, independentemente de sua fundamentação.',
+    'B) A recusa, uma vez aceita pelo juiz, isentará o cidadão do serviço do júri, sem qualquer consequência adicional.',
+    'C) A recusa fundada em convicção religiosa, filosófica ou política importará no dever de prestar serviço alternativo, sob pena de suspensão dos direitos políticos.',
+    'D) O cidadão será imediatamente preso por desobediência, pois o serviço do júri é obrigatório e não admite escusas de foro íntimo.',
+    'E) O juiz presidente determinará sua inclusão compulsória no Conselho, pois motivos de consciência não são considerados legítimos para escusa.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. O art. 438 do CPP prevê expressamente que recusa por convicção religiosa, filosófica ou política implica dever de prestar serviço alternativo, com pena de suspensão de direitos políticos se não prestar. A) seria para recusa injustificada (art. 436).'
+},
+{
+  id: '61',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Após a pronúncia de um acusado por crime doloso contra a vida, o Ministério Público, analisando novamente os autos, identifica indícios robustos de que outra pessoa, não incluída na denúncia original, participou do crime. Com base no art. 417 do CPP, qual o procedimento adequado a ser seguido pelo juiz?',
+  alternativas: [
+    'A) Deve anular toda a instrução já realizada e determinar a inclusão do novo acusado na mesma denúncia, reiniciando-se o procedimento desde a citação.',
+    'B) Ao pronunciar o acusado original, deve determinar o retorno dos autos ao Ministério Público por 15 dias, para que este adite a denúncia ou ofereça denúncia em separado.',
+    'C) Deve impronunciar o acusado original e remeter os autos ao Ministério Público para que ofereça nova denúncia, incluindo todos os envolvidos.',
+    'D) Deve prosseguir com o julgamento do acusado original e determinar a instauração de um novo inquérito policial para apurar a participação da outra pessoa.',
+    'E) Deve desclassificar o crime para outra infração de competência do juiz singular, onde será possível a denúncia contra o novo partícipe.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. O art. 417 do CPP estabelece que, havendo indícios de autoria ou participação de outras pessoas, o juiz, ao pronunciar ou impronunciar, determinará o retorno dos autos ao MP por 15 dias para aditamento ou denúncia em separado, aplicando-se o art. 80.'
+},
+{
+  id: '62',
+  materia: 'Direito Processual Penal',
+  assunto: 'Tribunal do Júri',
+  enunciado: 'Sobre a competência para o julgamento de questões incidentais no Tribunal do Júri, à luz do disposto no art. 497, IV, do CPP, assinale a alternativa CORRETA.',
+  alternativas: [
+    'A) Todas as questões incidentes, inclusive as que envolvam matéria de mérito, devem ser submetidas à apreciação do Conselho de Sentença.',
+    'B) O juiz presidente resolve as questões incidentes que não dependam de pronunciamento do júri, como questões de direito e de prejudicialidade.',
+    'C) As questões sobre a validade da pronúncia devem ser sempre decididas pelo Conselho de Sentença antes do início da votação dos quesitos.',
+    'D) Qualquer questão suscitada pela defesa durante o plenário, como a alegação de prescrição, deve ser obrigatoriamente submetida à votação dos jurados.',
+    'E) A arguição de suspeição contra o juiz presidente deve ser julgada pelo próprio Conselho de Sentença, por votação secreta.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. O art. 497, IV, atribui ao juiz presidente a competência para resolver as questões incidentes que não dependam de pronunciamento do júri. A prescrição, por exemplo, é questão de direito resolvida pelo presidente (inciso IX). C, D e E são questões resolvidas pelo juiz presidente.'
+}
+  
 
 ];
 
