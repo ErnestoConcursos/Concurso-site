@@ -1092,6 +1092,291 @@ export const QUESTOES_EXEMPLO: Questao[] = [
   ],
   indiceCorreto: 1,
   explicacao: 'B) Correta. O art. 497, IV, atribui ao juiz presidente a competência para resolver as questões incidentes que não dependam de pronunciamento do júri. A prescrição, por exemplo, é questão de direito resolvida pelo presidente (inciso IX). C, D e E são questões resolvidas pelo juiz presidente.'
+},
+{
+  id: '63',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Em um julgamento perante o Tribunal do Júri, durante a sustentação oral do representante do Ministério Público, um dos jurados, de forma espontânea, exclamou em voz alta: "Isso é um absurdo!". O juiz presidente imediatamente o advertiu e prosseguiu com o julgamento, que terminou com a condenação do réu. Com base na jurisprudência dominante, a conduta do jurado:',
+  alternativas: [
+    'A) Não acarreta nulidade, pois a manifestação foi espontânea e isolada, tendo sido prontamente coibida pelo presidente, sem prejuízo à imparcialidade do colegiado.',
+    'B) Configura grave violação ao dever de incomunicabilidade, implicando a nulidade absoluta do julgamento, independentemente da influência sobre os demais jurados.',
+    'C) Gera nulidade relativa, sanável se a defesa não tiver feito a respectiva reserva na ata de julgamento imediatamente após o ocorrido.',
+    'D) Caracteriza excesso de linguagem do jurado, anulável apenas se comprovado que sua opinião contaminou os demais membros do conselho de sentença.',
+    'E) Configura mero erro processual, passível de correção via recurso de apelação, sem necessidade de anulação do júri.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Segundo o STJ (HC 436241-SP), manifestação espontânea de jurado durante os debates viola o dever de incomunicabilidade e gera nulidade absoluta do julgamento, independentemente de influência sobre os demais.'
+},
+{
+  id: '64',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Sobre os recursos no procedimento do Tribunal do Júri, analise as assertivas a seguir: I. O protesto por novo júri permanece como recurso cabível contra sentença condenatória proferida após a vigência da Lei 11.689/2008, se o crime foi cometido antes dessa lei. II. É possível a anulação parcial da sentença do júri para submeter o réu a novo julgamento apenas sobre as qualificadoras, se o veredicto sobre elas for manifestamente contrário à prova dos autos. III. Determinada a anulação do júri por recurso da defesa, em novo julgamento, a pena não poderá ser superior àquela fixada na primeira sentença, sob pena de violação ao princípio da reformatio in pejus indireta. IV. A condenação definitiva pelo Júri pode ser desconstituída via revisão criminal, podendo o tribunal revisor, se entender pela contrariedade à evidência dos autos, absolver diretamente o réu. Está correto o que se afirma APENAS em:',
+  alternativas: [
+    'A) I e II.',
+    'B) I e IV.',
+    'C) II e III.',
+    'D) III e IV.',
+    'E) I, III e IV.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) Correta. III: Correto - vedada reformatio in pejus indireta (STF, HC 165376/SP). IV: Correto - revisão criminal possível (STJ, HC 137504-BA). I: Errado - protesto por novo júri não mais existe após Lei 11.689/2008. II: Errado - não é possível anulação parcial apenas das qualificadoras (STJ, HC 246.223-BA).'
+},
+{
+  id: '65',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Um acusado de homicídio doloso foi pronunciado com base exclusivamente em elementos informativos colhidos no inquérito policial, sem que houvesse produção de prova em juízo sob o crivo do contraditório. A defesa impetrou habeas corpus alegando violação ao art. 155 do CPP. À luz da jurisprudência atual do STJ, o writ deve ser:',
+  alternativas: [
+    'A) Concedido, pois a pronúncia demanda lastro probatório mínimo colhido em juízo, sendo vedado o uso exclusivo de elementos inquisitoriais.',
+    'B) Concedido, mas apenas se o réu estiver preso, pois a ilegalidade flagrante só se configura na restrição de liberdade.',
+    'C) Denegado, pois na pronúncia opera o princípio in dubio pro societate, sendo admissível seu fundamento em indícios oriundos do inquérito policial.',
+    'D) Denegado, desde que o inquérito policial tenha sido instruído com ampla produção probatória e o juiz tenha motivado sua decisão convencendo-se da existência do crime e de indícios de autoria.',
+    'E) Concedido parcialmente, para determinar o desentranhamento dos elementos inquisitoriais e a prolação de nova decisão baseada apenas em provas judicializadas.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Prevalente no STJ é a posição de que é possível a pronúncia com base em indícios do inquérito policial, aplicando-se o princípio in dubio pro societate (HC 435.977/RS, REsp 1458386/PA).'
+},
+{
+  id: '66',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Em um julgamento pelo Tribunal do Júri, o réu foi posicionado na sala de plenário de costas para os jurados que compunham o Conselho de Sentença, durante toda a sessão. A defesa protestou, requerendo que o acusado ficasse de frente para os julgadores, mas o pedido foi indeferido pelo juiz presidente. O réu foi condenado. Com base no entendimento jurisprudencial recente, essa conduta do juiz presidente:',
+  alternativas: [
+    'A) É irrelevante, pois a lei processual não disciplina o posicionamento físico do réu, ficando a critério da segurança do plenário.',
+    'B) Configura mero erro formal, não gerando nulidade, uma vez que a decisão dos jurados se baseia na prova oral e documental, não nas expressões do réu.',
+    'C) Viola o princípio da plenitude de defesa e da dignidade da pessoa humana, implicando a nulidade do julgamento por cerceamento de direito fundamental.',
+    'D) Gera nulidade relativa, que só será reconhecida se a defesa comprovar, em grau recursal, que o posicionamento influenciou diretamente o resultado do veredicto.',
+    'E) É correta, pois visa a evitar a intimidação das testemunhas ou dos próprios jurados pelo olhar do acusado.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Segundo o STJ (AgRg no HC 768.422-SP), posicionar o réu de costas para os jurados viola a dignidade humana e o direito de ser visto pelos julgadores, anulando o julgamento.'
+},
+{
+  id: '67',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Sobre o princípio do in dubio pro societate na fase da pronúncia, é INCORRETO afirmar:',
+  alternativas: [
+    'A) Exige do juízo de pronúncia um padrão probatório inferior ao da certeza além da dúvida razoável, próprio para uma sentença condenatória.',
+    'B) Permite que questões sobre a dosimetria da pena ou a configuração de qualificadoras específicas sejam resolvidas em favor da acusação.',
+    'C) Não autoriza a pronúncia baseada em prova exclusivamente testemunhal indireta ("ouvir dizer"), sem qualquer outro lastro probatório.',
+    'D) Determina que as dúvidas persistentes após a instrução sejam resolvidas em favor da sociedade, admitindo a submissão do acusado ao júri.',
+    'E) Não dispensa a análise crítica e racional das provas pelo juiz, que deve verificar a existência de indícios suficientes da autoria e materialidade.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta (por ser a incorreta). O princípio não permite ao juiz resolver questões sobre dosimetria ou qualificadoras específicas em favor da acusação; essas são matérias para o júri. Somente pode excluir qualificadoras manifestamente improcedentes.'
+},
+{
+  id: '68',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'No plenário do Tribunal do Júri, o Ministério Público, durante seus debates, fez referência expressa e leu trechos da sentença de pronúncia, argumentando que a decisão judicial que admitiu a acusação já havia se convencido da culpa do réu. A defesa opôs-se, alegando violação ao art. 478, I, do CPP. Acerca da nulidade decorrente de tal conduta, assinale a alternativa correta à luz da jurisprudência:',
+  alternativas: [
+    'A) É nula a sessão de julgamento, pois qualquer referência à decisão de pronúncia no plenário do júri é vedada em absoluto pelo citado dispositivo.',
+    'B) Não há nulidade se a leitura for feita apenas para contextualizar os fatos, sem utilizá-la como argumento de autoridade para beneficiar ou prejudicar o acusado.',
+    'C) A nulidade somente ocorre se a referência for à decisão de pronúncia de corréu já julgado, e não à do próprio acusado.',
+    'D) Configura excesso de linguagem do representante do MP, gerando a anulação da pronúncia, mas não do julgamento em plenário.',
+    'E) A nulidade é relativa, dependendo de demonstração, em grau recursal, de que os jurados foram efetivamente influenciados pelo argumento.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Segundo STF e STJ (RHC 120598/MT, HC 248.617-MT), a nulidade só ocorre se a referência for usada como argumento de autoridade para beneficiar ou prejudicar o acusado.'
+},
+{
+  id: '69',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Após a condenação de um réu pelo Tribunal do Júri, o Ministério Público interpôs apelação com fundamento no art. 593, III, "d", do CPP, alegando que a decisão absolutória de um corréu no mesmo processo foi manifestamente contrária à prova dos autos. O Tribunal de Justiça deu provimento ao recurso, anulou a absolvição e determinou novo júri para esse corréu. Diante do exposto e do entendimento do STF sobre a apelabilidade das absolvições fundadas no quesito genérico, a decisão do Tribunal de Justiça:',
+  alternativas: [
+    'A) Está correta, pois a soberania dos veredictos não impede o reexame da decisão dos jurados quando eivada de manifesta contrariedade às provas.',
+    'B) Está incorreta, pois, em regra, não cabe recurso da acusação contra absolvição fundada no quesito genérico do art. 483, § 2º, do CPP, por força da soberania dos veredictos.',
+    'C) Está correta, pois o princípio da paridade de armas exige que a acusação tenha amplo direito de recorrer contra qualquer decisão absolutória.',
+    'D) Está incorreta, pois o recurso cabível nessa hipótese seria o "protesto por novo júri", e não a apelação.',
+    'E) Está correta, desde que a apelação tenha sido interposta também com base em violação a norma constitucional, como a utilização da tese da legítima defesa da honra.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Posição majoritária do STF (HC 178777/MG, HC 185068) é que, em regra, não cabe apelação da acusação contra absolvição fundada no quesito genérico, por respeito à soberania dos veredictos.'
+},
+{
+  id: '70',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Durante a sessão de julgamento do Tribunal do Júri, a acusação pretendeu exibir um vídeo que não havia sido juntado aos autos nem cientificado à defesa previamente. O defensor opôs-se, invocando o art. 479 do CPP. Sobre o tema, é correto afirmar:',
+  alternativas: [
+    'A) A exibição é permitida, desde que o objeto seja relevante para a descoberta da verdade real, princípio que prevalece sobre formalidades no Júri.',
+    'B) A juntada do documento ou objeto e a ciência à parte contrária devem ocorrer com antecedência mínima de três dias úteis do julgamento.',
+    'C) O prazo do art. 479 refere-se apenas à juntada, sendo suficiente a ciência no próprio dia do julgamento, antes do início dos trabalhos.',
+    'D) A inobservância do prazo gera nulidade relativa, que deve ser arguida na ocasião, sob pena de preclusão.',
+    'E) A regra não se aplica a documentos ou objetos já conhecidos das partes, mas que por esquecimento não foram juntados anteriormente.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme STJ (REsp 1.637288-SP), o prazo de três dias úteis aplica-se tanto à juntada quanto à ciência da parte contrária.'
+},
+{
+  id: '71',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Em um processo por homicídio doloso de competência do Júri, o juiz, ao proferir a sentença de pronúncia, utilizou-se de termos excessivamente contundentes e condenatórios, dando a entender que já estava plenamente convencido da culpa do réu. Sobre o "excesso de linguagem" e suas consequências, assinale a alternativa que reflete o entendimento dos tribunais superiores:',
+  alternativas: [
+    'A) O excesso de linguagem é vício sanável pelo simples envelopamento da sentença de pronúncia, afastando-se sua influência dos jurados.',
+    'B) A anulação da sentença de pronúncia é obrigatória, determinando-se que outra seja prolatada com moderação, não sendo suficiente o desentranhamento.',
+    'C) A nulidade só ocorre se o excesso de linguagem for replicado nos debates orais pelo Ministério Público, contaminando os jurados.',
+    'D) Trata-se de mero vício de motivação, insuscetível de gerar nulidade, pois a pronúncia é juízo de admissibilidade e não se confunde com a sentença condenatória.',
+    'E) A defesa pode, em plenário, requerer a exclusão dos trechos exagerados da pronúncia, devendo o juiz presidente acatar para evitar influência indevida.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Segundo STF e STJ (RHC 127522/BA, AgRg no REsp 1.442.002-AL), havendo excesso de linguagem, deve-se anular a pronúncia e determinar nova decisão, não bastando desentranhamento ou envelopamento.'
+},
+{
+  id: '72',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Sobre a execução provisória da pena após condenação pelo Tribunal do Júri, à luz dos julgados mais recentes do STF e do STJ, assinale a alternativa correta:',
+  alternativas: [
+    'A) É inconstitucional, pois viola o princípio da presunção de inocência, não podendo ser determinada antes do trânsito em julgado.',
+    'B) É cabível apenas se a pena fixada for igual ou superior a 15 anos de reclusão, nos termos do art. 492, I, do CPP, com a redação da Lei 13.964/2019.',
+    'C) É devida imediatamente, independentemente do quantum da pena aplicada, em respeito à soberania dos veredictos do Júri.',
+    'D) É possível, mas somente após a confirmação da condenação pelo Tribunal de Justiça em segundo grau de jurisdição.',
+    'E) É inadmissível no processo do Júri, pois a execução provisória só se aplica a crimes julgados pelos juízos singulares.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Segundo tese do STF no Tema 1.068 (RE 1.235.340/SC), confirmada pelo STJ, a execução é imediata independentemente da pena, em respeito à soberania dos veredictos.'
+},
+{
+  id: '73',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Na fase de quesitação perante o Conselho de Sentença, a defesa sustentou como tese principal a legítima defesa e, de forma subsidiária, a desclassificação para lesão corporal grave. Sobre a ordem correta dos quesitos, de acordo com a jurisprudência, é correto afirmar:',
+  alternativas: [
+    'A) O quesito sobre desclassificação deve vir antes do quesito sobre legítima defesa, por ser análise de natureza prévia.',
+    'B) O quesito genérico de absolvição ("O jurado absolve o acusado?") deve ser o primeiro formulado, independentemente das teses defensivas.',
+    'C) O quesito sobre a tese defensiva principal (legítima defesa) deve preceder o quesito sobre a tese subsidiária (desclassificação).',
+    'D) A ordem é irrelevante, desde que todos os quesitos obrigatórios e complementares sejam formulados.',
+    'E) O juiz deve formular primeiro os quesitos da acusação (materialidade e autoria) e, em seguida, alternar entre quesitos defensivos e de qualificadoras, conforme a complexidade do caso.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Conforme STJ (REsp 1.509.504-SP), a tese principal absolutória deve ser quesitada antes da tese subsidiária de desclassificação, para garantir a plenitude da defesa.'
+},
+{
+  id: '74',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Identifique a alternativa INCORRETA sobre aspectos processuais do Tribunal do Júri:',
+  alternativas: [
+    'A) A lista geral de jurados não pode incluir pessoa que tenha integrado Conselho de Sentença nos doze meses anteriores à sua publicação.',
+    'B) O assistente de acusação tem direito à réplica, ainda que o Ministério Público tenha declinado de exercê-lo.',
+    'C) Em caso de desaforamento fundado na dúvida sobre a imparcialidade dos jurados, a competência será deslocada obrigatoriamente para a comarca mais próxima.',
+    'D) A competência para a execução provisória da pena, após condenação em júri desaforado, é do juízo originário, e não do presidente do Tribunal do Júri onde se realizou o julgamento.',
+    'E) A decisão do juiz que proíbe a retirada dos autos do cartório nos cinco dias anteriores ao julgamento não configura ilegalidade.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta (por ser a incorreta). Segundo STJ (HC 219.739-RJ), em desaforamento por dúvida de imparcialidade, o deslocamento não é limitado às comarcas mais próximas, mas sim para onde o risco não exista.'
+},
+{
+  id: '75',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'No contexto do Tribunal do Júri, a defesa de um acusado de feminicídio requereu ao juízo acesso aos antecedentes criminais da vítima, alegando que estes poderiam indicar o envolvimento dela com terceiros perigosos, os quais seriais os verdadeiros autores do crime. O magistrado indeferiu o pleito. À luz do entendimento do STJ, o indeferimento:',
+  alternativas: [
+    'A) Configura cerceamento de defesa, pois a plenitude de defesa no Júri autoriza a produção de qualquer prova relevante para a tese defensiva.',
+    'B) É correto, pois a tentativa de desqualificar a vítima com base em seus antecedentes configura revitimização secundária, vedada por lei.',
+    'C) É inadequado, pois os antecedentes da vítima são prova pertinente para aferir sua credibilidade como pessoa, especialmente em crimes passionais.',
+    'D) Só seria legítimo se o pedido fosse genérico; a defesa deveria ter indicado processos criminais específicos em que a vítima figurasse como ré.',
+    'E) Viola o princípio da ampla defesa, devendo ser reformado pelo Tribunal, com a determinação da juntada dos certidões criminais.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme STJ (AgRg no HC 953.647-SP), a tentativa de acessar antecedentes criminais da vítima para desqualificá-la configura revitimização secundária, vedada pelo art. 474-A do CPP.'
+},
+{
+  id: '76',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Analise as seguintes assertivas acerca de questões controvertidas no Tribunal do Júri: I. É cabível a absolvição sumária do acusado inimputável na fase do art. 415 do CPP, mesmo que a defesa, além da tese de inimputabilidade, alegue genericamente a ausência de dolo e culpabilidade. II. A desclassificação do crime doloso contra a vida para outro de menor potencial ofensivo, reconhecida pelo Conselho de Sentença em favor de um corréu, é automaticamente extensível a outro corréu que participou da mesma conduta, independentemente de recurso. III. O princípio do in dubio pro societate autoriza o juiz, na pronúncia, a afastar qualificadoras sempre que houver dúvida sobre sua configuração. IV. A disponibilização tardia de depoimentos essenciais à defesa, que só foram integralmente acessados durante o julgamento, pode configurar cerceamento de defesa e anular tanto o júri quanto a pronúncia. Está correto o que se afirma em:',
+  alternativas: [
+    'A) I, II e III, apenas.',
+    'B) I, II e IV, apenas.',
+    'C) I, III e IV, apenas.',
+    'D) II, III e IV, apenas.',
+    'E) I, II, III e IV.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. I: STJ REsp 39.920-RJ. II: STJ RHC 67383-SP. IV: STJ REsp 2.050.711-DF. III: Errada - qualificadoras só podem ser excluídas quando manifestamente improcedentes.'
+},
+{
+  id: '77',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Um réu foi condenado pelo Tribunal do Júri. Seu advogado, inconformado, interpôs recurso de apelação. No Tribunal de Justiça, o julgamento foi realizado por uma Câmara composta por um desembargador (presidente) e dois juízes convocados. A defesa alega violação ao princípio do juiz natural. De acordo com a jurisprudência do STF, a composição do órgão colegiado:',
+  alternativas: [
+    'A) Viola o princípio do juiz natural, pois órgãos colegiados de segundo grau devem ser compostos exclusivamente por desembargadores.',
+    'B) Não viola o princípio do juiz natural, sendo válida a composição com maioria de juízes convocados, desde que presidida por desembargador.',
+    'C) Viola o princípio, mas a nulidade é relativa, dependendo de demonstração de prejuízo concreto na análise do recurso.',
+    'D) É nula apenas se os juízes convocados forem oriundos de comarca diversa daquela do processo de origem.',
+    'E) É irrelevante, pois o recurso contra sentença do Júri tem efeito devolutivo e o reexame é restrito às questões de direito.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme STF (HC 101473/SP), não viola o princípio do juiz natural o julgamento por órgão colegiado presidido por desembargador com juízes convocados.'
+},
+{
+  id: '78',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Sobre a utilização de prova ilícita e suas repercussões no processo do Tribunal do Júri, é correto afirmar:',
+  alternativas: [
+    'A) Se determinada prova é declarada ilícita, devem ser desentranhadas do processo não apenas a prova em si, mas também todas as peças judiciais que a ela façam referência, como a denúncia e a pronúncia.',
+    'B) A decisão de pronúncia fundamentada em prova posteriormente declarada ilícita deve ser anulada, independentemente da existência de outros elementos de convicção lícitos.',
+    'C) As peças processuais como a denúncia e a sentença de pronúncia não são consideradas "provas" para os fins do art. 157 do CPP, não sendo desentranhadas por fazerem referência a prova ilícita.',
+    'D) A declaração de ilicitude de uma prova no curso do Júri obriga a dissolução imediata do conselho de sentença e a anulação de todos os atos processuais anteriores.',
+    'E) A teoria dos frutos da árvore envenenada é mitigada no Júri, em razão da soberania dos veredictos e da íntima convicção dos jurados.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Conforme STF (RHC 137368/PR), as peças processuais não são "provas" e não precisam ser desentranhadas por referirem-se a prova ilícita.'
+},
+{
+  id: '79',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Em um processo perante o Tribunal do Júri com três réus, todos defendidos pelo mesmo advogado constituído, foi exercido o direito de recusa imotivada de jurados. O defensor recusou, no total, nove jurados (três para cada réu). O juiz presidente indeferiu as recusas que excederam o limite de três, entendendo ser o direito da defesa, e não de cada acusado. Tal decisão:',
+  alternativas: [
+    'A) Está correta, pois o art. 469 do CPP garante até três recusas à defesa, independentemente do número de réus.',
+    'B) Está incorreta, pois cada réu tem direito a três recusas imotivadas, podendo o defensor comum exercê-las em nome de todos, sob pena de violação à plenitude de defesa.',
+    'C) Está correta, pois a recusa é ato personalíssimo do réu, que deve ser exercido por ele próprio, e não por intermédio do advogado.',
+    'D) Está incorreta, mas o erro é meramente formal, não gerando nulidade se não houver prejuízo à composição final do conselho.',
+    'E) Está correta, desde que o Ministério Público também tenha concordado com o limite de três recusas totais para evitar protelação.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme STJ (REsp 1.540.155-MT), cada réu tem direito a três recusas, podendo o defensor comum exercê-las para todos, sob pena de violar a plenitude de defesa.'
+},
+{
+  id: '80',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Acerca da tese da "legítima defesa da honra" e seu tratamento pelos tribunais superiores, assinale a alternativa correta:',
+  alternativas: [
+    'A) Trata-se de causa de excludente de ilicitude reconhecida pelo Código Penal, podendo ser invocada normalmente nos plenários do Júri, especialmente em crimes passionais.',
+    'B) O STF, ao julgar a ADPF 779, afastou sua aplicação, por considerar a tese incompatível com a dignidade da pessoa humana, a proteção à vida e a igualdade de gênero, proibindo seu uso em qualquer fase do processo.',
+    'C) Apesar de criticada pela doutrina, a tese pode ser arguida pela defesa em plenário, cabendo exclusivamente aos jurados, por sua soberania, acolhê-la ou rejeitá-la.',
+    'D) A utilização da tese pelo Ministério Público em sua acusação gera nulidade absoluta, mas se utilizada apenas pela defesa, configura exercício regular do direito de ampla defesa.',
+    'E) A tese foi declarada inconstitucional apenas para os crimes de feminicídio, mas permanece aplicável aos homicídios dolosos simples.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme ADPF 779/DF (STF), a tese é inconstitucional e seu uso é proibido em qualquer fase processual, sob pena de nulidade.'
+},
+{
+  id: '81',
+  materia: 'Direito Processual Penal',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'Um réu foi pronunciado por homicídio doloso. A defesa sustentou, na fase de alegações finais, que o fato configuraria homicídio culposo, por ausência de dolo. O juiz, na sentença de pronúncia, afastou expressamente a tese defensiva, afirmando estar convencido da existência de dolo eventual. Diante da jurisprudência do STJ, tal procedimento do juiz:',
+  alternativas: [
+    'A) É correto, pois na pronúncia o juiz deve analisar se o fato se amolda à figura típica dolosa, incluindo a distinção entre dolo e culpa.',
+    'B) É incorreto, pois a análise aprofundada sobre a existência de dolo eventual ou culpa consciente é tarefa que deve ser reservada ao Corpo de Jurados, juiz natural da causa.',
+    'C) É correto apenas se a acusação também tiver oferecido alegações finais especificamente sobre a modalidade de dolo.',
+    'D) É incorreto, pois a pronúncia só pode versar sobre a materialidade e indícios de autoria, sendo vedada qualquer análise subjetiva.',
+    'E) É correto, desde que fundamentado em laudo pericial conclusivo sobre o estado psicológico do agente no momento do fato.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme STJ (REsp 1.689.173-SC), a análise entre dolo eventual e culpa consciente é tarefa do Júri, não devendo o juiz da pronúncia adentrar esse mérito.'
 }
   
 
