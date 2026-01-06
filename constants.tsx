@@ -68,7 +68,7 @@ export const TOPICOS_POR_MATERIA: Record<string, string[]> = {
 "12. Juizados especiais criminais (lei 9.099/1995)",
 "13. Procedimento de apuração dos crimes falimentares",
 "14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)",
-"15. Tribunal do júri (arts. 406 a 497 do cpp)",
+"15. Tribunal do júri",
 "16. Suspensão condicional do processo (art. 89 da lei 9.099/1995)",
 "17. Medidas cautelares diversas da prisão",
 "18. Prisão",
@@ -796,7 +796,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
   },{
   id: '43',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'No procedimento do Tribunal do Júri, sobre a fase de instrução preliminar (art. 411, CPP), o juiz, encerrada a instrução probatória, verifica que os elementos colhidos sugerem a ocorrência de um crime diverso do descrito na denúncia, sendo este também da competência do Júri. Diante disso, considerando a possibilidade de mutatio libelli, assinale a alternativa que indica a providência legal cabível ao magistrado.',
   alternativas: [
     'A) Deve impronunciar o acusado, determinando o arquivamento dos autos, por falta de justa causa para a ação penal em relação ao crime apurado.',
@@ -811,7 +811,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '44',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Sobre a formação da lista anual de jurados e o alistamento, conforme arts. 425 e 426 do CPP, considere as seguintes assertivas: I. A lista geral dos jurados, com indicação das respectivas profissões, deve ser publicada pela imprensa e divulgada em editais até o dia 10 de outubro de cada ano. II. O jurado que tiver integrado o Conselho de Sentença nos doze meses anteriores à publicação da lista geral fica automaticamente excluído dela. III. É vedada a alteração da lista geral após sua publicação definitiva no dia 10 de novembro, mesmo que se descubra vício no alistamento. IV. O sorteio dos nomes para compor a urna deve ser realizado na presença do Ministério Público, de advogado indicado pela OAB e de defensor público, conforme o § 3º do art. 426.',
   alternativas: [
     'A) I e II.',
@@ -826,7 +826,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '45',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Em um processo perante o Tribunal do Júri, após o trânsito em julgado da pronúncia, o acusado, que está preso preventivamente há oito meses, requer ao Tribunal de Justiça o desaforamento do julgamento, alegando excesso de serviço na comarca de origem, o que impossibilitaria a realização do julgamento no prazo legal. O Ministério Público contesta, alegando que o prazo de seis meses, previsto no art. 428 do CPP, não foi ultrapassado. Analise a situação à luz da legislação processual penal e assinale a alternativa INCORRETA.',
   alternativas: [
     'A) O prazo para a realização do julgamento, para fins de desaforamento por excesso de serviço, conta-se a partir do trânsito em julgado da decisão de pronúncia.',
@@ -841,7 +841,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '46',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Durante a fase de preparação para o julgamento em plenário (Seção III, Capítulo II, Título VIII do CPP), o juiz presidente do Tribunal do Júri determina a intimação das partes para, no prazo de cinco dias, apresentarem o rol de testemunhas que irão depor em plenário. Sobre essa fase, é correto afirmar:',
   alternativas: [
     'A) Cada parte poderá arrolar até oito testemunhas para o julgamento em plenário, reproduzindo o mesmo limite da fase de instrução preliminar.',
@@ -856,7 +856,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '47',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'No curso de uma sessão de julgamento pelo Tribunal do Júri, durante os debates orais, o advogado de defesa, em sua sustentação, faz reiteradas referências à decisão de pronúncia, argumentando que ela foi prolatada com base em provas frágeis e que, portanto, o Conselho de Sentença deveria absolver seu cliente. O Ministério Público, imediatamente, levanta protesto contra a conduta. Analisando a situação à luz do art. 478 do CPP, assinale a alternativa que descreve a consequência legal e processual adequada.',
   alternativas: [
     'A) A referência é permitida, pois a pronúncia é peça fundamental do processo e pode ser criticada pela defesa como estratégia para demonstrar a fragilidade da acusação.',
@@ -871,7 +871,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '48',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Sobre as hipóteses de absolvição sumária no procedimento do Tribunal do Júri, previstas no art. 415 do CPP, assinale a alternativa CORRETA.',
   alternativas: [
     'A) A absolvição sumária por causa de isenção de pena aplica-se inclusive à inimputabilidade por doença mental, ainda que não seja a única tese defensiva.',
@@ -886,7 +886,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '49',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Após a formação do Conselho de Sentença e prestado o compromisso, inicia-se a instrução em plenário. Sobre a ordem de inquirição, de acordo com o art. 473 do CPP, é correto afirmar que:',
   alternativas: [
     'A) O defensor inquirirá primeiro as testemunhas arroladas pela acusação, seguido pelo Ministério Público e pelo querelante.',
@@ -901,7 +901,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '50',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'No tocante aos quesitos obrigatórios que devem ser submetidos à votação do Conselho de Sentença, conforme o art. 483 do CPP, considere as seguintes afirmações: I. A resposta negativa, de mais de três jurados, ao quesito sobre a materialidade do fato implica a absolvição do acusado, encerrando-se a votação. II. O quesito sobre a existência de causa de diminuição de pena só será formulado se os jurados, após votarem pela condenação, assim o requererem. III. Sustentada a desclassificação para infração de competência do juiz singular, o quesito respectivo será respondido após o segundo ou terceiro quesito. IV. O questionário sempre será iniciado com a indagação sobre se o acusado deve ser absolvido, para respeitar o princípio da presunção de inocência.',
   alternativas: [
     'A) I e III.',
@@ -916,7 +916,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '51',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Durante a sessão de julgamento, após a leitura dos quesitos, o juiz presidente, os jurados e as partes se dirigem à sala especial para a votação. Sobre o procedimento de votação, de acordo com os arts. 486 a 489 do CPP, assinale a alternativa INCORRETA.',
   alternativas: [
     'A) Antes da votação de cada quesito, são distribuídas aos jurados cédulas de papel opaco contendo a palavra "sim" ou "não".',
@@ -931,7 +931,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '52',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Um acusado, pronunciado por homicídio qualificado, está preso cautelarmente. Na fase de preparação do processo para julgamento em plenário, seu defensor requer a produção de prova pericial suplementar, alegando que a já existente nos autos é insuficiente. O juiz presidente indeferiu o requerimento, por considerar protelatório. O defensor então alega violação ao direito à ampla defesa. À luz do regramento do CPP sobre o Tribunal do Júri, a atitude do juiz presidente foi:',
   alternativas: [
     'A) Ilegal, pois o direito à produção de provas é amplo na fase de preparação para o plenário, sendo nulo o julgamento se realizado sem a perícia requerida.',
@@ -946,7 +946,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '53',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Sobre as recusas de jurados durante a formação do Conselho de Sentença, conforme art. 468 do CPP, é correto afirmar que:',
   alternativas: [
     'A) Cada parte pode recusar, sem necessidade de motivação, até três jurados sorteados, e as recusas são sempre feitas após o sorteio de todos os sete jurados.',
@@ -961,7 +961,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '54',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Após o julgamento pelo Tribunal do Júri que resultou na condenação do réu a pena de 18 anos de reclusão, a defesa interpôs apelação. Sobre os efeitos e o processamento desse recurso, à luz das alterações promovidas pela Lei nº 13.964/2019 (Pacote Anticrime), analise as assertivas: I. A apelação não terá efeito suspensivo, devendo o acusado iniciar o cumprimento da pena de imediato. II. Excepcionalmente, o tribunal ad quem pode atribuir efeito suspensivo à apelação, se o recurso não for protelatório e levantar questão substancial que possa resultar em redução da pena para patamar inferior a 15 anos. III. A execução provisória da pena é mandatória em caso de condenação igual ou superior a 15 anos, não havendo qualquer margem de discricionariedade para o juiz presidente. IV. O pedido de concessão de efeito suspensivo pode ser feito incidentemente na apelação ou por meio de petição em separado dirigida diretamente ao relator.',
   alternativas: [
     'A) I e II.',
@@ -976,7 +976,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '55',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Na fase de instrução preliminar do procedimento do Júri, o juiz, ao analisar a resposta do acusado, verifica que ele arguiu a incompetência do juízo por prerrogativa de função. De acordo com o art. 407 do CPP, como deve ser processada essa arguição?',
   alternativas: [
     'A) Deve ser decidida de plano pelo juiz, antes de qualquer ato instrutório, sob pena de preclusão.',
@@ -991,22 +991,22 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '56',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
-  enunciado: 'Sobre a publicidade e o sigilo no Tribunal do Júri, considere as seguintes situações: I. Os trabalhos de votação do Conselho de Sentença na sala especial. II. O conteúdo das cédulas de votação individual de cada jurado. III. A sessão de instrução e julgamento em plenário. IV. O sorteio dos nomes dos jurados que comporão a urna, para a reunião periódica.',
+  assunto: '15. Tribunal do júri',
+  enunciado: 'No que diz respeito à publicidade dos atos processuais no Tribunal do Júri, de acordo com o Código de Processo Penal, assinale a alternativa que indica corretamente quais dos atos listados possuem natureza pública obrigatória. I. O sorteio dos 25 jurados para a reunião periódica, realizado entre o 15º e o 10º dia útil antes da sessão. II. A votação dos quesitos pelo Conselho de Sentença na sala especial. III. A sessão de instrução e julgamento em plenário, com a inquirição de testemunhas e debates. IV. A leitura da sentença pelo juiz presidente ao final da sessão.',
   alternativas: [
-    'A) I e II.',
-    'B) III e IV.',
-    'C) I, III e IV.',
-    'D) II e III.',
-    'E) I e IV.'
+    'A) Apenas I e II.',
+    'B) Apenas III e IV.',
+    'C) Apenas I, III e IV.',
+    'D) Apenas II e III.',
+    'E) I, II, III e IV.'
   ],
-  indiceCorreto: 1,
-  explicacao: 'B) Correta. III e IV são atos públicos: a sessão de instrução e julgamento (art. 793, CPP) e o sorteio (art. 433 - "a portas abertas"). I e II são sigilosos: a votação na sala especial e o voto individual são secretos (arts. 485-487).'
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. I é público: o sorteio é realizado "a portas abertas" (art. 433, caput, CPP). II é sigiloso: a votação na sala especial é ato sigiloso para garantia do segredo do voto (art. 485, CPP). III é público: a sessão de instrução e julgamento em plenário obedece à regra geral de publicidade dos atos processuais (art. 793, CPP). IV é público: a leitura da sentença é parte integrante da sessão pública de julgamento (art. 493, CPP).'
 },
 {
   id: '57',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Em relação às atribuições do juiz presidente do Tribunal do Júri, previstas no art. 497 do CPP, assinale a alternativa que indica uma conduta que ele NÃO está autorizado a praticar.',
   alternativas: [
     'A) Regular a polícia das sessões e prender os desobedientes.',
@@ -1021,7 +1021,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '58',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Durante os debates no plenário do Júri, o representante do Ministério Público, em sua sustentação, exibe um vídeo contendo entrevista com uma testemunha que não foi arrolada e não consta dos autos. A defesa opõe-se veementemente. Com base no art. 479 do CPP, assinale a alternativa que exprime a consequência legal adequada.',
   alternativas: [
     'A) A exibição é permitida, desde que a testemunha tenha sido ouvida em inquérito policial e o vídeo seja fiel ao seu depoimento.',
@@ -1036,7 +1036,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '59',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Sobre a resposta à acusação no procedimento do Tribunal do Júri (art. 406, CPP), é INCORRETO afirmar que:',
   alternativas: [
     'A) O prazo para resposta é de dez dias, contado a partir do efetivo cumprimento do mandado de citação ou do comparecimento espontâneo.',
@@ -1051,7 +1051,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '60',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Um cidadão convocado para servir como jurado alega, por motivo de convicção filosófica profundamente arraigada, ser contrário à ideia de julgar seu semelhante, recusando-se a integrar o Conselho de Sentença. Diante disso, de acordo com o art. 438 do CPP, assinale a alternativa que descreve o procedimento legal.',
   alternativas: [
     'A) A recusa importará na aplicação de multa de 1 a 10 salários mínimos, independentemente de sua fundamentação.',
@@ -1066,7 +1066,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '61',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Após a pronúncia de um acusado por crime doloso contra a vida, o Ministério Público, analisando novamente os autos, identifica indícios robustos de que outra pessoa, não incluída na denúncia original, participou do crime. Com base no art. 417 do CPP, qual o procedimento adequado a ser seguido pelo juiz?',
   alternativas: [
     'A) Deve anular toda a instrução já realizada e determinar a inclusão do novo acusado na mesma denúncia, reiniciando-se o procedimento desde a citação.',
@@ -1081,7 +1081,7 @@ export const QUESTOES_EXEMPLO: Questao[] = [
 {
   id: '62',
   materia: 'Direito Processual Penal',
-  assunto: 'Tribunal do Júri',
+  assunto: '15. Tribunal do júri',
   enunciado: 'Sobre a competência para o julgamento de questões incidentais no Tribunal do Júri, à luz do disposto no art. 497, IV, do CPP, assinale a alternativa CORRETA.',
   alternativas: [
     'A) Todas as questões incidentes, inclusive as que envolvam matéria de mérito, devem ser submetidas à apreciação do Conselho de Sentença.',
