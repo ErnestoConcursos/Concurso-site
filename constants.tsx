@@ -1377,6 +1377,306 @@ export const QUESTOES_EXEMPLO: Questao[] = [
   ],
   indiceCorreto: 1,
   explicacao: 'B) Correta. Conforme STJ (REsp 1.689.173-SC), a análise entre dolo eventual e culpa consciente é tarefa do Júri, não devendo o juiz da pronúncia adentrar esse mérito.'
+},
+{
+  id: '82',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Sobre o procedimento dos crimes de responsabilidade dos funcionários públicos, analise as assertivas: I. A queixa ou denúncia deve ser instruída com documentos ou justificação que façam presumir a existência do delito, sendo admitida declaração fundamentada da impossibilidade de apresentação dessas provas. II. Após a reforma do art. 323 do CPP, todos os crimes praticados por funcionários públicos são considerados afiançáveis. III. O prazo para resposta escrita do acusado é de 15 dias, sendo obrigatória a nomeação de defensor se não for conhecida a residência do acusado. IV. O juiz poderá rejeitar a queixa ou denúncia em despacho fundamentado se convencido, pela resposta do acusado, da inexistência do crime. Está correto o que se afirma em:',
+  alternativas: [
+    'A) I e II, apenas.',
+    'B) I, II e III, apenas.',
+    'C) I, II e IV, apenas.',
+    'D) II, III e IV, apenas.',
+    'E) I, II, III e IV.'
+  ],
+  indiceCorreto: 4,
+  explicacao: 'E) Correta. Todas as assertivas estão corretas conforme arts. 513, 514 e 516 do CPP. A assertiva III reflete o disposto no art. 514 e seu parágrafo único.'
+},
+{
+  id: '83',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Em um processo por crime de ameaça (pena máxima de 1 ano) que seguiu o rito sumário, durante a audiência de instrução e julgamento, o Ministério Público arrolou 7 testemunhas e a defesa arrolou 6. O juiz, fundamentando-se no princípio da ampla defesa, permitiu a oitiva de todas as testemunhas arroladas. Considerando o disposto no art. 532 do CPP, a conduta do magistrado:',
+  alternativas: [
+    'A) Está correta, pois o princípio da ampla defesa prevalece sobre limitações procedimentais.',
+    'B) Está incorreta, pois no procedimento sumário podem ser inquiridas apenas 5 testemunhas por parte.',
+    'C) Está correta, desde que as testemunhas excedentes sejam ouvidas em audiência separada.',
+    'D) Está incorreta, mas o vício é sanado se não houver prejuízo ao direito de defesa.',
+    'E) Está correta, pois o limite de testemunhas aplica-se apenas aos crimes de menor potencial ofensivo.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. O art. 532 do CPP estabelece limite máximo de 5 testemunhas por parte no procedimento sumário, independentemente do fundamento da ampla defesa.'
+},
+{
+  id: '84',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Identifique a alternativa INCORRETA acerca do procedimento dos crimes de calúnia e injúria de competência do juiz singular:',
+  alternativas: [
+    'A) Antes de receber a queixa, o juiz deve oferecer às partes oportunidade para reconciliação.',
+    'B) Na audiência de reconciliação, as partes são ouvidas separadamente, sem a presença dos advogados.',
+    'C) Em caso de reconciliação, após assinatura do termo de desistência pelo querelante, a queixa será arquivada.',
+    'D) Quando for oferecida exceção da verdade, o prazo para contestação pelo querelante é de 10 dias.',
+    'E) O juiz pode promover entendimento entre as partes se achar provável a reconciliação após ouvi-las.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) Correta (por ser a incorreta). O prazo para contestação da exceção da verdade é de 2 dias, conforme art. 523 do CPP, não 10 dias.'
+},
+{
+  id: '85',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Os autos originais de um processo penal por estelionato foram destruídos por um incêndio no fórum quando o processo estava em segundo grau de jurisdição. Não existe cópia autêntica ou certidão do processo. Sobre o procedimento de restauração, assinale a alternativa correta:',
+  alternativas: [
+    'A) A restauração deve ser realizada na segunda instância, onde os autos se extraviaram.',
+    'B) As partes devem ser citadas por edital com prazo de 15 dias para o processo de restauração.',
+    'C) Os selos e taxas judiciárias já pagos nos autos originais deverão ser novamente cobrados.',
+    'D) A sentença condenatória em execução continuará a produzir efeito até a decisão que julgue restaurados os autos.',
+    'E) As testemunhas falecidas não podem ser substituídas, devendo a prova testemunhal ser considerada perdida.'
+  ],
+  indiceCorreto: 3,
+  explicacao: 'D) Correta. Conforme art. 548 do CPP, a sentença condenatória em execução continua produzindo efeito até decisão sobre restauração. A) Incorreta - a restauração é na 1ª instância (art. 541, §3º). B) Incorreta - prazo é 10 dias (art. 541, §2º, c). C) Incorreta - não há nova cobrança (art. 545). E) Incorreta - testemunhas podem ser substituídas (art. 543, I).'
+},
+{
+  id: '86',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Um autor musical descobriu que suas composições estavam sendo reproduzidas e comercializadas sem autorização. Requereu busca e apreensão dos CDs piratas. A diligência foi realizada por dois peritos que concluíram não haver fundamento para a apreensão. Sobre os desdobramentos processuais, assinale a correta:',
+  alternativas: [
+    'A) O laudo pericial é definitivo, impedindo qualquer apreensão posterior.',
+    'B) O requerente pode impugnar o laudo, cabendo ao juiz ordenar a apreensão se reconhecer a improcedência das razões dos peritos.',
+    'C) A queixa não pode mais ser oferecida, pois a perícia foi contrária à apreensão.',
+    'D) Deve ser nomeado novo perito para contraprova obrigatória.',
+    'E) O Ministério Público deve ser ouvido previamente sobre a impugnação.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 527, parágrafo único, do CPP, o requerente pode impugnar o laudo contrário, cabendo ao juiz ordenar a apreensão se reconhecer a improcedência das razões dos peritos.'
+},
+{
+  id: '87',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Sobre as alegações finais no procedimento sumário, é correto afirmar:',
+  alternativas: [
+    'A) Devem ser apresentadas por escrito, com prazo de 5 dias para cada parte.',
+    'B) São orais, com tempo máximo de 20 minutos para cada parte, prorrogável por mais 10.',
+    'C) O assistente do Ministério Público não tem direito a alegações finais no rito sumário.',
+    'D) Havendo mais de um acusado, o tempo para defesa é dividido igualmente entre eles.',
+    'E) O juiz deve proferir sentença apenas após 10 dias das alegações finais.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 534 do CPP, as alegações são orais com tempo de 20 minutos prorrogáveis por mais 10. C) Incorreta - o assistente tem direito a 10 minutos. D) Incorreta - o tempo é individual (art. 534, §1º). E) Incorreta - sentença é proferida a seguir.'
+},
+{
+  id: '88',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'João, funcionário público municipal, foi denunciado por peculato. A denúncia foi instruída com declaração fundamentada do Ministério Público sobre a impossibilidade de apresentação de documentos, alegando sigilo das investigações. O juiz recebeu a denúncia e notificou o acusado para resposta escrita. João, que se encontrava em viagem ao exterior, não foi localizado para citação. Diante disso, o juiz nomeou defensor dativo para apresentar a resposta. Considerando o art. 514 do CPP e sua aplicação após a reforma do art. 323, assinale a alternativa correta:',
+  alternativas: [
+    'A) O juiz agiu corretamente, pois a nomeação de defensor é obrigatória quando não conhecida a residência do acusado.',
+    'B) O juiz errou, pois deveria ter rejeitado a denúncia por falta de instrução com documentos.',
+    'C) O juiz agiu corretamente apenas na nomeação do defensor, mas errou ao receber denúncia sem documentos.',
+    'D) O juiz deveria ter determinado a prisão preventiva do acusado por estar fora do país.',
+    'E) A nomeação de defensor só seria cabível após esgotadas todas as tentativas de citação pessoal.'
+  ],
+  indiceCorreto: 0,
+  explicacao: 'A) Correta. Conforme art. 514, parágrafo único, do CPP, se não for conhecida a residência ou o acusado estiver fora da jurisdição, nomeia-se defensor para resposta. A denúncia com declaração de impossibilidade é admitida pelo art. 513.'
+},
+{
+  id: '89',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Uma editora foi vítima de violação de direitos autorais. Requereu e obteve apreensão de livros piratas. Após homologação do laudo pericial, a editora não ofereceu queixa no prazo de 30 dias. Decorrido esse prazo, o Ministério Público, tomando conhecimento dos fatos, ofereceu denúncia. Sobre a admissibilidade da ação penal, assinale a alternativa correta:',
+  alternativas: [
+    'A) A denúncia é inadmissível, pois tratando-se de crime de ação pública condicionada, o prazo do ofendido é peremptório.',
+    'B) A denúncia é admissível, pois o Ministério Público tem legitimidade para agir independentemente do prazo do ofendido.',
+    'C) A denúncia é inadmissível, mas o ofendido ainda pode oferecer queixa com justificação do retardamento.',
+    'D) A denúncia é admissível apenas se o crime deixou vestígios que foram periciados.',
+    'E) A denúncia é inadmissível, pois nos crimes contra propriedade imaterial a ação é sempre privada.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 529, parágrafo único, do CPP, se o crime for de ação pública e não tiver sido oferecida queixa no prazo, será dada vista ao MP, que pode oferecer denúncia. A ação não se extingue pela inércia do ofendido.'
+},
+{
+  id: '90',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Analise as assertivas sobre o procedimento sumário: I. A audiência de instrução e julgamento deve ser realizada no prazo máximo de 30 dias. II. Nenhum ato será adiado, salvo quando imprescindível a prova faltante. III. As testemunhas que comparecerem serão inquiridas independentemente da suspensão da audiência. IV. O procedimento sumário aplica-se apenas aos crimes de menor potencial ofensivo. Está correto o que se afirma em:',
+  alternativas: [
+    'A) I e II, apenas.',
+    'B) I, II e III, apenas.',
+    'C) I, III e IV, apenas.',
+    'D) II, III e IV, apenas.',
+    'E) I, II, III e IV.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. I, II e III estão corretas conforme arts. 531, 535 e 536 do CPP. IV está incorreta - o procedimento sumário também pode ser adotado quando o juizado especial encaminhar ao juízo comum (art. 538).'
+},
+{
+  id: '91',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Carlos moveu queixa-crime contra Pedro por injúria racial. Antes de receber a queixa, o juiz convocou as partes para audiência de reconciliação. Pedro compareceu com advogado, mas Carlos compareceu sem. O juiz determinou que os advogados aguardassem fora da sala e ouviu as partes separadamente. Após a oitiva, considerou provável a reconciliação e promoveu entendimento entre eles, resultando em acordo. Sobre a legalidade do procedimento, assinale a correta:',
+  alternativas: [
+    'A) O juiz agiu corretamente em todos os aspectos, em conformidade com o art. 520 do CPP.',
+    'B) O juiz errou ao ouvir as partes separadamente, pois a reconciliação exige confronto direto.',
+    'C) O juiz errou ao excluir os advogados, violando o direito à assistência jurídica.',
+    'D) O juiz agiu corretamente, exceto pela promoção do entendimento, que compete exclusivamente às partes.',
+    'E) O juiz deveria ter lavrado termo da audiência de reconciliação.'
+  ],
+  indiceCorreto: 0,
+  explicacao: 'A) Correta. Conforme art. 520 do CPP, o juiz ouve as partes separadamente, sem a presença dos advogados, e não se lavra termo. O art. 521 autoriza o juiz a promover entendimento se achar provável a reconciliação.'
+},
+{
+  id: '92',
+  materia: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  assunto: 'Do processo de restauração de autos extraviados ou destruídos',
+  enunciado: 'Em um processo de restauração de autos extraviados, foram realizadas diversas diligências para reconstituir a prova. Sobre as regras aplicáveis a essas diligências, assinale a alternativa INCORRETA:',
+  alternativas: [
+    'A) As testemunhas podem ser substituídas se tiverem falecido ou se encontrarem em lugar não sabido.',
+    'B) Os exames periciais, quando possível, serão repetidos preferencialmente pelos mesmos peritos.',
+    'A) A prova documental será reproduzida apenas por meio de cópia autêntica, não admitindo testemunhas.',
+    'D) Podem ser inquiridas autoridades e serventuários que tenham funcionado no processo original.',
+    'E) As diligências devem concluir-se dentro de 20 dias, salvo motivo de força maior.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta (por ser a incorreta). A prova documental pode ser reproduzida por testemunhas quando impossível a cópia autêntica (art. 543, III). A alternativa está errada por dizer "apenas".'
+},
+{
+  id: '93',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Sobre a apreensão nos crimes contra a propriedade imaterial, à luz dos arts. 530-B a 530-I do CPP, identifique a alternativa correta:',
+  alternativas: [
+    'A) A apreensão deve abranger apenas amostras dos bens ilicitamente reproduzidos.',
+    'B) Os titulares de direito de autor são os fiéis depositários dos bens apreendidos.',
+    'C) O laudo pericial deve ser elaborado necessariamente por perito oficial, não admitindo pessoa tecnicamente habilitada.',
+    'D) A destruição dos bens apreendidos só pode ser determinada na sentença condenatória definitiva.',
+    'E) As associações de titulares de direitos não podem atuar como assistentes da acusação.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 530-E do CPP, os titulares de direito de autor são os fiéis depositários. A) Incorreta - apreende-se totalidade (art. 530-B). C) Incorreta - admite pessoa habilitada (art. 530-D). D) Incorreta - pode ocorrer antes (art. 530-F). E) Incorreta - podem atuar como assistentes (art. 530-H).'
+},
+{
+  id: '94',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Em um processo que seguiu o rito sumário, o advogado de defesa requereu o adiamento da audiência porque uma testemunha imprescindível não compareceu. A testemunha havia sido regularmente intimada, mas não indicada como imprescindível. O juiz indeferiu o pedido e prosseguiu com a audiência, determinando a condução coercitiva da testemunha para nova data. Considerando o art. 535 do CPP, a decisão do magistrado:',
+  alternativas: [
+    'A) Está correta, pois no procedimento sumário nenhum ato será adiado, salvo quando imprescindível a prova faltante.',
+    'B) Está incorreta, pois a ausência de qualquer testemunha obriga o adiamento da audiência.',
+    'C) Está correta apenas se a testemunha não intimada com cláusula de imprescindibilidade.',
+    'D) Está incorreta, pois a condução coercitiva só é admitida para o réu, não para testemunhas.',
+    'E) Está correta, desde que a acusação tenha concordado com o prosseguimento.'
+  ],
+  indiceCorreto: 0,
+  explicacao: 'A) Correta. Conforme art. 535 do CPP, no procedimento sumário nenhum ato será adiado, salvo quando imprescindível a prova faltante. A testemunha não indicada como imprescindível não justifica adiamento.'
+},
+{
+  id: '95',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Maria, servidora pública federal, foi denunciada por corrupção passiva. A denúncia foi instruída com documentos que faziam presumir o delito. Citada, Maria apresentou resposta escrita fundamentada, demonstrando documentalmente a inexistência do crime. O juiz, analisando a resposta, convenceu-se da inexistência do delito. Sobre a possibilidade de rejeição da denúncia nessa fase, assinale a correta:',
+  alternativas: [
+    'A) O juiz não pode rejeitar a denúncia, pois esta foi recebida e instruída regularmente.',
+    'B) O juiz pode rejeitar a denúncia em despacho fundamentado, conforme art. 516 do CPP.',
+    'C) O juiz deve remeter os autos ao Tribunal para análise da rejeição da denúncia.',
+    'D) O juiz pode rejeitar apenas se o Ministério Público concordar com a inexistência do crime.',
+    'E) O juiz deve determinar a absolvição sumária do acusado.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 516 do CPP, o juiz rejeitará a queixa ou denúncia em despacho fundamentado se convencido, pela resposta do acusado, da inexistência do crime ou da improcedência da ação.'
+},
+{
+  id: '96',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Uma empresa de software identificou que seu programa estava sendo copiado e comercializado ilegalmente. Requereu busca e apreensão, que foi realizada por dois peritos. Sobre o laudo pericial nesses casos, assinale a alternativa correta:',
+  alternativas: [
+    'A) O laudo deve ser apresentado dentro de 5 dias após o encerramento da diligência.',
+    'B) Apenas um perito é necessário quando a ação penal for pública.',
+    'C) O laudo é dispensável se houver confissão do acusado.',
+    'D) O laudo deve ser homologado pelo Ministério Público antes de ser juntado aos autos.',
+    'E) O laudo pericial só é exigido quando o crime deixou vestígios materiais.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 530-D, parágrafo único, do CPP, quando a ação penal for pública, basta um único perito ou pessoa tecnicamente habilitada. A) Incorreta - prazo é 3 dias (art. 527).'
+},
+{
+  id: '97',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Pedro foi processado por calúnia contra João. Em sede de exceção da verdade, alegou que os fatos imputados eram verídicos. João, querelante, requereu a inquirição de 8 testemunhas arroladas na queixa para comprovar a falsidade das alegações. Considerando o art. 523 do CPP, o juiz deve:',
+  alternativas: [
+    'A) Permitir a inquirição de todas as 8 testemunhas, pois não há limite legal.',
+    'B) Permitir apenas 5 testemunhas, que é o máximo legal no procedimento especial.',
+    'C) Permitir apenas as testemunhas arroladas na queixa ou outras indicadas no prazo de 2 dias.',
+    'D) Indeferir o requerimento, pois a exceção da verdade deve ser resolvida apenas com documentos.',
+    'E) Determinar produção antecipada de prova antes do recebimento da queixa.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Conforme art. 523 do CPP, o querelante pode contestar a exceção no prazo de 2 dias, podendo ser inquiridas as testemunhas arroladas na queixa, ou outras indicadas naquele prazo.'
+},
+{
+  id: '98',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Os autos de um processo penal foram extraviados após sentença condenatória transitada em julgado, quando o réu já cumpria pena. Iniciado o processo de restauração, apareceram os autos originais durante as diligências. Sobre o procedimento a ser adotado, assinale a correta:',
+  alternativas: [
+    'A) Os autos da restauração devem ser arquivados, prevalecendo os originais.',
+    'B) Os autos originais devem ser apensados aos da restauração, continuando o processo nestes.',
+    'C) Deve ser realizado novo julgamento com base nos autos restaurados.',
+    'D) O processo de restauração deve continuar independentemente do aparecimento dos originais.',
+    'E) Os autos originais devem ser destruídos por já terem sido substituídos.'
+  ],
+  indiceCorreto: 1,
+  explicacao: 'B) Correta. Conforme art. 547, parágrafo único, do CPP, se aparecerem os autos originais, nestes continuará o processo, apensos a eles os autos da restauração.'
+},
+{
+  id: '99',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Sobre a aplicação do procedimento sumário aos crimes de menor potencial ofensivo encaminhados pelo juizado especial criminal, assinale a alternativa correta:',
+  alternativas: [
+    'A) O procedimento sumário é obrigatório em todos os casos encaminhados pelo juizado especial.',
+    'B) Aplica-se apenas quando o juizado especial entender pela impossibilidade de conciliação.',
+    'C) Observar-se-á o procedimento sumário previsto no Capítulo V do CPP.',
+    'D) O rito sumário só se aplica se o acusado não tiver recursos para pagar transação penal.',
+    'E) É facultado ao juiz escolher entre o rito sumário ou o ordinário.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Conforme art. 538 do CPP, quando o juizado especial encaminhar ao juízo comum as peças existentes para adoção de outro procedimento, observar-se-á o procedimento sumário previsto no Capítulo V.'
+},
+{
+  id: '100',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Uma gravadora moveu ação penal por violação de direitos autorais contra uma empresa que reproduzia CDs piratas. Na sentença condenatória, o juiz determinou a destruição dos CDs apreendidos e o perdimento dos equipamentos usados para reprodução. Sobre a destinação desses equipamentos, conforme art. 530-G do CPP, assinale a alternativa correta:',
+  alternativas: [
+    'A) Devem ser devolvidos ao acusado após o pagamento da multa.',
+    'B) Devem ser destruídos obrigatoriamente junto com os CDs.',
+    'C) Podem ser doados a instituições públicas de ensino e pesquisa.',
+    'D) Devem ser leiloados e o produto revertido ao ofendido.',
+    'E) Devem ser guardados para eventual reutilização legal.'
+  ],
+  indiceCorreto: 2,
+  explicacao: 'C) Correta. Conforme art. 530-G do CPP, os equipamentos podem ser doados aos Estados, Municípios, Distrito Federal, instituições públicas de ensino e pesquisa ou de assistência social, entre outras destinações.'
+},
+{
+  id: '101',
+  materia: 'Direito Processual Penal',
+  assunto: '14. Procedimentos especiais (crimes praticados por funcionários públicos contra a administração pública (arts. 513 a 518 do cpp). Dos crimes contra a honra (arts. 519 a 523 do cpp). Procedimento dos crimes contra a propriedade imaterial (arts. 524 a 530 do cpp). 10.10 procedimento de apuração dos crimes de imprensa (lei 5.250/1967)',
+  enunciado: 'Analise as assertivas sobre o processo dos crimes de responsabilidade dos funcionários públicos após a nova redação do art. 323 do CPP: I. Todos os crimes praticados por funcionários públicos são afiançáveis. II. A distinção entre crimes afiançáveis e não afiançáveis perdeu o sentido. III. A prisão preventiva é inadmissível em crimes de funcionários públicos. IV. O procedimento especial só se aplica aos crimes funcionais propriamente ditos. Está correto o que se afirma em:',
+  alternativas: [
+    'A) I e II, apenas.',
+    'B) I e III, apenas.',
+    'C) I, II e IV, apenas.',
+    'D) II, III e IV, apenas.',
+    'E) I, II, III e IV.'
+  ],
+  indiceCorreto: 0,
+  explicacao: 'A) Correta. I e II estão corretas conforme comentário ao art. 514. III está incorreta - a prisão preventiva ainda é cabível. IV está incorreta - o procedimento aplica-se a crimes de responsabilidade.'
 }
   
 
