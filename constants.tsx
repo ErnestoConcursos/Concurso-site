@@ -3777,6 +3777,306 @@ export const QUESTOES_EXEMPLO: Questao[] = [
     ],
     "indiceCorreto": 1,
     "explicacao": "B) Correta. Reprodução do art. 33 do CPP."
+  },
+  {
+    "id": "341",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Sobre os sistemas de relação entre ação penal e ação civil, assinale a alternativa que descreve CORRETAMENTE o sistema adotado pelo CPP brasileiro.",
+    "alternativas": [
+      "A) Sistema da confusão, em que a ação penal e civil são exercidas cumulativamente no mesmo processo.",
+      "B) Sistema da solidariedade, com cumulação obrigatória perante o juízo penal.",
+      "C) Sistema da livre escolha, com cumulação facultativa perante o juízo penal.",
+      "D) Sistema da independência, em que as ações podem ser propostas independentemente, mas com mitigações.",
+      "E) Sistema da subordinação, em que a ação civil depende necessariamente do trânsito em julgado da ação penal."
+    ],
+    "indiceCorreto": 3,
+    "explicacao": "D) Correta. O CPP adota o sistema da independência, porém com mitigações: a sentença penal condenatória serve como título executivo (art. 63) e pode haver suspensão da ação civil até o julgamento da penal (art. 64, parágrafo único)."
+  },
+  {
+    "id": "342",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Após sentença absolutória em processo penal por crime de lesão corporal, baseada na inexistência de provas suficientes para condenação (art. 386, VII, do CPP), o ofendido pretende ajuizar ação de indenização por danos materiais e morais. Sobre a possibilidade e os efeitos da coisa julgada, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) A ação civil é vedada, pois a sentença absolutória faz coisa julgada material no âmbito cível.",
+      "B) A ação civil é possível, pois a absolvição com base no in dubio pro reo não faz coisa julgada no cível.",
+      "C) A ação civil depende de nova instrução probatória completa no juízo cível.",
+      "D) O ofendido deve aguardar o trânsito em julgado da ação penal para ajuizar a ação civil.",
+      "E) A ação civil só é cabível se comprovado dolo ou culpa do agente na esfera cível."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. Conforme art. 66 do CPP e a doutrina, quando a absolvição é baseada em dúvida (in dubio pro reo), não faz coisa julgada no âmbito cível, permitindo a propositura da ação civil para discussão do mérito com ônus probatório diverso."
+  },
+  {
+    "id": "343",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Com base na diferenciação estabelecida por Renato Brasileiro, analise as características abaixo:\n\nI. Funda-se no art. 63 do CPP e pressupõe trânsito em julgado da sentença condenatória penal.\nII. Tem natureza cognitiva e objetiva a formação de título executivo cível.\nIII. É ação de execução com base em título executivo judicial.\nIV. Pode ser proposta independentemente da ação penal, nos termos do art. 64 do CPP.\n\nAssinale a alternativa que indica corretamente as características da AÇÃO CIVIL EX DELICTO (ação de conhecimento).",
+    "alternativas": [
+      "A) Apenas I e III.",
+      "B) Apenas II e IV.",
+      "C) Apenas I, II e III.",
+      "D) Apenas II, III e IV.",
+      "E) Todas as características."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. A ação civil ex delicto (ação de conhecimento) tem natureza cognitiva (II), funda-se no art. 64 (IV) e visa formar título executivo. Já I e III referem-se à ação de execução ex delicto (art. 63)."
+  },
+  {
+    "id": "344",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Em ação penal por crime de violência doméstica, o Ministério Público, na denúncia, formulou pedido expresso para fixação de valor mínimo para reparação de danos morais. Durante o processo, houve reconciliação entre vítima e agressor. Ao proferir sentença condenatória, o juiz entendeu desnecessária a fixação do valor indenizatório em razão da reconciliação. Com base na jurisprudência dos Tribunais Superiores, assinale a alternativa que indica a CORREÇÃO da decisão.",
+    "alternativas": [
+      "A) A decisão está correta, pois a reconciliação extingue o direito à indenização.",
+      "B) A decisão está correta, pois o dano moral em violência doméstica exige comprovação específica.",
+      "C) A decisão está incorreta, pois a reconciliação não afasta a necessidade de fixação do valor mínimo se houve pedido.",
+      "D) A decisão está incorreta apenas se a vítima manifestar expressamente o desejo de receber a indenização.",
+      "E) A decisão está correta, pois compete ao juízo cível fixar eventual indenização."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Correta. Conforme jurisprudência do STJ (REsp 1.819.504-MS), a reconciliação não afasta a necessidade de fixação do valor mínimo previsto no art. 387, IV, do CPP, quando há pedido expresso. Cabe à vítima decidir se irá executar o título."
+  },
+  {
+    "id": "345",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Sobre os efeitos civis das decisões penais, analise as assertivas:\n\nI. A sentença penal que reconhece legítima defesa faz coisa julgada no cível.\nII. O arquivamento do inquérito policial impede a propositura da ação civil.\nIII. A extinção da punibilidade por morte do agente não impede ação contra herdeiros.\nIV. O perdão judicial, se entendido como sentença declaratória, não gera obrigação de indenizar.\n\nAssinale a alternativa que indica as assertivas CORRETAS.",
+    "alternativas": [
+      "A) Apenas I e II.",
+      "B) Apenas I e III.",
+      "C) Apenas I, III e IV.",
+      "D) Apenas II, III e IV.",
+      "E) Todas estão corretas."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Correta. I está correta (art. 65, CPP). II está incorreta (art. 67, I). III está correta (extinção da punibilidade não afeta ação civil contra espólio). IV está correta (Súmula 18, STJ)."
+  },
+  {
+    "id": "346",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Em processo penal por estelionato contra empresa, transitou em julgado sentença condenatória. O representante legal da pessoa jurídica pretende executar o valor mínimo fixado para reparação de danos morais. À luz da jurisprudência do STJ, assinale a alternativa CORRETA sobre a possibilidade.",
+    "alternativas": [
+      "A) É possível, pois o dano moral da pessoa jurídica é presumido nos crimes patrimoniais.",
+      "B) É possível, desde que comprovado o abalo à honra objetiva da empresa durante a ação penal.",
+      "C) É possível apenas para danos materiais, não cabendo reparação por danos morais à pessoa jurídica.",
+      "D) É possível, mas depende de pedido expresso na denúncia com indicação de valor específico.",
+      "E) É possível apenas se a empresa comprovar prejuízos à sua imagem no mercado."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. Conforme jurisprudência do STJ (AREsp 2.267.828-MG), para pessoa jurídica é necessário comprovar o dano à honra objetiva, não sendo presumido como para pessoas naturais. A fixação na esfera penal é possível se houver essa comprovação nos autos."
+  },
+  {
+    "id": "347",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Após sentença condenatória transitada em julgado por crime de furto qualificado, o ofendido, pessoa pobre, busca promover a execução para reparação do dano. Na comarca há Defensoria Pública estruturada. Sobre a legitimidade para a execução, à luz do art. 68 do CPP e da jurisprudência do STF, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) O Ministério Público é legitimado, independentemente da existência de Defensoria.",
+      "B) A Defensoria Pública é a única legitimada, devendo o MP abster-se de atuar.",
+      "C) O ofendido pobre deve contratar advogado particular, com posterior ressarcimento.",
+      "D) O juiz deve nomear advogado dativo, sendo vedada a atuação do MP e da Defensoria.",
+      "E) O MP pode atuar apenas se a Defensoria renunciar expressamente ao caso."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. O STF reconheceu inconstitucionalidade progressiva do art. 68 do CPP. Onde há Defensoria Pública estruturada, esta é a legítima para atuar em favor do necessitado, afastando a legitimidade do MP para essa função específica."
+  },
+  {
+    "id": "348",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Em ação penal por crime de corrupção passiva, o Ministério Público requereu na denúncia a fixação de valor mínimo para reparação de danos morais coletivos. O juiz, ao proferir sentença condenatória, fixou o valor. Sobre a possibilidade jurídica desse pedido, à luz da jurisprudência do STF, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) É vedado, pois danos morais coletivos só podem ser discutidos em ação civil pública.",
+      "B) É permitido, desde que haja pedido expresso e fundamente-se em provas dos autos.",
+      "C) É vedado, pois o art. 387, IV, do CPP refere-se apenas a danos individuais.",
+      "D) É permitido apenas para danos materiais, não se aplicando a danos morais.",
+      "E) É vedado, por configurar bis in idem com eventual ação de improbidade."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. O STF, no AP 1002/DF, reconheceu a possibilidade de fixação de danos morais coletivos no processo penal, desde que haja pedido expresso e fundamentação baseada nas provas dos autos, aplicando-se o art. 387, IV, do CPP."
+  },
+  {
+    "id": "349",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Sobre a fixação do valor mínimo para reparação de danos nos termos do art. 387, IV, do CPP (com redação da Lei 11.719/2008), assinale a alternativa INCORRETA.",
+    "alternativas": [
+      "A) Exige pedido expresso formulado na denúncia ou queixa.",
+      "B) Pode abranger danos morais, desde que fundamentada a decisão.",
+      "C) Aplica-se retroativamente a fatos ocorridos antes de 2008.",
+      "D) Pressupõe existência de provas nos autos dos prejuízos sofridos.",
+      "E) Funciona como título executivo líquido, sem prejuízo de liquidação."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Incorreta. STJ e STF entendem que o art. 387, IV, com redação da Lei 11.719/2008, é norma híbrida (processual e material), não aplicando-se retroativamente a fatos anteriores à vigência da lei (REsp 1.206.643/RS, RvC 5437/RO)."
+  },
+  {
+    "id": "350",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "No curso de ação civil de indenização por danos decorrentes de crime, o réu arguiu a existência de ação penal em andamento sobre os mesmos fatos e requereu a suspensão do processo civil. O magistrado indeferiu o pedido, decidindo prosseguir com a ação civil. Analisando o art. 64, parágrafo único, do CPP, assinale a alternativa CORRETA sobre a decisão.",
+    "alternativas": [
+      "A) A decisão está correta, pois a suspensão é obrigatória quando há ação penal em curso.",
+      "B) A decisão está incorreta, pois o juiz deve obrigatoriamente suspender a ação civil.",
+      "C) A decisão está correta, pois a suspensão é faculdade do magistrado, a ser usada quando houver risco de decisões contraditórias.",
+      "D) A decisão está incorreta, pois viola o princípio da primazia da jurisdição penal.",
+      "E) A decisão está correta apenas se a ação penal estiver em fase de instrução."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Correta. Conforme art. 64, parágrafo único, do CPP e entendimento doutrinário majoritário, a suspensão da ação civil é faculdade do magistrado ('poderá suspender'), não obrigação, devendo ser utilizada quando houver risco de decisões contraditórias."
+  },
+  {
+    "id": "351",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Após absolvição no Tribunal do Júri por crime contra a vida, em que os jurados votaram pela negativa de autoria, a família da vítima pretende ajuizar ação de indenização por danos morais. Sobre os efeitos da coisa julgada da sentença absolutória do Júri no âmbito cível, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) Faz coisa julgada material, impedindo totalmente a ação civil.",
+      "B) Não faz coisa julgada, permitindo a discussão da responsabilidade civil.",
+      "C) Faz coisa julgada apenas quanto aos danos materiais, não os morais.",
+      "D) Impede a ação civil apenas se a absolvição for unânime.",
+      "E) Permite ação civil apenas por danos materiais, não morais."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. Pelo sistema da íntima convicção adotado no Júri, não é possível conhecer o fundamento da absolvição, portanto a sentença absolutória do Júri não faz coisa julgada no âmbito cível, permitindo a discussão da responsabilidade civil."
+  },
+  {
+    "id": "352",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Sobre a transação penal nos Juizados Especiais Criminais e seus efeitos na esfera cível, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) Implica reconhecimento tácito de responsabilidade civil pelo transacionante.",
+      "B) Impede a propositura de ação civil de indenização pelos mesmos fatos.",
+      "C) Não acarreta reconhecimento de responsabilidade penal, podendo discutir-se a existência do fato e autoria no cível.",
+      "D) Gera título executivo judicial para reparação de danos automática.",
+      "E) Suspende o prazo prescricional da ação civil por dois anos."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Correta. Conforme art. 76, §6º, da Lei 9.099/95, a transação penal não repercute no âmbito cível, não acarretando reconhecimento de responsabilidade penal, permanecendo possível discutir a autoria e existência do fato em ação civil própria."
+  },
+  {
+    "id": "353",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Na sentença condenatória por crime de injúria racial, o juiz fixou ofício valor mínimo para reparação de danos morais, embora não houvesse pedido expresso do Ministério Público ou do ofendido. Sobre a validade dessa fixação, à luz da jurisprudência dos Tribunais Superiores, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) É válida, pois o dano moral em crimes raciais é presumido e de fixação obrigatória.",
+      "B) É válida, pois configura pedido implícito decorrente da natureza do crime.",
+      "C) É inválida, por violação ao princípio da demanda e ampla defesa.",
+      "D) É válida apenas se o ofendido for pessoa pobre e não tiver assistência jurídica.",
+      "E) É inválida, mas pode ser convalidada se o réu não impugnar na apelação."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Correta. A jurisprudência do STJ (HC 321279/PE) exige pedido expresso e formal para fixação do valor mínimo, sob pena de violação ao princípio da ampla defesa e contraditório. A fixação de ofício configura julgamento extra petita."
+  },
+  {
+    "id": "354",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Em ação civil de indenização por danos decorrentes de crime, após cinco anos de tramitação com ação penal paralela, o juiz cível determinou a suspensão do processo. Sobre o prazo máximo de suspensão, analise as assertivas:\n\nI. Não pode exceder um ano, aplicando-se por analogia o art. 313, §4º, do CPC.\nII. Pode perdurar até o trânsito em julgado da ação penal, conforme art. 64, parágrafo único, do CPP.\nIII. Findo qualquer prazo, o juiz cível deve prosseguir com o processo independentemente do andamento da ação penal.\n\nAssinale a alternativa que indica a posição doutrinária DIVERGENTE sobre o tema.",
+    "alternativas": [
+      "A) Apenas I está correta.",
+      "B) Apenas II está correta.",
+      "C) Apenas III está correta.",
+      "D) I e II estão corretas (posições divergentes).",
+      "E) II e III estão corretas."
+    ],
+    "indiceCorreto": 3,
+    "explicacao": "D) Correta. Há divergência doutrinária: alguns aplicam por analogia o prazo máximo de 1 ano do CPC (I), outros entendem que a suspensão pode durar até o trânsito em julgado da ação penal conforme CPP (II). A assertiva III não representa posição majoritária."
+  },
+  {
+    "id": "355",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Sobre a execução da sentença penal condenatória para fins de reparação de danos, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) Deve ser proposta necessariamente no juízo penal que proferiu a sentença.",
+      "B) Pode ser efetuada pelo valor fixado sem prejuízo de liquidação para apuração do dano efetivamente sofrido.",
+      "C) Pressupõe a propositura prévia de ação civil de conhecimento no juízo cível.",
+      "D) Somente pode ser promovida pelo Ministério Público, independentemente da condição da vítima.",
+      "E) Extingue-se com a prescrição da pretensão punitiva, mesmo após o trânsito em julgado."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. Conforme art. 63, parágrafo único, do CPP, a execução pode ser efetuada pelo valor fixado nos termos do art. 387, IV, sem prejuízo da liquidação para apuração do dano efetivamente sofrido, se maior."
+  },
+  {
+    "id": "356",
+  "materia": "Direito Processual Penal",
+  "assunto": "7. Ação Civil",
+  "enunciado": "Após êxito em revisão criminal que rescindiu sentença condenatória transitada em julgado, o ex-condenado busca anular a execução civil já concluída com pagamento integral ao ofendido. Sobre as consequências da revisão criminal na esfera cível, assinale a alternativa CORRETA.",
+  "alternativas": [
+    "A) A execução civil mantém-se válida, pois transitou em julgado antes da revisão.",
+    "B) O ex-condenado pode requerer indenização contra o Estado, inclusive na própria revisão criminal.",
+    "C) Deve ajuizar ação de repetição de indébito contra o ofendido.",
+    "D) A revisão criminal não afeta os efeitos civis já consumados.",
+    "E) Cabe ação rescisória específica para anular a execução civil."
+  ],
+  "indiceCorreto": 1,
+  "explicacao": "B) Correta. A rescisão da sentença penal por revisão criminal também rescinde o título executivo. Se a execução já foi concluída, cabe ao ex-condenado requerer indenização contra o Estado, pedido que pode constar na própria revisão criminal (art. 630, CPP)."
+  },
+  {
+    "id": "357",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Em ação penal por crime contra a honra, o Ministério Público não formulou pedido de fixação de valor mínimo para reparação na denúncia. Durante a instrução, produziram-se provas dos danos sofridos. Ao proferir sentença condenatória, pode o juiz fixar ofício o valor para reparação?",
+    "alternativas": [
+      "A) Sim, sempre que houver provas dos danos nos autos.",
+      "B) Sim, por se tratar de pedido implícito na ação penal pública.",
+      "C) Não, pois violaria o princípio da demanda e ampla defesa.",
+      "D) Não, exceto se o ofendido for pessoa pobre e não tiver assistência.",
+      "E) Sim, desde que o ofendido tenha manifestado interesse durante o processo."
+    ],
+    "indiceCorreto": 2,
+    "explicacao": "C) Correta. A jurisprudência do STJ (REsp 1.986.672/SC) exige pedido expresso na denúncia para fixação do valor mínimo, sob pena de violação ao princípio do contraditório e ampla defesa. A mera existência de provas não autoriza a fixação de ofício."
+  },
+  {
+    "id": "358",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Sobre os efeitos do indulto na esfera cível, à luz da Súmula 631 do STJ, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) Extingue completamente os efeitos da condenação, inclusive a obrigação de indenizar.",
+      "B) Extingue apenas os efeitos primários da condenação, não atingindo os efeitos secundários extrapenais.",
+      "C) Não produz qualquer efeito sobre a execução civil baseada na sentença condenatória.",
+      "D) Suspende a execução civil por prazo equivalente ao da pena remida.",
+      "E) Converte a obrigação de indenizar em prestação de serviços à comunidade."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. Conforme Súmula 631 do STJ: 'O indulto extingue os efeitos primários da condenação (pretensão executória), mas não atinge os efeitos secundários, penais ou extrapenais'. A obrigação de indenizar, como efeito secundário extrapenal, permanece."
+  },
+  {
+    "id": "359",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Na ação civil de indenização por danos decorrentes de crime, o autor pretende responsabilizar solidariamente o empregador do agente, com base no art. 932 do CC. Sobre o procedimento adequado, assinale a alternativa CORRETA.",
+    "alternativas": [
+      "A) Deve promover execução diretamente contra o responsável civil com base na sentença penal condenatória.",
+      "B) Pode ajuizar ação de conhecimento contra o responsável civil no juízo cível.",
+      "C) Deve requerer no processo penal a citação do responsável civil como litisconsorte.",
+      "D) Precisa aguardar trânsito em julgado da ação penal para propor ação contra o responsável civil.",
+      "E) Deve provocar o Ministério Público para ajuizar ação civil pública contra o empregador."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. Os efeitos da coisa julgada penal não atingem o responsável civil que não foi parte no processo penal. Deve-se ajuizar ação de conhecimento no juízo cível, com observância do contraditório e ampla defesa."
+  },
+  {
+    "id": "360",
+    "materia": "Direito Processual Penal",
+    "assunto": "7. Ação Civil",
+    "enunciado": "Analise as hipóteses de sentença absolutória e seus efeitos na esfera cível:\n\nI. Absolvição por existência de estado de necessidade (art. 386, VI).\nII. Absolvição por não haver prova suficiente para condenação (art. 386, VII).\nIII. Absolvição por negativa de autoria comprovada (art. 386, IV).\nIV. Absolvição por atipicidade do fato (art. 386, III).\n\nAssinale a alternativa que indica as hipóteses em que a sentença absolutória FAZ COISA JULGADA NO CÍVEL.",
+    "alternativas": [
+      "A) Apenas I e II.",
+      "B) Apenas I e III.",
+      "C) Apenas II e IV.",
+      "D) Apenas I, II e III.",
+      "E) Apenas II, III e IV."
+    ],
+    "indiceCorreto": 1,
+    "explicacao": "B) Correta. I (estado de necessidade) faz coisa julgada (art. 65, CPP). III (negativa de autoria comprovada) faz coisa julgada. II (dúvida) e IV (atipicidade penal, que pode ser ilícito civil) não fazem coisa julgada no cível."
   }
   
 
