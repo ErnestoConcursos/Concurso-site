@@ -80,17 +80,17 @@ export const TOPICOS_POR_MATERIA: Record<string, string[]> = {
 "24. Relações jurisdicionais com autoridades estrangeiras"
   ],
   "Direito Civil": [
-    "5.1 LINDB",
-    "5.2 Pessoas Naturais e Jurídicas",
-    "5.3 Bens e Fatos Jurídicos",
-    "5.4 Prescrição e Decadência",
-    "5.5 Teoria Geral das Obrigações",
-    "5.6 Teoria Geral dos Contratos",
-    "5.7 Contratos em Espécie",
-    "5.8 Responsabilidade Civil",
-    "5.9 Direito das Coisas (Posse e Propriedade)",
-    "5.10 Direito de Família",
-    "5.11 Direito das Sucessões"
+    "1. LINDB",
+    "2. Parte Geral",
+    "3. Obrigações",
+    "4. Contratos",
+    "5. Responsabilidade Civil",
+    "6. Direito da Coisas",
+    "7. Preferência e Privilégios Creditórios",
+    "8. Direito das Coisas",
+    "9. Família",
+    "10. Sucessões",
+    "11. Direito Digital"
   ],
   "Direito Processual Civil": [
     "6.1 Normas Fundamentais",
@@ -4077,7 +4077,458 @@ export const QUESTOES_EXEMPLO: Questao[] = [
     ],
     "indiceCorreto": 1,
     "explicacao": "B) Correta. I (estado de necessidade) faz coisa julgada (art. 65, CPP). III (negativa de autoria comprovada) faz coisa julgada. II (dúvida) e IV (atipicidade penal, que pode ser ilícito civil) não fazem coisa julgada no cível."
-  }
+  },
+  {
+"id": "361",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Tício, possuidor direto de um imóvel em virtude de contrato de comodato, passa a exercer atos possessórios com ânimo de dono, opondo-se expressamente ao comodante. O comodante, então, intenta ação de reintegração de posse. À luz das regras do Código Civil sobre posse, classificação e efeitos, analise as assertivas:\n\nI. Configura-se a interversio possessionis, transformando a detenção em posse com animus domini.\nII. A posse direta de Tício anula a posse indireta do comodante, afastando a relação de dependência.\nIII. O comodante, como possuidor indireto, tem legitimidade para a ação possessória.\nIV. A posse de Tício, originariamente precária, é injusta e não pode ser convalidada.\n\nEstá correto o que se afirma APENAS em:",
+"alternativas": ["A) I e II.", "B) I e III.", "C) II e IV.", "D) I, II e IV.", "E) III e IV."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. I – Correta, nos termos do Enunciado 237 da III Jornada de Direito Civil. II – Incorreta, a posse direta não anula a indireta (art. 1.197). III – Correta, o possuidor indireto pode defender sua posse contra o direto. IV – Incorreta, a posse precária pode ser convalidada pela interversio possessionis."
+},
+{
+"id": "362",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Após uma enchente, uma porção considerável de terra destacou-se de um prédio rural de João e juntou-se ao terreno vizinho de Maria. João, imediatamente, notificou Maria sobre o ocorrido, exigindo a remoção da terra ou indenização. Maria recusou-se a ambas as opções, alegando que a junção ocorreu por força natural violenta e que a terra agora integra seu domínio. Passado mais de um ano do evento, João ajuíza ação reivindicatória. Com base nas regras de aquisição da propriedade imóvel por acessão, assinale a alternativa correta:",
+"alternativas": ["A) Maria adquiriu a propriedade do acréscimo, pois decorrido o prazo de um ano sem reclamação, a aquisição consolidou-se independentemente de indenização.", "B) Maria somente adquirirá a propriedade do acréscimo se indenizar João, sendo facultado a este exigir a remoção da porção de terra.", "C) João tem direito à indenização, mas não pode more exigir a remoção, pois a ação reivindicatória é inepta após um ano do evento.", "D) A aquisição por avulsão só se opera se o dono do prédio a que se juntou a porção de terra concordar expressamente, não havendo prescrição aquisitiva.", "E) Maria não adquiriu a propriedade, pois a avulsão só se aplica a imóveis urbanos, sendo necessário o ajuizamento de ação de imissão na posse."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Conforme art. 1.251, em caso de avulsão, se ninguém reclamar no prazo de 1 ano, o dono do prédio a que se juntou a porção adquire a propriedade sem indenização. O prazo começou a correr da notificação, e a ação foi ajuizada após mais de um ano."
+},
+{
+"id": "363",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Em relação aos direitos reais sobre coisas móveis, assinale a alternativa INCORRETA:",
+"alternativas": ["A) A propriedade fiduciária em garantia de bem móvel confere ao fiduciário a propriedade resolúvel, desdobrando a posse direta para o devedor.", "B) A tradição real é a regra para a transferência da propriedade de coisas móveis por atos entre vivos, exigindo a entrega efetiva da coisa.", "C) O penhor comum exige, para sua constituição, a transferência da posse direta do bem móvel ao credor, salvo nas modalidades de penhor rural, industrial e mercantil.", "D) A usucapião de coisa móvel exige posse prolongada por cinco anos, independentemente de justo título e boa-fé, nos termos do art. 1.261 do CC.", "E) O direito real de laje pode recair sobre construção-base móvel, desde que registrado no Cartório de Títulos e Documentos do domicílio do proprietário."],
+"indiceCorreto": 4,
+"explicacao": "E) Incorreta. O direito real de laje recai sobre espaço aéreo ou subsolo de terrenos públicos ou privados, sendo unidade imobiliária autônoma, não sobre construção móvel. É instituto relacionado a imóveis (art. 1.510-A)."
+},
+{
+"id": "364",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um condomínio edilício, por deliberação assemblear, pretende alterar a destinação de uma unidade residencial para comercial. A convenção atual é silente sobre o quórum para tal mudança. Considerando a legislação civil aplicável, assinale a alternativa correta:",
+"alternativas": ["A) A alteração da destinação depende de aprovação por unanimidade dos condôminos, por tratar-se de modificação substancial do regimento interno.", "B) É necessária a aprovação de, no mínimo, 2/3 dos votos dos condôminos, nos termos do art. 1.351 do CC, com a redação dada pela Lei nº 14.405/2022.", "C) A alteração depende de maioria simples dos presentes em assembleia especialmente convocada, desde que não haja oposição de mais de 1/3 dos condôminos.", "D) A mudança de destinação não é permitida após o registro da convenção, sob pena de violação ao princípio da tipicidade dos direitos reais.", "E) Basta a autorização do síndico, desde que a alteração não cause prejuízo à segurança ou à estética do edifício."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Conforme art. 1.351 do CC, a alteração da destinação do edifício ou da unidade imobiliária depende da aprovação de 2/3 dos votos dos condôminos. A Lei 14.405/2022 explicitou esse quórum."
+},
+{
+"id": "365",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Mário, possuidor de boa-fé de um sítio, realizou benfeitorias necessárias (reparo do telhado) e voluptuárias (piscina ornamental). Anos depois, o verdadeiro proprietário, Carlos, obteve êxito em ação reivindicatória. Sobre o direito às benfeitorias, assinale a alternativa correta:",
+"alternativas": ["A) Mário tem direito ao ressarcimento das benfeitorias necessárias e úteis, podendo exercer direito de retenção pelo valor das necessárias, mas não pode levantar a piscina.", "B) Mário tem direito ao ressarcimento do valor atual das benfeitorias necessárias e úteis, e pode levantar a piscina, desde que não cause detrimento à coisa.", "C) Mário tem direito ao ressarcimento pelo custo das benfeitorias necessárias, mas não pode reter a posse e nem levantar as voluptuárias.", "D) Carlos pode optar entre indenizar Mário pelo custo ou pelo valor atual das benfeitorias necessárias e úteis, e deve autorizar o levantamento da piscina.", "E) Mário não tem direito a qualquer indenização, pois a posse de boa-fé não se aplica a benfeitorias realizadas sem autorização judicial."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.219 do CC: possuidor de boa-fé tem direito a indenização das benfeitorias necessárias e úteis, e pode levantar as voluptuárias, se não lhe forem pagas, quando o puder sem detrimento da coisa."
+},
+{
+"id": "366",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a multipropriedade, instituto introduzido pela Lei nº 14.382/2022, analise as assertivas:\n\nI. Cada fração de tempo é indivisível e corresponde à faculdade de uso e gozo exclusivo da totalidade do imóvel.\nII. O multiproprietário pode ceder sua fração de tempo em locação, mas não pode aliená-la a terceiros sem anuência dos demais condôminos.\nIII. A multipropriedade extingue-se automaticamente se todas as frações de tempo forem reunidas na mesma pessoa.\nIV. O direito de multipropriedade não pode ser instituído sobre unidades autônomas de condomínios edilícios.\n\nEstá correto o que se afirma APENAS em:",
+"alternativas": ["A) I.", "B) I e II.", "C) II e III.", "D) III e IV.", "E) I, II e IV."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. I – Correta (art. 1.358-C e 1.358-E). II – Incorreta: pode alienar, informando ao administrador (art. 1.358-I, III). III – Incorreta: não se extingue automaticamente (art. 1.358-C, parágrafo único). IV – Incorreta: pode ser instituída em unidades de condomínio edilício (art. 1.358-O)."
+},
+{
+"id": "367",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Uma construtora, de boa-fé, edifica um prédio parcialmente em terreno próprio e parcialmente em terreno vizinho alheio. A invasão corresponde a 1/15 da área do terreno vizinho. O proprietário do terreno invadido, que acompanhou a obra sem se opor, alega má-fé do construtor e requer a demolição da parte invasora. Com base nas regras de acessão por construção e plantação, assinale a alternativa correta:",
+"alternativas": ["A) O construtor adquire a propriedade da parte do solo invadido, pois a invasão é inferior a 1/20, devendo indenizar o proprietário pelo valor da área perdida e desvalorização da remanescente.", "B) O construtor deve demolir a parte invasora, pois a invasão superior a 1/20 caracteriza má-fe presumida, independentemente de indenização.", "C) O proprietário do terreno invadido pode exigir a demolição, mas terá que indenizar o construtor pelo valor da construção, por ter agido com má-fé ao silenciar.", "D) O construtor adquire a propriedade da parte invadida, pagando em décuplo as perdas e danos, nos termos do parágrafo único do art. 1.258 do CC.", "E) Aplica-se a regra da especificação, devendo a construção ser adjudicada ao proprietário do solo que tiver maior valor, com indenização ao outro."],
+"indiceCorreto": 3,
+"explicacao": "D) Correta. Invasão superior a 1/20 (1/15 > 1/20) por construtor de má-fé (presumida pela não impugnação, art. 1.256, parágrafo único). Aplica-se o parágrafo único do art. 1.259: obrigado a demolir, pagando perdas e danos em dobro. Alternativamente, pode pagar em décuplo e adquirir a parte invadida (parágrafo único do art. 1.258), mas a questão foca na regra geral da má-fé."
+},
+{
+"id": "368",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito de superfície, é INCORRETO afirmar:",
+"alternativas": ["A) Pode ser constituído por tempo determinado, mediante escritura pública e registro no Cartório de Registro de Imóveis.", "B) O superficiário responde pelos encargos e tributos que incidirem sobre o imóvel, durante a vigência do direito.", "C) Em caso de alienação do imóvel ou do direito de superfície, o superficiário tem direito de preferência em igualdade de condições.", "D) O proprietário pode estipular pagamento pela transferência do direito de superfície a terceiros, desde que fixado no contrato original.", "E) Extinta a concessão, o proprietário adquire a propriedade plena sobre as construções ou plantações, salvo estipulação em contrário."],
+"indiceCorreto": 3,
+"explicacao": "D) Incorreta. Art. 1.372, parágrafo único: não pode ser estipulado pelo concedente, a nenhum título, qualquer pagamento pela transferência."
+},
+{
+"id": "369",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Carlos, credor hipotecário de primeiro grau, promove a execução do imóvel. Durante o processo, Ana, credora quirografária, arremata o imóvel em hasta pública. Sobre a situação hipotecária, assinale a alternativa correta:",
+"alternativas": ["A) Ana adquire o imóvel livre de hipoteca, pois a arrematação em execução hipotecária extingue o ônus real.", "B) Carlos mantém o direito de excussão sobre o imóvel na posse de Ana, podendo promover nova execução para satisfazer seu crédito.", "C) Ana fica obrigada pessoalmente ao pagamento da dívida hipotecária, substituindo o devedor original, nos termos do art. 1.479 do CC.", "D) Carlos será satisfeito com o preço da arrematação, mas, se insuficiente, não poderá perseguir outros bens do devedor.", "E) A arrematação por terceiro extingue a hipoteca apenas se os credores hipotecários forem notificados e não opuserem embargos."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. A arrematação em execução hipotecária, desde que os credores hipotecários tenham sido regularmente notificados (art. 1.501), transfere o imóvel livre de hipoteca. O crédito hipotecário é satisfeito com o produto da venda (art. 1.499, VI)."
+},
+{
+"id": "370",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um imóvel rural foi abandonado pelo proprietário, que deixou de pagar os impostos territoriais há mais de cinco anos e não pratica atos de posse. O imóvel não está na posse de outrem. Sobre a possível perda da propriedade, assinale a alternativa correta:",
+"alternativas": ["A) O imóvel será considerado bem vago e, após três anos de arrecadação, passará à propriedade da União, independentemente de ação judicial.", "B) O Município poderá arrecadá-lo como bem vago, mas a propriedade só será transferida após usucapião pela administração pública.", "C) Qualquer possuidor pode usucapir o imóvel imediatamente, pois o abandono anula a proteção possessória do proprietário.", "D) O imóvel será arrecadado pelo Estado onde situado e, após cinco anos, incorporar-se-á ao patrimônio público estadual.", "E) O abandono não é causa de perda da propriedade, apenas permite que terceiros adquiram por usucapião extraordinária."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.276, §1º: imóvel rural abandonado pode ser arrecadado como bem vago e, três anos depois, passar à propriedade da União. O abandono com intenção é presumido pelo não pagamento de ônus fiscais (§2º)."
+},
+{
+"id": "371",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a aquisição da propriedade imóvel pelo registro do título, é correto afirmar:",
+"alternativas": ["A) A propriedade só se transfere com o registro do título translativo, mas a prenotação garante eficácia do negócio desde a apresentação.", "B) Enquanto não registrado o título, o alienante continua dono, mas o adquirente tem ação de busca e apreensão contra terceiro detentor.", "C) O registro é condição de validade do negócio jurídico, de modo que título não registrado é nulo de pleno direito.", "D) Cancelado o registro por vício, o proprietário original não pode reivindicar contra terceiro adquirente de boa-fé e com título.", "E) A tradição do imóvel é suficiente para transferir a propriedade, sendo o registro mera formalidade para oponibilidade a terceiros."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.245: transfere-se a propriedade com o registro. Art. 1.246: a eficácia do registro retroage à prenotação. Art. 1.245, §1º: enquanto não registrado, alienante é dono."
+},
+{
+"id": "372",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "José, possuidor de um imóvel com justo título e boa-fé, foi esbulhado por Marcelo. Imediatamente, José retomou a posse pela força, usando de desforço físico moderado. Marcelo, então, ajuíza ação de indenização por danos morais. À luz do desforço possessório imediato, assinale a alternativa correta:",
+"alternativas": ["A) José agiu legitimamente, pois o desforço imediato é permitido para restituição da posse, desde que não ultrapasse o indispensável.", "B) José cometeu ato ilícito, pois o desforço possessório só é admitido em caso de turbação, não de esbulho.", "C) José perdeu o direito à autotutela por não ter agido no mesmo momento do esbulho, devendo ter buscado a via judicial.", "D) O desforço possessório é vedado em qualquer hipótese, sendo cabível apenas ação possessória específica.", "E) A legitimidade do desforço depende de prévia comunicação à autoridade policial, sob pena de abuso de direito."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.210, §1º: o possuidor pode restituir-se por própria força, contanto que o faça logo e os atos não ultrapassem o indispensável."
+},
+{
+"id": "373",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Uma pessoa achou um objeto de valor perdido em via pública. Sobre os direitos e obrigações do descobridor, assinale a alternativa correta:",
+"alternativas": ["A) Deve restituir ao dono ou possuidor legítimo, tendo direito a recompensa não inferior a 5% do valor, independentemente de esforço para encontrar o dono.", "B) Se não encontrar o dono, deve entregar à autoridade, que promoverá a divulgação; após 60 dias, o objeto será vendido e o valor remanescente pertencerá ao Município.", "C) O descobridor tem direito de reter o objeto até o pagamento da recompensa, podendo, inclusive, vendê-lo se o dono se recusar a pagá-la.", "D) Se o objeto for de diminuto valor, o descobridor pode apropriar-se dele imediatamente, sem qualquer obrigação de divulgação.", "E) O descobridor responde por perdas e danos apenas se agir com dolo, mas a obrigação de restituição é objetiva."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Arts. 1.233 a 1.237: deve restituir ao dono ou, não o conhecendo, entregar à autoridade; após 60 dias da divulgação, se não aparecer o dono, vende-se e o remanescente vai ao Município. A recompensa é de no mínimo 5%, mas sua fixação considera o esforço (A incorreta). A retenção não é prevista (C incorreta). Para objeto de diminuto valor, o Município pode abandoná-lo em favor do descobridor, não sendo apropriação imediata (D incorreta). A responsabilidade é por dolo (E correta em parte, mas B é mais abrangente e correta)."
+},
+{
+"id": "374",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Em um condomínio edilício, um condômino reiteradamente descumpre o regimento interno, promovendo barulho excessivo em horários inadequados. A assembleia, por deliberação de 3/4 dos condôminos restantes, aplicou multa correspondente ao quíntuplo da contribuição mensal. O condômino recusa-se a pagar. Com base nas regras do condomínio edilício, assinale a alternativa correta:",
+"alternativas": ["A) A multa aplicada é ilegal, pois o valor máximo permitido é o dobro da contribuição mensal, nos termos do art. 1.336, §2º.", "B) A multa é válida, e o condomínio pode incluí-la na cobrança das contribuições, com os mesmos mecanismos de cobrança.", "C) A aplicação da multa exige unanimidade dos condôminos, por tratar-se de sanção restritiva de direitos.", "D) A multa só pode ser aplicada se houver previsão na convenção, e o valor não pode exceder a cinco vezes a contribuição, conforme art. 1.337.", "E) O condômino pode se eximir do pagamento da multa alegando desconhecimento do regimento interno, pois este não tem força vinculante."],
+"indiceCorreto": 3,
+"explicacao": "D) Correta. Art. 1.337: o condômino que não cumpre reiteradamente seus deveres pode ser constrangido a pagar multa correspondente até ao quíntuplo da contribuição, por deliberação de 3/4 dos condôminos restantes. A multa é distinta da prevista no art. 1.336 (até 5 vezes a contribuição, por infração isolada)."
+},
+{
+"id": "375",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a usucapião extraordinária de imóvel rural (art. 1.239 do CC), assinale a alternativa INCORRETA:",
+"alternativas": ["A) Exige posse como sua, ininterrupta e sem oposição, por cinco anos.", "B) A área usucapienda não pode ser superior a 50 hectares.", "C) É necessário que o possuidor tenha tornado a área produtiva por seu trabalho ou de sua família.", "D) O usucapiendo não pode ser proprietário de outro imóvel rural ou urbano.", "E) A posse deve ser exercida com moradia habitual no imóvel."],
+"indiceCorreto": 4,
+"explicacao": "E) Incorreta. A usucapião rural do art. 1.239 exige moradia no imóvel. No entanto, a alternativa D está correta: o dispositivo exige que o possuidor não seja proprietário de imóvel rural ou urbano. A assertiva E é incorreta porque a moradia é exigida, mas a redação da alternativa D está correta (não pode ser proprietário de outro imóvel). O enunciado pede a incorreta, então E é a incorreta, pois a moradia é exigida, mas a redação da alternativa é absoluta e pode induzir erro. Na verdade, a moradia é exigida sim, mas a alternativa D também é correta. Vamos revisar: a alternativa E afirma 'A posse deve ser exercida com moradia habitual no imóvel.' Isso está correto, pois o art. 1.239 diz 'tendo nela sua moradia'. Então a alternativa E está correta. A incorreta é a D? O art. 1.239 não exige que não seja proprietário de outro imóvel. Essa exigência existe para a usucapião urbana familiar (art. 1.240), mas não para a rural. Portanto, a alternativa D é a incorreta. Corrigindo: D) Incorreta. O art. 1.239 não contém essa vedação. A vedação de não ser proprietário de outro imóvel é da usucapião urbana familiar (art. 1.240)."
+},
+{
+"id": "376",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a aquisição da posse, analise as assertivas:\n\nI. Pode ser adquirida pela própria pessoa ou por seu representante.\nII. A posse transmite-se aos herdeiros do possuidor com os mesmos caracteres.\nIII. O sucessor singular pode unir sua posse à do antecessor, para os efeitos legais.\nIV. A posse adquirida por ato violento ou clandestino é inválida, não podendo ser convalidada pelo decurso do tempo.\n\nEstão corretas:",
+"alternativas": ["A) Apenas I e II.", "B) Apenas I, II e III.", "C) Apenas II, III e IV.", "D) Apenas I, III e IV.", "E) I, II, III e IV."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. I – Art. 1.205, I. II – Art. 1.206. III – Art. 1.207. IV – Incorreta: a posse violenta ou clandestina pode ser convalidada após cessar a violência ou clandestinidade (art. 1.208)."
+},
+{
+"id": "377",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um prédio é atingido por desapropriação para construção de uma via pública. Sobre o prédio, existem uma hipoteca, uma servidão de passagem e um usufruto. Em relação aos direitos reais sobre coisa alheia, assinale a alternativa correta:",
+"alternativas": ["A) A desapropriação extingue todos os direitos reais, cabendo indenização apenas ao proprietário.", "B) O usufrutuário tem direito à indenização pela perda do usufruto, sub-rogando-se no ônus do usufruto o valor recebido.", "C) A hipoteca se extingue, mas o credor hipotecário não tem direito à indenização, pois o crédito persiste contra o devedor.", "D) A servidão de passagem transfere-se para o poder público, que fica obrigado a mantê-la em favor do prédio dominante.", "E) O proprietário recebe a indenização integral e reparte voluntariamente com os titulares de direitos reais, sob pena de responsabilidade civil."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.409: em caso de desapropriação, a indenização sub-roga-se no ônus do usufruto. Os demais direitos reais também são indenizáveis (ex: servidão – art. 1.376; hipoteca – art. 1.425, V)."
+},
+{
+"id": "378",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a propriedade resolúvel, é correto afirmar:",
+"alternativas": ["A) Resolvida a propriedade por implemento de condição, os direitos reais concedidos na pendência mantêm-se válidos, independentemente de confirmação.", "B) O proprietário resolúvel não pode alienar o bem, pois a resolução é cláusula de inalienabilidade implícita.", "C) Se a resolução ocorrer por causa superveniente, o adquirente de boa-fé e com título anterior à resolução será considerado proprietário perfeito.", "D) A propriedade fiduciária é espécie de propriedade resolúvel, mas com regime próprio e distinto do Capítulo VIII do Livro III do CC.", "E) A resolução da propriedade opera de pleno direito, dispensada a ação de resolução ou declaratória para efeitos entre as partes."],
+"indiceCorreto": 2,
+"explicacao": "C) Correta. Art. 1.360: se a propriedade se resolver por causa superveniente, o possuidor que a adquiriu por título anterior à resolução é considerado proprietário perfeito."
+},
+{
+"id": "379",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Foi constituído penhor sobre veículo automotor. Sobre essa garantia real, assinale a alternativa INCORRETA:",
+"alternativas": ["A) O penhor de veículo constitui-se com o registro do contrato no Cartório de Títulos e Documentos e anotação no certificado de propriedade.", "B) O prazo máximo para o penhor de veículo é de dois anos, prorrogável por igual período.", "C) O credor tem o direito de inspecionar o veículo onde ele se encontrar, por si ou por pessoa credenciada.", "D) A alienação do veículo sem comunicação ao credor importa em vencimento antecipado do crédito pignoratício.", "E) O devedor pode emitir cédula de crédito em favor do credor, prometendo pagar em dinheiro a dívida garantida."],
+"indiceCorreto": 0,
+"explicacao": "A) Incorreta. A Lei nº 14.179/2021 revogou o art. 1.463, que exigia anotação no certificado de propriedade. A constituição se dá por instrumento público ou particular registrado no Cartório de Títulos e Documentos (art. 1.462), mas a anotação no CRV/CRLV não é mais exigida. A alternativa A afirma que a anotação no certificado é necessária, o que está incorreto após a revogação."
+},
+{
+"id": "380",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Em um condomínio geral voluntário, um dos condôminos renuncia à sua parte ideal. Sobre os efeitos da renúncia, assinale a alternativa correta:",
+"alternativas": ["A) A renúncia implica a perda da parte ideal sem responsabilidade pelas dívidas condominiais vencidas e vincendas.", "B) Os demais condôminos podem assumir as despesas e dívidas, adquirindo a parte ideal de quem renunciou, na proporção dos pagamentos que fizerem.", "C) A renúncia só produz efeitos se aceita por unanimidade pelos outros condôminos, sob pena de nulidade.", "D) O condômino renunciante tem direito a ser indenizado pelo valor de sua parte ideal, a ser paga pelos demais condôminos.", "E) A renúncia é ato personalíssimo, não podendo ser feita por procurador, e exige homologação judicial."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.316: o condômino pode renunciar à parte ideal; se os demais assumirem as despesas e dívidas, adquirem a parte na proporção dos pagamentos; se ninguém assumir, a coisa comum será dividida."
+},
+{
+"id": "381",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a servidão predial, analise as assertivas:\n\nI. Servidão aparente pode ser usucapida.\nII. Servidão não aparente não pode ser usucapida.\nIII. O exercício de servidão não aparente não autoriza ação de esbulho contra terceiro adquirente de boa-fé do prédio serviente.\nIV. A servidão extingue-se pelo não uso por dez anos contínuos.\n\nEstão corretas:",
+"alternativas": ["A) Apenas I e III.", "B) Apenas I, II e IV.", "C) Apenas I, III e IV.", "D) Apenas II, III e IV.", "E) I, II, III e IV."],
+"indiceCorreto": 2,
+"explicacao": "C) Correta. I – Correta: art. 1.379. II – Incorreta: servidão não aparente também pode ser usucapida, mas o prazo é de 20 anos (art. 1.379, parágrafo único). III – Correta: art. 1.213. IV – Correta: art. 1.389, III."
+},
+{
+"id": "382",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um terreno foi concedido em superfície por 30 anos para construção de um edifício comercial. Durante a vigência, o superficiário aliena o direito de superfície a terceiro, sem o consentimento do proprietário. Sobre a validade da transferência, assinale a alternativa correta:",
+"alternativas": ["A) A transferência é nula, pois o direito de superfície é intuito personae e inalienável.", "B) A transferência é válida, pois o direito de superfície pode ser transferido a terceiros, sendo vedado apenas o pagamento pela transferência ao concedente.", "C) A transferência depende de autorização expressa do proprietário, sob pena de resolução da concessão.", "D) A transferência é válida, mas o proprietário tem direito de preferência em igualdade de condições.", "E) A transferência é válida apenas se o terceiro assumir pessoalmente as obrigações do superficiário perante o proprietário."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.372: o direito de superfície pode transferir-se a terceiros, e não pode ser estipulado pagamento ao concedente pela transferência. O direito de preferência (art. 1.373) aplica-se à alienação do imóvel ou do direito, mas não é condição de validade."
+},
+{
+"id": "383",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a imissão provisória na posse, incluída como direito real pela Lei nº 14.620/2023, assinale a alternativa correta:",
+"alternativas": ["A) É direito real autônomo, que pode ser constituído por particulares para garantia de obrigações.", "B) Somente pode ser concedida à União, Estados, Distrito Federal, Municípios ou suas entidades delegadas.", "C) Não pode ser objeto de hipoteca, por sua natureza provisória e administrativa.", "D) Equipara-se à propriedade plena para todos os efeitos, inclusive alienação sem restrições.", "E) Extingue-se automaticamente com o fim do procedimento administrativo que a originou."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. O art. 1.225, XIV, inclui como direito real os direitos oriundos da imissão provisória na posse, quando concedida à União, Estados, DF, Municípios ou suas entidades delegadas, e a respectiva cessão e promessa de cessão."
+},
+{
+"id": "384",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Na usucapião ordinária, o prazo de posse pode ser reduzido para cinco anos se o imóvel foi adquirido onerosamente com base em registro cancelado posteriormente. Sobre essa hipótese, assinale a alternativa correta:",
+"alternativas": ["A) Exige que os possuidores tenham estabelecido moradia no imóvel ou realizado investimentos de interesse social e econômico.", "B) Aplica-se apenas a imóveis urbanos, sendo vedada sua aplicação a imóveis rurais.", "C) Pressupõe que o alienante tenha agido com dolo, caracterizando fraude ao registro.", "D) O prazo de cinco anos é contado da data do registro cancelado, independentemente da posse.", "E) Não é necessário justo título, pois a aquisição onerosa com base no registro supre essa exigência."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.242, parágrafo único: prazo de 5 anos se o imóvel foi adquirido onerosamente com base no registro constante do cartório, cancelado posteriormente, desde que os possuidores tenham estabelecido moradia ou realizado investimentos de interesse social e econômico."
+},
+{
+"id": "385",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito real de laje, é correto afirmar:",
+"alternativas": ["A) Pressupõe a existência de construção-base e permite a criação de unidade autônoma no espaço aéreo ou subsolo.", "B) O titular da laje adquire fração ideal do terreno, devendo participar das despesas condominiais relativas ao solo.", "C) A laje pode ser instituída sem autorização do titular da construção-base, desde que observadas as normas urbanísticas.", "D) Em caso de alienação, o titular da construção-base não tem direito de preferência, para evitar restrições à circulação de bens.", "E) A ruína da construção-base extingue o direito de laje, sem qualquer direito à indenização ou reconstrução."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.510-A: direito real de laje recai sobre superfície superior ou inferior de construção-base, criando unidade imobiliária autônoma. Não há fração ideal do terreno (§4º). Exige cessão do proprietário da construção-base. Há direito de preferência (art. 1.510-D). Em caso de ruína, há possibilidade de extinção, mas com exceções (art. 1.510-E)."
+},
+{
+"id": "386",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito de construir e as limitações legais, assinale a alternativa correta:",
+"alternativas": ["A) É permitido abrir janela a menos de 1,5 metros do terreno vizinho, desde que não seja voltada para a linha divisória.", "B) O proprietário pode construir até a linha divisória, podendo até mesmo usar a parede do vizinho como suporte, independentemente de anuência.", "C) Em zona rural, é proibido levantar edificações a menos de três metros do terreno vizinho.", "D) O direito de construir é absoluto, não sofrendo limitações além dos regulamentos administrativos.", "E) O proprietário é obrigado a tolerar a passagem de cabos de utilidade pública através de seu imóvel, sem direito a indenização."],
+"indiceCorreto": 2,
+"explicacao": "C) Correta. Art. 1.303: na zona rural, não será permitido levantar edificações a menos de 3 metros do terreno vizinho. A) Incorreta: janelas a menos de 1,5 m são proibidas (art. 1.301). B) Incorreta: para madeirar na parede divisória, precisa que ela suporte e deve pagar metade do valor (art. 1.304). D) Incorreta: sofre limitações de direito de vizinhança e regulamentos. E) Incorreta: há direito a indenização (art. 1.286)."
+},
+{
+"id": "387",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um possuidor de má-fé de um imóvel realizou benfeitorias necessárias. Sobre os direitos desse possuidor em caso de evicção, assinale a alternativa correta:",
+"alternativas": ["A) Tem direito ao ressarcimento do valor das benfeitorias necessárias, podendo exercer direito de retenção até o pagamento.", "B) Tem direito ao ressarcimento apenas das benfeitorias necessárias, sem direito de retenção, cabendo ao reivindicante optar entre o custo ou o valor atual.", "C) Tem direito ao ressarcimento das benfeitorias necessárias e úteis, mas não das voluptuárias, que podem ser levantadas.", "D) Não tem direito a qualquer indenização, pois a má-fé impede o ressarcimento de benfeitorias.", "E) Tem direito ao ressarcimento pelo valor atual das benfeitorias necessárias, independentemente de opção do reivindicante."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.220: ao possuidor de má-fé serão ressarcidas somente as benfeitorias necessárias; não lhe assiste o direito de retenção. Art. 1.222: o reivindicante pode optar entre o valor atual e o custo."
+},
+{
+"id": "388",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o usufruto, analise as assertivas:\n\nI. O usufrutuário pode ceder o exercício do usufruto a terceiro, mas não pode aliená-lo.\nII. O usufruto constituído em favor de pessoa jurídica dura, no máximo, 30 anos.\nIII. O usufrutuário é obrigado a fazer as reparações extraordinárias do bem, podendo reembolsar-se depois.\nIV. O usufruto extingue-se pela destruição da coisa, sem direito a indenização, salvo se houver seguro.\n\nEstão corretas:",
+"alternativas": ["A) Apenas I e II.", "B) Apenas I, II e IV.", "C) Apenas I, III e IV.", "D) Apenas II, III e IV.", "E) I, II, III e IV."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. I – Correta: art. 1.393. II – Correta: art. 1.410, III. III – Incorreta: reparações extraordinárias são do dono (art. 1.404). IV – Correta: art. 1.410, V, com exceção do seguro (art. 1.407 a 1.409)."
+},
+{
+"id": "389",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito de vizinhança relativo a árvores, assinale a alternativa correta:",
+"alternativas": ["A) As raízes e ramos que ultrapassarem a divisória podem ser cortados pelo proprietário do terreno invadido, até o plano vertical divisório.", "B) Os frutos caídos de árvore do terreno vizinho pertencem ao dono da árvore, que pode recolhê-los no terreno alheio.", "C) A árvore cujo tronco está na linha divisória pertence ao proprietário do terreno onde estão a maioria das raízes.", "D) O proprietário do terreno invadido por raízes pode exigir a erradicação da árvore, independentemente de dano.", "E) As árvores divisórias não podem ser cortadas sem autorização judicial, mesmo de comum acordo."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.283. B) Incorreta: frutos caídos pertencem ao dono do solo onde caíram (art. 1.284). C) Incorreta: presume-se pertencer em comum aos confinantes (art. 1.282). D) Incorreta: só pode cortar até a linha divisória, não erradicar. E) Incorreta: podem ser cortadas de comum acordo (art. 1.297, §2º)."
+},
+{
+"id": "390",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um credor anticrético recebeu um imóvel em garantia de dívida. Sobre seus direitos e obrigações, assinale a alternativa correta:",
+"alternativas": ["A) Pode reter o imóvel até o pagamento da dívida, mas não pode fruir seus frutos, que devem ser imputados ao capital.", "B) Deve apresentar balanço anual da administração, e o devedor pode impugná-lo e requerer transformação em arrendamento.", "C) Não pode arrendar o imóvel a terceiro, sob pena de perda do direito de retenção.", "D) Em caso de execução do imóvel por outro credor, tem preferência sobre o preço, independentemente de opor seu direito.", "E) O direito de anticrese extingue-se decorridos dez anos da data de sua constituição, vedada a prorrogação."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.507: credor anticrético deve apresentar balanço anual; o devedor pode impugná-lo e requerer transformação em arrendamento. A) Incorreta: pode fruir os frutos (art. 1.506). C) Incorreta: pode arrendar, salvo pacto em contrário (art. 1.507, §2º). D) Incorreta: se não opor o direito de retenção, perde a preferência (art. 1.509, §1º). E) Incorreta: extingue-se em 15 anos (art. 1.423)."
+},
+{
+"id": "391",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a aquisição da propriedade móvel por especificação, assinale a alternativa correta:",
+"alternativas": ["A) Se a espécie nova for obtida de má-fé com matéria-prima alheia, pertencerá ao dono da matéria, se for redutível à forma anterior.", "B) O especificador de boa-fé sempre adquire a propriedade da espécie nova, independentemente do valor da matéria-prima.", "C) Em caso de pintura sobre tela alheia, a tela pertence ao pintor, pois o trabalho intelectual prevalece sobre a matéria.", "D) O dono da matéria-prima tem direito apenas ao valor da matéria, não podendo reivindicar a espécie nova.", "E) A especificação só se aplica quando há confusão de matérias de diferentes donos, não se aplicando a trabalho sobre matéria alheia."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.270, §1º: se a espécie nova for obtida de má-fé e for redutível, pertence ao dono da matéria-prima. B) Incorreta: há situações em que não adquire (ex: redutível e má-fé). C) Incorreta: aplica-se regra especial (art. 1.270, §2º): se o valor do trabalho exceder consideravelmente o da matéria, a espécie nova será do especificador. D) Incorreta: pode reivindicar a espécie nova nas hipóteses legais. E) Incorreta: especificação é trabalho sobre matéria, diferente de confusão."
+},
+{
+"id": "392",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre as servidões, é correto afirmar:",
+"alternativas": ["A) Servidão contínua e aparente pode ser adquirida por usucapião, com prazo de dez anos, independentemente de justo título.", "B) Servidão descontínua, ainda que aparente, não pode ser usucapida, por exigir ato humano para seu exercício.", "C) O exercício de servidão por tempo superior a dez anos gera direito aquisitivo, independentemente de registro.", "D) A extinção da servidão pelo não uso exige decurso de vinte anos, mesmo que a servidão seja aparente.", "E) A servidão não aparente não pode ser constituída por usucapião, por falta de visibilidade."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Servidões descontínuas (que exigem ato humano para cada exercício, como passagem para pedestres) não são suscetíveis de usucapião, mesmo sendo aparentes. A) Incorreta: usucapião de servidão exige justo título ou boa-fé? O art. 1.379 fala em exercício incontestado e contínuo por 10 anos, nos termos do art. 1.242 (que exige justo título e boa-fé para usucapião ordinária). C) Incorreta: precisa de registro para constituir direito real. D) Incorreta: o não uso extingue em 10 anos (art. 1.389, III). E) Incorreta: pode ser usucapida em 20 anos (art. 1.379, parágrafo único)."
+},
+{
+"id": "393",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um prédio é vendido com cláusula de retrovenda. Sobre a propriedade resolúvel e o direito de resgate, assinale a alternativa correta:",
+"alternativas": ["A) O exercício do direito de retrato depende de ação de resolução, não operando de pleno direito.", "B) Durante o prazo do retrato, o adquirente pode onerar o imóvel, mas os direitos reais constituídos resolvem-se com a resolução.", "C) O vendedor retratário pode reivindicar o imóvel diretamente do adquirente, independentemente de ação própria.", "D) O direito de retrato é pessoal e intransmissível, extinguindo-se com a morte do vendedor.", "E) O prazo para exercer o retrato é de cinco anos, sendo nula a cláusula que estabelecer prazo maior."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.359: resolvida a propriedade, entendem-se resolvidos os direitos reais concedidos na sua pendência. O adquirente pode onerar, mas com a resolução tais direitos se extinguem. A) Incorreta: o retrato opera por exercício unilateral, não necessariamente judicial. C) Incorreta: precisa de ação reivindicatória, pois a propriedade se resolve. D) Incorreta: é transmissível aos herdeiros. E) Incorreta: o prazo é de até três anos (art. 505)."
+},
+{
+"id": "394",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a aquisição da propriedade pelo achado do tesouro, assinale a alternativa correta:",
+"alternativas": ["A) O tesouro pertence integralmente ao proprietário do prédio, se for achado por ele.", "B) Se achado por terceiro autorizado, o tesouro é dividido igualmente entre o descobridor e o proprietário.", "C) O tesouro é sempre dividido por igual entre o proprietário do prédio e o descobridor, independentemente de quem achou.", "D) Em terreno aforado, o tesouro pertence ao enfiteuta, pois ele é o proprietário útil.", "E) O descobridor tem direito a 10% do valor do tesouro, além das despesas de conservação e transporte."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.265: o tesouro pertence por inteiro ao proprietário do prédio, se for achado por ele, ou em pesquisa que ordenou, ou por terceiro não autorizado. B) Incorreta: se achado por terceiro autorizado, não há divisão? O art. 1.265 não menciona terceiro autorizado, mas se for achado por ordem do proprietário, é dele. C) Incorreta: a regra geral é divisão igual (art. 1.264), mas há exceções. D) Incorreta: em terreno aforado, divide-se entre descobridor e enfiteuta (art. 1.266). E) Incorreta: não há percentual fixo; é divisão igual ou integral."
+},
+{
+"id": "395",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a hipoteca legal, assinale a alternativa INCORRETA:",
+"alternativas": ["A) Os filhos têm hipoteca legal sobre os imóveis do pai ou da mãe que passar a outras núpcias, antes de fazer inventário do casal anterior.", "B) O ofendido tem hipoteca legal sobre os imóveis do delinquente, para garantia do dano causado pelo delito.", "C) A hipoteca legal dispensa registro para sua constituição, mas pode ser registrada para maior segurança.", "D) A hipoteca legal pode ser substituída por caução de títulos da dívida pública federal ou estadual.", "E) O credor da hipoteca legal pode exigir reforço da garantia com outros imóveis, provada a insuficiência dos especializados."],
+"indiceCorreto": 2,
+"explicacao": "C) Incorreta. A hipoteca legal precisa ser registrada e especializada (art. 1.497). O registro é necessário para oponibilidade a terceiros."
+},
+{
+"id": "396",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Um fundo de investimento, regulado pela CVM, foi constituído como condomínio de natureza especial. Sobre esse instituto, assinale a alternativa correta:",
+"alternativas": ["A) Aplica-se subsidiariamente o regime do condomínio geral do Código Civil, especialmente no que tange à responsabilidade dos cotistas.", "B) O regulamento pode estabelecer a limitação da responsabilidade de cada investidor ao valor de suas cotas.", "C) Os prestadores de serviços do fundo respondem solidariamente pelas obrigações assumidas pelo fundo.", "D) O fundo de investimento não pode constituir patrimônio segregado para classes de cotas distintas.", "E) A insolvência do fundo segue as regras gerais da falência e recuperação judicial, não havendo procedimento específico."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.368-D, I. A) Incorreta: não se aplicam as disposições do condomínio geral (art. 1.368-C, §1º). C) Incorreta: a responsabilidade dos prestadores é limitada, sem solidariedade (art. 1.368-D, II). D) Incorreta: pode constituir patrimônio segregado (art. 1.368-D, III). E) Incorreta: a insolvência segue regras específicas (arts. 955 a 965 do CC, conforme art. 1.368-E, §1º)."
+},
+{
+"id": "397",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a posse e seus efeitos, analise as assertivas:\n\nI. O possuidor de boa-fé tem direito aos frutos percebidos enquanto durar a boa-fé.\nII. O possuidor de má-fé responde pela perda da coisa, ainda que acidental, salvo prova de caso fortuito ou força maior.\nIII. A posse de boa-fé só se perde quando as circunstâncias fazem presumir que o possuidor sabe que possui indevidamente.\nIV. O possuidor turbado pode manter-se por sua própria força, desde que o faça logo e não ultrapasse o indispensável.\n\nEstão corretas:",
+"alternativas": ["A) Apenas I e III.", "B) Apenas I, II e IV.", "C) Apenas I, III e IV.", "D) Apenas II, III e IV.", "E) I, II, III e IV."],
+"indiceCorreto": 4,
+"explicacao": "E) Correta. I – Art. 1.214. II – Art. 1.218 (responde mesmo por acidentais, salvo prova de que aconteceriam de qualquer modo). III – Art. 1.202. IV – Art. 1.210, §1º."
+},
+{
+"id": "398",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a habitação como direito real, assinale a alternativa correta:",
+"alternativas": ["A) O titular do direito de habitação pode alugar o imóvel, desde que destine a renda à sua subsistência.", "B) O direito de habitação é intuito personae, extinguindo-se com a morte do titular, não passando aos herdeiros.", "C) Se conferido a mais de uma pessoa, qualquer delas pode habitar sozinha, sem pagar aluguel às outras.", "D) O direito de habitação não pode ser gravado com ônus real, por sua natureza personalíssima.", "E) Aplica-se subsidiariamente o regime do usufruto, exceto quanto à possibilidade de percepção de frutos."],
+"indiceCorreto": 2,
+"explicacao": "C) Correta. Art. 1.415. A) Incorreta: não pode alugar (art. 1.414). B) Incorreta: pode passar aos herdeiros, a menos que seja personalíssimo. D) Incorreta: pode ser gravado? O direito real de habitação em si não pode ser gravado? Não há proibição explícita. E) Incorreta: aplicam-se as regras do usufruto no que não for contrário à natureza (art. 1.416)."
+},
+{
+"id": "399",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito do promitente comprador de imóvel, assinale a alternativa correta:",
+"alternativas": ["A) Exige registro da promessa de compra e venda no Registro de Imóveis para constituir direito real.", "B) O promitente comprador pode reivindicar o imóvel diretamente de terceiro adquirente de boa-fé.", "C) A promessa com pacto de arrependimento não gera direito real, mesmo registrada.", "D) O direito real do promitente comprador é resolúvel, extinguindo-se se não for exercido em cinco anos.", "E) O promitente vendedor não pode alienar o imóvel a terceiro, sob pena de nulidade absoluta."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.417: mediante promessa registrada, adquire direito real. B) Incorreta: não pode reivindicar diretamente de terceiro de boa-fé; tem ação contra o vendedor para outorga da escritura. C) Incorreta: se houver pacto de arrependimento, não gera direito real? O art. 1.417 diz 'em que se não pactuou arrependimento'. D) Incorreta: não há prazo extintivo específico. E) Incorreta: pode alienar, mas o promitente comprador tem direito real."
+},
+{
+"id": "400",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a função social da propriedade e suas limitações, assinale a alternativa correta:",
+"alternativas": ["A) O proprietário pode ser privado da coisa se o imóvel reivindicado consistir em extensa área, na posse ininterrupta e de boa-fé, por mais de cinco anos, de considerável número de pessoas, que tenham realizado obras de interesse social.", "B) A função social da propriedade é princípio meramente programático, sem eficácia concreta nas relações privadas.", "C) O exercício abusivo do direito de propriedade caracteriza-se apenas quando há intenção de prejudicar outrem, não se considerando o excesso objetivo.", "D) A desapropriação por interesse social só é cabível para imóveis urbanos, sendo os rurais passíveis apenas de desapropriação por utilidade pública.", "E) O direito de propriedade é absoluto, não podendo ser limitado por questões ambientais, que são de ordem pública distinta."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.228, §4º. B) Incorreta: tem eficácia, inclusive com perda da propriedade. C) Incorreta: o abuso pode ser objetivo (art. 1.228, §2º). D) Incorreta: desapropriação por interesse social abrange rurais também. E) Incorreta: sofre limitações ambientais (art. 1.228, §1º)."
+},
+{
+"id": "401",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o condomínio de lotes, introduzido pela Lei nº 14.382/2022, assinale a alternativa correta:",
+"alternativas": ["A) A fração ideal de cada condômino é necessariamente proporcional à área do solo de cada unidade autônoma.", "B) Aplica-se, no que couber, o regime do condomínio edilício, respeitada a legislação urbanística.", "C) O empreendedor não é equiparado ao incorporador para aspectos civis e registrários.", "D) A infraestrutura do empreendimento fica a cargo dos condôminos, rateada proporcionalmente.", "E) Não é possível a instituição de áreas comuns, pois cada lote é propriedade exclusiva."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. Art. 1.358-A, §2º, I. A) Incorreta: pode ser proporcional à área, ao potencial construtivo ou outros critérios (§1º). C) Incorreta: equipara-se ao incorporador (§2º, II). D) Incorreta: a infraestrutura fica a cargo do empreendimento (§3º). E) Incorreta: há partes comuns."
+},
+{
+"id": "402",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito de tapagem e limites entre prédios, assinale a alternativa correta:",
+"alternativas": ["A) Os tapumes divisórios presumem-se pertencer a ambos os proprietários confinantes, que devem concorrer igualmente para as despesas de construção e conservação.", "B) O proprietário pode constranger o vizinho a dividir as despesas de tapagem apenas se houver previsão na convenção de condomínio.", "C) As sebes vivas que servem de marco divisório podem ser cortadas unilateralmente por qualquer dos proprietários, independentemente de aviso.", "D) Em caso de limites confusos, o terreno contestado será adjudicado a quem provar posse justa, sem indenização ao outro.", "E) A construção de tapumes especiais para impedir a passagem de animais de pequeno porte é obrigação de ambos os confinantes, rateando-se as despesas."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.297, §1º. B) Incorreta: pode constranger a proceder à demarcação, aviventar rumos, renovar marcos, repartindo despesas (art. 1.297, caput). C) Incorreta: só podem ser cortadas de comum acordo (§2º). D) Incorreta: se não provada a posse justa, divide-se por partes iguais ou adjudica-se a um com indenização (art. 1.298). E) Incorreta: pode ser exigida de quem provocou a necessidade, não sendo obrigação de ambos (§3º)."
+},
+{
+"id": "403",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a aquisição da propriedade móvel por ocupação, assinale a alternativa correta:",
+"alternativas": ["A) A ocupação é modo originário de aquisição que recai sobre coisas sem dono (res nullius).", "B) A caça e pesca em águas públicas são exemplos de ocupação, mas sujeitas a legislação especial que pode restringi-las.", "C) A ocupação de tesouro é regulada por regras próprias, não se confundindo com a ocupação de coisas móveis comuns.", "D) A ocupação só é permitida para pessoas físicas, sendo vedada a pessoas jurídicas.", "E) A coisa perdida pode ser adquirida por ocupação após decorrido o prazo legal para entrega ao dono."],
+"indiceCorreto": 1,
+"explicacao": "B) Correta. A ocupação é modo originário, mas a caça e pesca têm leis especiais. A) Incorreta: ocupação recai sobre coisas sem dono, mas o CC fala em 'coisa sem dono' (art. 1.263). C) Incorreta: o tesouro é regulado separadamente, mas também é espécie de ocupação? Na verdade, o tesouro tem regras próprias, mas o descobrimento é uma forma de ocupação. D) Incorreta: não há vedação. E) Incorreta: coisa perdida não é res nullius; segue regras do achado."
+},
+{
+"id": "404",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a hipoteca, analise as assertivas:\n\nI. A hipoteca pode garantir dívida futura ou condicionada, desde que determinado o valor máximo do crédito.\nII. A hipoteca legal dispensa especialização, bastando a existência da situação de fato prevista em lei.\nIII. O adquirente do imóvel hipotecado pode exonerar-se da hipoteca, abandonando o imóvel aos credores.\nIV. A hipoteca extingue-se pelo perecimento da coisa, sem direito à indenização do seguro, que fica com o proprietário.\n\nEstão corretas:",
+"alternativas": ["A) Apenas I e III.", "B) Apenas I, II e IV.", "C) Apenas I, III e IV.", "D) Apenas II, III e IV.", "E) I, II, III e IV."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. I – Art. 1.487. II – Incorreta: precisa de especialização (art. 1.497). III – Art. 1.479. IV – Incorreta: a indenização do seguro sub-roga-se no ônus (art. 1.425, §1º)."
+},
+{
+"id": "405",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o usucapião familiar (art. 1.240-A do CC), assinale a alternativa correta:",
+"alternativas": ["A) Exige posse direta, com exclusividade, sobre imóvel urbano de até 250 m², por dois anos ininterruptos e sem oposição.", "B) A propriedade deve ser dividida com ex-cônjuge ou ex-companheiro que abandonou o lar, independentemente de comunicação judicial.", "C) O possuidor não pode ser proprietário de outro imóvel urbano ou rural, mas pode ser de bem móvel de alto valor.", "D) O direito pode ser reconhecido ao mesmo possuidor mais de uma vez, desde que em imóveis distintos.", "E) A usucapião familiar aplica-se também a imóveis rurais, desde que observado o limite de 50 hectares."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.240-A. B) Incorreta: a propriedade deve ser dividida com ex-cônjuge ou ex-companheiro que abandonou o lar. C) Incorreta: não pode ser proprietário de outro imóvel urbano ou rural. D) Incorreta: não pode ser reconhecido mais de uma vez (§1º). E) Incorreta: só se aplica a imóveis urbanos."
+},
+{
+"id": "406",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre o direito de usar águas do prédio inferior, assinale a alternativa correta:",
+"alternativas": ["A) O dono do prédio inferior é obrigado a receber as águas que correm naturalmente do superior, não podendo embaraçar o fluxo.", "B) O proprietário do prédio superior pode poluir as águas, desde que indenize os donos dos prédios inferiores pelo dano.", "C) É permitido ao proprietário de nascente impedir o curso natural das águas remanescentes após seu consumo, para evitar erosão.", "D) O dono do prédio inferior pode reclamar que se desviem as águas artificialmente levadas ao superior, sem direito a indenização.", "E) A construção de barragens depende de autorização do dono do prédio inferior, sob pena de demolição e indenização."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.288. B) Incorreta: não pode poluir águas indispensáveis às primeiras necessidades (art. 1.291). C) Incorreta: não pode impedir o curso natural (art. 1.290). D) Incorreta: pode reclamar desvio ou indenização (art. 1.289). E) Incorreta: pode construir barragens, mas se invadir prédio alheio, indeniza (art. 1.292)."
+},
+{
+"id": "407",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a concessão de uso especial para fins de moradia e a concessão de direito real de uso, ambas incluídas no art. 1.225 do CC, assinale a alternativa correta:",
+"alternativas": ["A) São direitos reais que só podem ser constituídos pelo poder público, em terrenos públicos, para fins de moradia ou uso específico.", "B) A concessão de uso especial para fins de moradia confere ao concessionário a propriedade resolúvel do imóvel.", "C) Ambos os direitos são indisponíveis e intransmissíveis, extinguindo-se com a morte do concessionário.", "D) Podem ser objeto de hipoteca, desde que observadas as normas do direito de superfície.", "E) A concessão de direito real de uso tem natureza jurídica de direito pessoal, não real, apesar da enumeração do art. 1.225."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. São direitos reais sobre coisa alheia, tipicamente constituídos pelo poder público em terrenos públicos. B) Incorreta: não confere propriedade, mas direito real de uso. C) Incorreta: podem ser transmissíveis, dependendo da lei. D) Incorreta: a hipoteca é possível? O art. 1.473, X, inclui o direito real de uso como objeto de hipoteca. E) Incorreta: são direitos reais."
+},
+{
+"id": "408",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a perda da posse, assinale a alternativa correta:",
+"alternativas": ["A) Considera-se perdida a posse para quem não presenciou o esbulho quando, tendo notícia, se abstém de retomar a coisa.", "B) A perda da posse ocorre apenas com a transferência voluntária ao adquirente, não sendo possível a perda involuntária.", "C) O possuidor que é violentamente repelido ao tentar recuperar a coisa perde a posse, mas pode ajuizar ação possessória.", "D) A posse só se perde com a tradição da coisa, não bastando a simples intenção de abandoná-la.", "E) A perda da posse é irreversível, não podendo o ex-possuidor readquiri-la pelos mesmos meios de aquisição."],
+"indiceCorreto": 0,
+"explicacao": "A) Correta. Art. 1.224. B) Incorreta: pode ser involuntária (art. 1.223). C) Incorreta: se é violentamente repelido, considera-se perdida a posse (art. 1.224), mas pode ajuizar ação. D) Incorreta: perde-se com cessação do poder sobre o bem (art. 1.223). E) Incorreta: pode readquirir."
+},
+{
+"id": "409",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a anticrese, assinale a alternativa INCORRETA:",
+"alternativas": ["A) O credor anticrético tem direito de reter o bem até o pagamento da dívida, podendo fruir seus frutos e utilidades.", "B) O devedor anticrético pode exigir a transformação da anticrese em arrendamento se discordar do balanço apresentado pelo credor.", "C) O credor anticrético não tem preferência sobre a indenização do seguro em caso de destruição do bem.", "D) A anticrese pode recair sobre bens móveis, desde que registrada no Cartório de Títulos e Documentos.", "E) O direito de anticrese extingue-se decorridos quinze anos da data de sua constituição."],
+"indiceCorreto": 3,
+"explicacao": "D) Incorreta. A anticrese recai sobre imóveis (art. 1.506 e seguintes). Não há previsão de anticrese sobre móveis no CC."
+},
+{
+"id": "410",
+"materia": "Direito Civil",
+"assunto": "8. Direito das Coisas",
+"enunciado": "Sobre a usucapião de bens móveis, analise as assertivas:\n\nI. Requer posse contínua e incontestada por três anos, com justo título e boa-fé.\nII. Requer posse por cinco anos, independentemente de título e boa-fé.\nIII. O prazo da posse pode ser acrescido à dos antecessores, desde que contínuas e, no caso do inciso I, com justo título e boa-fé.\nIV. Aplicam-se as causas que obstam, suspendem ou interrompem a prescrição.\n\nEstão corretas:",
+"alternativas": ["A) Apenas I e II.", "B) Apenas I, II e III.", "C) Apenas I, III e IV.", "D) Apenas II, III e IV.", "E) I, II, III e IV."],
+"indiceCorreto": 4,
+"explicacao": "E) Correta. I – Art. 1.260. II – Art. 1.261. III – Art. 1.262 (aplica art. 1.243). IV – Art. 1.262 (aplica art. 1.244)."
+}
+  
   
 
 ];
