@@ -1,31 +1,26 @@
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Button } from './Button';
 import { Questao, SessaoResposta } from '../types';
 import { obterDiagnostico } from '../geminiService';
-import { TOPICOS_POR_MATERIA } from '../constants';
 
 interface StudyAppProps {
   questoes: Questao[];
+  configMaterias: Record<string, string[]>;
+  cadernoIds: string[];
+  onToggleCaderno: (id: string) => void;
   onBack: () => void;
 }
 
 type StudyViewState = 'SELECIONAR_MATERIA' | 'SELECIONAR_ASSUNTO' | 'QUESTOES' | 'DIAGNOSTICO';
 
-interface ProgressoQuestao {
-  alternativaPreSelecionada: number | null;
-  alternativasDescartadas: number[];
-  foiRespondida: boolean;
-  estaCorreta: boolean | null;
-}
-
-export const StudyApp: React.FC<StudyAppProps> = ({ questoes, onBack }) => {
+export const StudyApp: React.FC<StudyAppProps> = ({ questoes, configMaterias, cadernoIds, onToggleCaderno, onBack }) => {
   const [viewState, setViewState] = useState<StudyViewState>('SELECIONAR_MATERIA');
   const [materiaSelecionada, setMateriaSelecionada] = useState<string | null>(null);
   const [assuntoSelecionado, setAssuntoSelecionado] = useState<string | null>(null);
   
   const [paginaAtual, setPaginaAtual] = useState(0);
-  const [progresso, setProgresso] = useState<Record<string, ProgressoQuestao>>({});
+  const [progresso, setProgresso] = useState<Record<string, any>>({});
   const [sessoes, setSessoes] = useState<SessaoResposta[]>([]);
   const [diagnostico, setDiagnostico] = useState<any>(null);
   const [carregandoDiagnostico, setCarregandoDiagnostico] = useState(false);
@@ -33,45 +28,26 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, onBack }) => {
   const QUESTOES_POR_PAGINA = 10;
 
   const materias = useMemo(() => {
-    return Object.keys(TOPICOS_POR_MATERIA).map(nome => {
-      const total = questoes.filter((q: Questao) => (q.materia || '').trim() === nome.trim()).length;
+    return Object.keys(configMaterias).map(nome => {
+      const total = questoes.filter(q => q.materia === nome).length;
       return { nome, total };
     });
-  }, [questoes]);
+  }, [questoes, configMaterias]);
 
   const assuntos = useMemo(() => {
-    const currentMateria = materiaSelecionada;
-    if (!currentMateria) return [];
-    
-    const topicosEdital = TOPICOS_POR_MATERIA[currentMateria] || [];
-    
-    const assuntosNasQuestoes: string[] = Array.from(new Set(
-      questoes
-        .filter((q: Questao) => (q.materia || '').trim() === currentMateria.trim())
-        .map((q: Questao) => (q.assunto || '').trim())
-    )).filter((a): a is string => typeof a === 'string' && a !== '');
-
-    const todosAssuntos: string[] = Array.from(new Set([...topicosEdital, ...assuntosNasQuestoes]));
-    
-    return todosAssuntos.map(nomeAssunto => {
-      const total = questoes.filter((q: Questao) => 
-        (q.materia || '').trim() === currentMateria.trim() && 
-        (q.assunto || '').trim() === nomeAssunto.trim()
-      ).length;
-      return { nome: nomeAssunto, total };
-    }).sort((a: {nome: string, total: number}, b: {nome: string, total: number}) => {
-      return a.nome.localeCompare(b.nome, undefined, { numeric: true, sensitivity: 'base' });
-    });
-  }, [questoes, materiaSelecionada]);
+    if (!materiaSelecionada) return [];
+    const topicosEdital = configMaterias[materiaSelecionada] || [];
+    return topicosEdital.map(nome => ({
+      nome,
+      total: questoes.filter(q => q.materia === materiaSelecionada && q.assunto === nome).length
+    }));
+  }, [questoes, materiaSelecionada, configMaterias]);
 
   const questoesFiltradas = useMemo(() => {
-    const currentMateria = materiaSelecionada;
-    if (!currentMateria) return [];
-    const currentAssunto = assuntoSelecionado;
-
-    return questoes.filter((q: Questao) => {
-      const bMateria = (q.materia || '').trim() === currentMateria.trim();
-      const bAssunto = !currentAssunto || currentAssunto === 'Ver Tudo' || (q.assunto || '').trim() === currentAssunto.trim();
+    if (!materiaSelecionada) return [];
+    return questoes.filter(q => {
+      const bMateria = q.materia === materiaSelecionada;
+      const bAssunto = !assuntoSelecionado || q.assunto === assuntoSelecionado;
       return bMateria && bAssunto;
     });
   }, [questoes, materiaSelecionada, assuntoSelecionado]);
@@ -81,82 +57,14 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, onBack }) => {
     return questoesFiltradas.slice(inicio, inicio + QUESTOES_POR_PAGINA);
   }, [questoesFiltradas, paginaAtual]);
 
-  const totalPaginas = Math.ceil(questoesFiltradas.length / QUESTOES_POR_PAGINA);
-
-  useEffect(() => {
-    const novoProgresso = { ...progresso };
-    let mudou = false;
-    questoesFiltradas.forEach(q => {
-      if (!novoProgresso[q.id]) {
-        novoProgresso[q.id] = {
-          alternativaPreSelecionada: null,
-          alternativasDescartadas: [],
-          foiRespondida: false,
-          estaCorreta: null
-        };
-        mudou = true;
-      }
-    });
-    if (mudou) setProgresso(novoProgresso);
-  }, [questoesFiltradas]);
-
-  const alternarDescarte = (idQuestao: string, indiceAlternativa: number) => {
-    const atual = progresso[idQuestao];
-    if (!atual || atual.foiRespondida) return;
-
-    const estaDescartada = atual.alternativasDescartadas.includes(indiceAlternativa);
-    const novasDescartadas = estaDescartada 
-      ? atual.alternativasDescartadas.filter(i => i !== indiceAlternativa)
-      : [...atual.alternativasDescartadas, indiceAlternativa];
-
-    setProgresso({
-      ...progresso,
-      [idQuestao]: {
-        ...atual,
-        alternativasDescartadas: novasDescartadas,
-        alternativaPreSelecionada: atual.alternativaPreSelecionada === indiceAlternativa ? null : atual.alternativaPreSelecionada
-      }
-    });
-  };
-
-  const selecionarAlternativa = (idQuestao: string, indiceAlternativa: number) => {
-    const atual = progresso[idQuestao];
-    if (!atual || atual.foiRespondida || atual.alternativasDescartadas.includes(indiceAlternativa)) return;
-
-    setProgresso({
-      ...progresso,
-      [idQuestao]: { ...atual, alternativaPreSelecionada: indiceAlternativa }
-    });
-  };
-
   const confirmarResposta = (idQuestao: string) => {
     const atual = progresso[idQuestao];
     const questao = questoes.find(q => q.id === idQuestao);
     if (!questao || !atual || atual.alternativaPreSelecionada === null || atual.foiRespondida) return;
 
     const estaCorreta = atual.alternativaPreSelecionada === questao.indiceCorreto;
-    
-    setProgresso({
-      ...progresso,
-      [idQuestao]: { ...atual, foiRespondida: true, estaCorreta }
-    });
-
-    const novaSessao: SessaoResposta = {
-      idQuestao,
-      alternativaSelecionada: atual.alternativaPreSelecionada,
-      estaCorreta,
-      timestamp: Date.now(),
-    };
-    
-    setSessoes(prev => [...prev, novaSessao]);
-  };
-
-  const finalizarSessao = async () => {
-    setViewState('DIAGNOSTICO');
-    setCarregandoDiagnostico(true);
-    const feedback = await obterDiagnostico(sessoes, questoesFiltradas);
-    setDiagnostico(feedback);
-    setCarregandoDiagnostico(false);
+    setProgresso({ ...progresso, [idQuestao]: { ...atual, foiRespondida: true, estaCorreta } });
+    setSessoes(prev => [...prev, { idQuestao, alternativaSelecionada: atual.alternativaPreSelecionada, estaCorreta, timestamp: Date.now() }]);
   };
 
   if (viewState === 'SELECIONAR_MATERIA') {
@@ -165,29 +73,18 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, onBack }) => {
         <div className="max-w-4xl mx-auto">
           <header className="mb-12 text-center md:text-left">
             <h1 className="text-4xl font-serif font-bold text-[#4b3621]">Diagnóstico de Performance</h1>
-            <p className="text-gray-500 mt-2">Escolha uma disciplina para avaliar seu conhecimento técnico.</p>
+            <p className="text-gray-500 mt-2">Selecione a disciplina para análise técnica.</p>
           </header>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {materias.map(materia => (
-              <button
-                key={materia.nome}
-                onClick={() => { setMateriaSelecionada(materia.nome); setViewState('SELECIONAR_ASSUNTO'); }}
-                className="bg-white p-6 md:p-8 rounded-sm shadow-sm border-2 border-transparent hover:border-[#B58863] transition-all text-left group"
-              >
-                <div className="text-[10px] font-bold text-[#B58863] uppercase mb-2 tracking-widest">Matéria</div>
-                <h3 className="text-lg md:text-xl font-serif font-bold text-gray-800 mb-4 h-14 overflow-hidden leading-tight">{materia.nome}</h3>
-                <div className="flex justify-between items-center text-[10px] md:text-xs text-gray-400 font-bold uppercase tracking-wider">
-                  <span>{materia.total} Questões</span>
-                  <span className={`transition-colors ${materia.total > 0 ? 'group-hover:text-[#B58863]' : 'opacity-20'}`}>
-                    {materia.total > 0 ? 'Selecionar →' : 'Vazio'}
-                  </span>
-                </div>
+            {materias.map(m => (
+              <button key={m.nome} onClick={() => { setMateriaSelecionada(m.nome); setViewState('SELECIONAR_ASSUNTO'); }} className="bg-white p-6 border-2 border-transparent hover:border-[#B58863] text-left group transition-all shadow-sm">
+                <div className="text-[10px] font-bold text-[#B58863] uppercase mb-2">Disciplina</div>
+                <h3 className="font-serif font-bold text-gray-800 h-12 overflow-hidden">{m.nome}</h3>
+                <div className="mt-4 text-xs text-gray-400 font-bold uppercase">{m.total} Questões</div>
               </button>
             ))}
           </div>
-          <div className="mt-12 flex justify-center">
-            <Button variant="outline" onClick={onBack}>Voltar ao Início</Button>
-          </div>
+          <div className="mt-12 flex justify-center"><Button variant="outline" onClick={onBack}>Voltar</Button></div>
         </div>
       </div>
     );
@@ -197,34 +94,14 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, onBack }) => {
     return (
       <div className="min-h-screen bg-[#F7F7F7] p-6 md:p-12">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-8 flex justify-between items-end">
-            <div>
-              <button onClick={() => setViewState('SELECIONAR_MATERIA')} className="text-[10px] font-bold text-[#B58863] uppercase tracking-widest mb-2 flex items-center gap-1 hover:underline">
-                ← Voltar para Matérias
-              </button>
-              <h1 className="text-3xl md:text-4xl font-serif font-bold text-[#4b3621]">{materiaSelecionada}</h1>
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <button 
-              disabled={questoesFiltradas.length === 0}
-              onClick={() => { setAssuntoSelecionado(null); setViewState('QUESTOES'); }} 
-              className={`p-6 rounded-sm text-left font-bold uppercase text-sm tracking-widest flex justify-between items-center shadow-lg transition-colors ${questoesFiltradas.length > 0 ? 'bg-[#B58863] text-white hover:bg-[#a07654]' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
-            >
-              <span>Resolver Todas as Questões ({questoesFiltradas.length})</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-            </button>
-            
-            <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-6 mb-2">Tópicos e Assuntos</div>
-            {assuntos.map(assunto => (
-              <button 
-                key={assunto.nome} 
-                disabled={assunto.total === 0}
-                onClick={() => { setAssuntoSelecionado(assunto.nome); setViewState('QUESTOES'); }} 
-                className={`bg-white p-5 md:p-6 border rounded-sm text-left transition-all flex justify-between items-center group ${assunto.total > 0 ? 'hover:border-[#B58863]' : 'opacity-50 grayscale cursor-not-allowed'}`}
-              >
-                <span className="font-serif font-bold text-base md:text-lg text-gray-700">{assunto.nome}</span>
-                <span className="text-[10px] md:text-xs font-bold text-gray-300 group-hover:text-[#B58863] whitespace-nowrap ml-4">{assunto.total} questões</span>
+          <button onClick={() => setViewState('SELECIONAR_MATERIA')} className="text-[10px] font-bold text-[#B58863] uppercase mb-4">← Voltar</button>
+          <h1 className="text-3xl font-serif font-bold text-[#4b3621] mb-8">{materiaSelecionada}</h1>
+          <div className="grid gap-3">
+            <button onClick={() => { setAssuntoSelecionado(null); setViewState('QUESTOES'); }} className="p-6 bg-[#B58863] text-white font-bold uppercase text-xs tracking-widest text-left">Resolver Geral ({questoesFiltradas.length})</button>
+            {assuntos.map(a => (
+              <button key={a.nome} onClick={() => { setAssuntoSelecionado(a.nome); setViewState('QUESTOES'); }} className="p-4 bg-white border hover:border-[#B58863] text-left flex justify-between items-center group">
+                <span className="font-serif text-gray-700">{a.nome}</span>
+                <span className="text-xs text-gray-300 group-hover:text-[#B58863]">{a.total} q</span>
               </button>
             ))}
           </div>
@@ -236,160 +113,99 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, onBack }) => {
   if (viewState === 'QUESTOES') {
     return (
       <div className="min-h-screen bg-[#F7F7F7] pb-24">
-        <div className="sticky top-0 z-40 bg-white border-b border-gray-200 py-4 px-6 md:px-12 flex justify-between items-center shadow-sm">
-          <div className="flex items-center gap-4">
-            <h2 className="font-serif font-bold text-[#4b3621] truncate max-w-[150px] md:max-w-none">{materiaSelecionada}</h2>
-            <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
-            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest truncate max-w-[100px] md:max-w-none">{assuntoSelecionado || 'Geral'}</span>
-          </div>
-          <div className="flex items-center gap-4 md:gap-6">
-            <div className="text-[10px] font-bold uppercase text-gray-400 hidden sm:block">
-               <span className="text-[#B58863]">{sessoes.length}</span> / {questoesFiltradas.length}
-            </div>
-            <Button size="sm" onClick={finalizarSessao} disabled={sessoes.length === 0}>Finalizar</Button>
+        <div className="sticky top-0 bg-white border-b py-4 px-6 md:px-12 flex justify-between items-center z-50">
+          <div className="font-serif font-bold text-[#4b3621]">{materiaSelecionada} {assuntoSelecionado && `> ${assuntoSelecionado}`}</div>
+          <div className="flex gap-4">
+            <Button size="sm" variant="outline" onClick={() => setViewState('SELECIONAR_ASSUNTO')}>Trocar Tópico</Button>
+            <Button size="sm" onClick={async () => { setViewState('DIAGNOSTICO'); setCarregandoDiagnostico(true); const d = await obterDiagnostico(sessoes, questoesFiltradas); setDiagnostico(d); setCarregandoDiagnostico(false); }}>Finalizar Sessão</Button>
           </div>
         </div>
-
-        <div className="max-w-4xl mx-auto mt-8 md:mt-12 px-4 md:px-6 space-y-8 md:y-12">
+        <div className="max-w-4xl mx-auto mt-12 px-6 space-y-8">
           {questoesPaginadas.map((q, idx) => {
-            const estado = progresso[q.id] || { alternativaPreSelecionada: null, alternativasDescartadas: [], foiRespondida: false, estaCorreta: null };
+            const estado = progresso[q.id] || { alternativaPreSelecionada: null, foiRespondida: false };
+            const noCaderno = cadernoIds.includes(q.id);
+
             return (
-              <div key={q.id} className="bg-white border rounded-sm shadow-sm overflow-hidden">
-                <div className="p-6 md:p-8">
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="bg-gray-100 text-[9px] md:text-[10px] font-bold text-gray-400 px-2 py-1 rounded-sm uppercase tracking-widest">Questão {paginaAtual * QUESTOES_POR_PAGINA + idx + 1}</span>
-                    {estado.foiRespondida && (
-                      <span className={`text-[9px] md:text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm ${estado.estaCorreta ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
-                        {estado.estaCorreta ? '✓ Correta' : '✗ Incorreta'}
-                      </span>
-                    )}
+              <div key={q.id} className="bg-white p-8 border rounded-sm shadow-sm relative overflow-hidden">
+                {estado.foiRespondida && (
+                  <div className={`absolute top-0 right-0 px-4 py-1 text-[10px] font-bold uppercase ${estado.estaCorreta ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
+                    {estado.estaCorreta ? 'Acerto' : 'Erro'}
                   </div>
-                  <p className="text-base md:text-lg font-serif font-medium leading-relaxed text-gray-800 mb-8 whitespace-pre-wrap">{q.enunciado}</p>
-
-                  <div className="space-y-3">
-                    {q.alternativas.map((textoAlternativa, oIdx) => {
-                      const estaDescartada = estado.alternativasDescartadas.includes(oIdx);
-                      const estaPreSelecionada = estado.alternativaPreSelecionada === oIdx;
-                      
-                      let btnStyles = "flex-1 text-left p-4 rounded-sm border-2 transition-all flex items-start gap-3 md:gap-4 text-sm ";
-                      
-                      if (estado.foiRespondida) {
-                        if (oIdx === q.indiceCorreto) btnStyles += "border-green-500 bg-green-50 text-green-900";
-                        else if (oIdx === estado.alternativaPreSelecionada) btnStyles += "border-red-400 bg-red-50 text-red-900";
-                        else btnStyles += "border-transparent bg-white opacity-40";
-                      } else if (estaDescartada) {
-                        btnStyles += "border-transparent bg-gray-100 opacity-40 grayscale pointer-events-none";
-                      } else if (estaPreSelecionada) {
-                        btnStyles += "border-[#B58863] bg-white shadow-md ring-1 ring-[#B58863]";
-                      } else {
-                        btnStyles += "border-gray-100 bg-white hover:border-gray-200 shadow-sm";
-                      }
-
-                      return (
-                        <div key={oIdx} className="flex gap-2 items-center group/opt">
-                          {!estado.foiRespondida && (
-                            <button 
-                              onClick={() => alternarDescarte(q.id, oIdx)}
-                              className={`p-2 transition-colors rounded-sm hover:bg-gray-200 ${estaDescartada ? 'text-red-500' : 'text-gray-300'}`}
-                            >
-                              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
-                              </svg>
-                            </button>
-                          )}
-                          <button 
-                            disabled={estado.foiRespondida || estaDescartada}
-                            onClick={() => selecionarAlternativa(q.id, oIdx)}
-                            className={btnStyles}
-                          >
-                            <span className={`font-bold ${estaPreSelecionada ? 'text-[#B58863]' : 'text-gray-300'}`}>{String.fromCharCode(65 + oIdx)})</span>
-                            <span className={estaDescartada ? "line-through" : ""}>{textoAlternativa}</span>
-                          </button>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  <div className="mt-8 flex justify-center">
-                    {!estado.foiRespondida && estado.alternativaPreSelecionada !== null && (
-                      <Button onClick={() => confirmarResposta(q.id)} variant="primary" className="px-12">
-                        RESPONDER
-                      </Button>
-                    )}
-                  </div>
+                )}
+                
+                <div className="flex justify-between items-start mb-6">
+                  <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{q.assunto}</div>
+                  <button 
+                    onClick={() => onToggleCaderno(q.id)}
+                    className={`transition-colors ${noCaderno ? 'text-[#B58863]' : 'text-gray-200 hover:text-gray-400'}`}
+                    title={noCaderno ? "Remover do Caderno" : "Adicionar ao Caderno de Erros"}
+                  >
+                    <svg className="w-6 h-6" fill={noCaderno ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" /></svg>
+                  </button>
                 </div>
 
+                <p className="text-lg font-serif mb-8 text-gray-800 leading-relaxed">{q.enunciado}</p>
+                
+                <div className="space-y-3">
+                  {q.alternativas.map((alt, i) => (
+                    <button 
+                      key={i} 
+                      onClick={() => setProgresso({...progresso, [q.id]: {...estado, alternativaPreSelecionada: i}})}
+                      className={`w-full text-left p-4 border rounded-sm transition-all text-sm flex gap-4 ${
+                        estado.foiRespondida 
+                          ? (i === q.indiceCorreto ? 'border-green-500 bg-green-50' : (estado.alternativaPreSelecionada === i ? 'border-red-300 bg-red-50' : 'border-gray-100 text-gray-400'))
+                          : (estado.alternativaPreSelecionada === i ? 'border-[#B58863] bg-white ring-1 ring-[#B58863]' : 'border-gray-100 bg-gray-50 hover:border-gray-300')
+                      }`}
+                      disabled={estado.foiRespondida}
+                    >
+                      <span className="font-bold">{String.fromCharCode(65+i)})</span>
+                      <span>{alt}</span>
+                    </button>
+                  ))}
+                </div>
+
+                {!estado.foiRespondida && estado.alternativaPreSelecionada !== null && (
+                  <Button onClick={() => confirmarResposta(q.id)} className="mt-8 w-full">Confirmar Resposta</Button>
+                )}
+
                 {estado.foiRespondida && (
-                  <div className="bg-[#B58863]/5 border-t p-6 md:p-8">
-                    <div className="max-w-3xl mx-auto">
-                      <span className="text-[10px] font-bold text-[#B58863] uppercase tracking-widest mb-2 block">Fundamentação Jurídica</span>
-                      <p className="text-sm text-gray-700 italic leading-relaxed font-serif whitespace-pre-wrap">"{q.explicacao}"</p>
-                    </div>
+                  <div className="mt-8 p-6 bg-amber-50 border-l-4 border-[#B58863] animate-in slide-in-from-top duration-300">
+                    <h4 className="text-[10px] font-bold uppercase text-[#B58863] mb-2">Fundamentação Técnica</h4>
+                    <p className="text-sm text-gray-700 italic leading-relaxed">{q.explicacao}</p>
                   </div>
                 )}
               </div>
             );
           })}
-
-          {totalPaginas > 1 && (
-            <div className="flex justify-center items-center gap-4 py-12">
-              <Button variant="outline" size="sm" disabled={paginaAtual === 0} onClick={() => setPaginaAtual(p => p - 1)}>Anterior</Button>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Página {paginaAtual + 1} de {totalPaginas}</span>
-              <Button variant="outline" size="sm" disabled={paginaAtual === totalPaginas - 1} onClick={() => setPaginaAtual(p => p + 1)}>Próxima</Button>
-            </div>
-          )}
         </div>
       </div>
     );
   }
 
-  if (viewState === 'DIAGNOSTICO') {
-    const corretas = sessoes.filter(s => s.estaCorreta).length;
-    const porcentagem = sessoes.length > 0 ? Math.round((corretas / sessoes.length) * 100) : 0;
-    
-    return (
-      <div className="min-h-screen bg-[#F7F7F7] p-6 md:p-12">
-        <div className="max-w-4xl mx-auto">
-          <header className="text-center mb-16">
-            <h1 className="text-4xl font-serif font-bold text-[#4b3621] mb-4">Análise Final do Diagnóstico</h1>
-            <p className="text-gray-500 uppercase tracking-widest text-xs font-bold">Baseado em {sessoes.length} questões resolvidas</p>
-          </header>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white p-12 rounded-sm shadow-sm flex flex-col items-center justify-center border-b-4 border-[#B58863]">
-              <div className="text-7xl font-bold text-[#4b3621] mb-2">{porcentagem}%</div>
-              <div className="text-xs font-bold uppercase tracking-widest text-gray-400">Aproveitamento Médio</div>
-            </div>
-            <div className="bg-white p-12 rounded-sm shadow-sm space-y-6">
-              <h3 className="font-bold text-[#B58863] uppercase text-xs tracking-[0.2em] border-b pb-2">Direcionamento de Estudo</h3>
-              {carregandoDiagnostico ? (
-                <div className="space-y-4 animate-pulse">
-                  <div className="h-4 bg-gray-100 w-full"></div>
-                  <div className="h-4 bg-gray-100 w-3/4"></div>
-                  <div className="h-4 bg-gray-100 w-5/6"></div>
-                </div>
-              ) : (
-                <div className="space-y-4">
-                  <p className="text-sm text-gray-700 leading-relaxed italic">"{diagnostico?.direcaoEstudo || 'Seu desempenho sugere que você deve continuar focando na consolidação da base doutrinária.'}"</p>
-                  {diagnostico?.proximaMateria && (
-                    <div className="bg-gray-50 p-4 rounded-sm">
-                      <span className="text-[10px] font-bold text-gray-400 uppercase">Próximo Foco Sugerido:</span>
-                      <p className="font-bold text-gray-800">{diagnostico.proximaMateria}</p>
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-[#F7F7F7] p-12">
+      <div className="max-w-md w-full text-center space-y-6">
+        {carregandoDiagnostico ? (
+          <div className="space-y-4">
+             <div className="w-12 h-12 border-4 border-[#B58863] border-t-transparent rounded-full animate-spin mx-auto"></div>
+             <p className="font-serif italic text-gray-500">O Gemini está processando sua performance...</p>
           </div>
-
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-            <Button size="lg" onClick={() => window.location.reload()}>Nova Sessão</Button>
-            <Button variant="outline" size="lg" onClick={onBack}>Voltar ao Menu</Button>
+        ) : (
+          <div className="bg-white p-8 border rounded-sm shadow-xl">
+             <h2 className="text-2xl font-serif font-bold text-[#4b3621] mb-6">Diagnóstico Pronto</h2>
+             <div className="text-left space-y-4 mb-8">
+                <div>
+                  <span className="text-[10px] font-bold text-gray-400 uppercase">Pontos de Atenção</span>
+                  <ul className="text-sm text-gray-600 list-disc ml-4 mt-1">
+                    {diagnostico?.pontosFracos.map((p: string) => <li key={p}>{p}</li>)}
+                  </ul>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed bg-gray-50 p-4 rounded-sm border italic">{diagnostico?.direcaoEstudo}</p>
+             </div>
+             <Button onClick={onBack} className="w-full">Concluir Sessão</Button>
           </div>
-        </div>
+        )}
       </div>
-    );
-  }
-
-  return null;
+    </div>
+  );
 };

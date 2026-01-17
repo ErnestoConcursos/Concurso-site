@@ -3,7 +3,8 @@ export enum AppView {
   LANDING = 'landing',
   ESTUDO = 'estudo',
   DASHBOARD = 'dashboard',
-  ADMIN = 'admin'
+  ADMIN = 'admin',
+  CADERNO = 'caderno'
 }
 
 export interface Questao {
