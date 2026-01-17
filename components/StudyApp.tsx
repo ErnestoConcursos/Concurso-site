@@ -10,11 +10,19 @@ interface StudyAppProps {
   cadernoIds: string[];
   onToggleCaderno: (id: string) => void;
   onBack: () => void;
+  onOpenCaderno?: () => void;
 }
 
 type StudyViewState = 'SELECIONAR_MATERIA' | 'SELECIONAR_ASSUNTO' | 'QUESTOES' | 'DIAGNOSTICO';
 
-export const StudyApp: React.FC<StudyAppProps> = ({ questoes, configMaterias, cadernoIds, onToggleCaderno, onBack }) => {
+export const StudyApp: React.FC<StudyAppProps> = ({ 
+  questoes, 
+  configMaterias, 
+  cadernoIds, 
+  onToggleCaderno, 
+  onBack,
+  onOpenCaderno 
+}) => {
   const [viewState, setViewState] = useState<StudyViewState>('SELECIONAR_MATERIA');
   const [materiaSelecionada, setMateriaSelecionada] = useState<string | null>(null);
   const [assuntoSelecionado, setAssuntoSelecionado] = useState<string | null>(null);
@@ -71,9 +79,19 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, configMaterias, ca
     return (
       <div className="min-h-screen bg-[#F7F7F7] p-6 md:p-12">
         <div className="max-w-4xl mx-auto">
-          <header className="mb-12 text-center md:text-left">
-            <h1 className="text-4xl font-serif font-bold text-[#4b3621]">Diagnóstico de Performance</h1>
-            <p className="text-gray-500 mt-2">Selecione a disciplina para análise técnica.</p>
+          <header className="mb-12 flex flex-col md:flex-row justify-between items-end gap-4">
+            <div>
+              <h1 className="text-4xl font-serif font-bold text-[#4b3621]">Onde você deseja focar?</h1>
+              <p className="text-gray-500 mt-2">Escolha uma disciplina para iniciar seu mapeamento.</p>
+            </div>
+            {onOpenCaderno && cadernoIds.length > 0 && (
+              <button 
+                onClick={onOpenCaderno}
+                className="text-[10px] font-bold text-[#B58863] uppercase tracking-widest border-b border-[#B58863]/30 pb-1 hover:border-[#B58863] transition-all"
+              >
+                Ver Caderno de Erros ({cadernoIds.length})
+              </button>
+            )}
           </header>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {materias.map(m => (
@@ -84,7 +102,7 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, configMaterias, ca
               </button>
             ))}
           </div>
-          <div className="mt-12 flex justify-center"><Button variant="outline" onClick={onBack}>Voltar</Button></div>
+          <div className="mt-12 flex justify-center"><Button variant="outline" onClick={onBack}>Voltar ao Início</Button></div>
         </div>
       </div>
     );
@@ -114,8 +132,8 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, configMaterias, ca
     return (
       <div className="min-h-screen bg-[#F7F7F7] pb-24">
         <div className="sticky top-0 bg-white border-b py-4 px-6 md:px-12 flex justify-between items-center z-50">
-          <div className="font-serif font-bold text-[#4b3621]">{materiaSelecionada} {assuntoSelecionado && `> ${assuntoSelecionado}`}</div>
-          <div className="flex gap-4">
+          <div className="font-serif font-bold text-[#4b3621] truncate max-w-[200px] md:max-w-md">{materiaSelecionada} {assuntoSelecionado && `> ${assuntoSelecionado}`}</div>
+          <div className="flex gap-2 md:gap-4">
             <Button size="sm" variant="outline" onClick={() => setViewState('SELECIONAR_ASSUNTO')}>Trocar Tópico</Button>
             <Button size="sm" onClick={async () => { setViewState('DIAGNOSTICO'); setCarregandoDiagnostico(true); const d = await obterDiagnostico(sessoes, questoesFiltradas); setDiagnostico(d); setCarregandoDiagnostico(false); }}>Finalizar Sessão</Button>
           </div>
@@ -202,7 +220,7 @@ export const StudyApp: React.FC<StudyAppProps> = ({ questoes, configMaterias, ca
                 </div>
                 <p className="text-sm text-gray-700 leading-relaxed bg-gray-50 p-4 rounded-sm border italic">{diagnostico?.direcaoEstudo}</p>
              </div>
-             <Button onClick={onBack} className="w-full">Concluir Sessão</Button>
+             <Button onClick={() => setViewState('SELECIONAR_MATERIA')} className="w-full">Voltar às Matérias</Button>
           </div>
         )}
       </div>

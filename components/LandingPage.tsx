@@ -1,72 +1,87 @@
 
 import React from 'react';
-import { Button } from './Button';
 
 interface LandingPageProps {
   onStart: () => void;
-  onManage: () => void;
   onOpenCaderno: () => void;
-  totalNoCaderno: number;
+  onAdmin: () => void;
+  totalCaderno: number;
 }
 
-export const LandingPage: React.FC<LandingPageProps> = ({ onStart, onManage, onOpenCaderno, totalNoCaderno }) => {
+export const LandingPage: React.FC<LandingPageProps> = ({ onStart, onOpenCaderno, onAdmin, totalCaderno }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#F7F7F7]">
-      {/* Cabeçalho */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 py-4 px-6 md:px-12 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#B58863] rounded-sm flex items-center justify-center">
-             <span className="text-white font-serif font-bold text-xs">B</span>
+    <div className="flex flex-col min-h-screen bg-white selection:bg-[#B58863] selection:text-white">
+      {/* Header Funcional */}
+      <nav className="w-full py-6 px-6 md:px-12 flex justify-between items-center bg-white border-b border-gray-50 sticky top-0 z-50">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 bg-[#B58863] flex items-center justify-center shadow-md">
+             <span className="text-white font-serif font-bold text-lg">B</span>
           </div>
-          <span className="font-serif text-xl font-bold tracking-tight text-[#4b3621]">BUDEGA DOS CONCURSOS</span>
+          <span className="font-serif text-xl font-bold text-[#4b3621] tracking-tight uppercase">
+            Budega dos Concursos
+          </span>
         </div>
-        <div className="flex gap-4 items-center">
-          <button onClick={onOpenCaderno} className="relative p-2 text-gray-400 hover:text-[#B58863] transition-colors">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" /></svg>
-            {totalNoCaderno > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#B58863] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">{totalNoCaderno}</span>
-            )}
+        <div className="flex items-center gap-8">
+          <button 
+            type="button"
+            onClick={(e) => { e.preventDefault(); onAdmin(); }} 
+            className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] hover:text-[#B58863] transition-colors cursor-pointer p-2"
+          >
+            Administração
           </button>
-          <button onClick={onManage} className="text-[10px] font-bold text-gray-400 uppercase tracking-widest hover:text-[#B58863] transition-colors">Administração</button>
-          <Button variant="primary" size="sm" onClick={onStart}>Iniciar Estudo</Button>
+          <button 
+            type="button"
+            onClick={(e) => { e.preventDefault(); onStart(); }}
+            className="bg-[#B58863] text-white px-6 py-2 text-sm font-bold rounded-sm hover:bg-[#a07654] transition-colors shadow-sm cursor-pointer"
+          >
+            Iniciar Estudo
+          </button>
         </div>
       </nav>
 
-      {/* Seção Hero */}
-      <section className="px-6 md:px-12 py-20 md:py-32 flex flex-col items-center text-center max-w-5xl mx-auto">
-        <div className="space-y-6 mb-12">
-          <h1 className="text-4xl md:text-7xl font-serif font-bold text-gray-900 leading-tight">
-            Estude exatamente onde você erra
-          </h1>
-          <div className="h-px w-24 bg-[#B58863] mx-auto opacity-30"></div>
-          <h2 className="text-2xl md:text-4xl font-serif font-medium text-[#B58863] italic">
-            Transforme cada erro em direção
-          </h2>
-        </div>
+      {/* Hero Content */}
+      <main className="flex-1 flex flex-col items-center justify-center px-6 text-center -mt-10">
+        <div className="max-w-5xl space-y-10">
+          <div>
+            <span className="text-[10px] font-bold tracking-[0.6em] text-[#B58863] uppercase">O Método de Elite</span>
+          </div>
 
-        <p className="text-lg text-gray-500 mb-10 max-w-2xl leading-relaxed">
-          O diagnóstico definitivo para Magistratura e Ministério Público. 
-          A Budega dos Concursos mapeia suas falhas técnicas e entrega o caminho cirúrgico para a sua aprovação.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Button size="lg" onClick={onStart} className="shadow-xl shadow-[#B58863]/20">Começar Diagnóstico Agora</Button>
-          <Button variant="outline" size="lg" onClick={onOpenCaderno}>
-            Caderno de Erros {totalNoCaderno > 0 && `(${totalNoCaderno})`}
-          </Button>
-        </div>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-[#1a1a1a] leading-[1.1] flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+              <span className="text-[#E5D3C0] text-4xl md:text-6xl select-none">01.</span>
+              <span>Estude exatamente onde você erra</span>
+            </h1>
+            
+            <h2 className="text-3xl md:text-5xl font-serif italic text-[#4b4b4b] flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 opacity-90">
+              <span className="text-[#E5D3C0] not-italic text-3xl md:text-4xl select-none">02.</span>
+              <span>Transforme cada erro em direção</span>
+            </h2>
+          </div>
 
-        <div className="mt-20 w-full aspect-[21/9] rounded-sm overflow-hidden shadow-2xl border-8 border-white bg-gray-200">
-           <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1973&auto=format&fit=crop" alt="Ambiente Jurídico" className="w-full h-full object-cover opacity-90" />
-        </div>
-      </section>
+          <p className="text-gray-500 text-lg md:text-xl max-w-3xl mx-auto font-normal leading-relaxed">
+            O diagnóstico definitivo para Carreiras Jurídicas. <br className="hidden md:block" /> Pare de andar em círculos e ataque os pontos cegos do seu edital.
+          </p>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-100 py-16 px-6 md:px-12 mt-auto">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="font-serif text-lg font-bold text-[#4b3621] mb-2">BUDEGA DOS CONCURSOS</div>
-          <p className="text-[10px] text-gray-400 uppercase tracking-widest">&copy; 2025 - Inteligência Jurídica para Alta Performance</p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-6">
+            <button 
+              type="button"
+              onClick={onStart}
+              className="px-10 py-5 bg-[#B58863] text-white font-bold text-sm uppercase tracking-wider rounded-sm shadow-xl shadow-[#B58863]/20 hover:bg-[#a07654] transition-all transform hover:-translate-y-1 cursor-pointer"
+            >
+              Testar Ferramenta Gratuitamente
+            </button>
+            <button 
+              type="button"
+              className="px-10 py-5 border-2 border-[#B58863] text-[#B58863] font-bold text-sm uppercase tracking-wider rounded-sm hover:bg-[#B58863] hover:text-white transition-all transform hover:-translate-y-1 cursor-pointer"
+            >
+              Entenda o Conceito
+            </button>
+          </div>
         </div>
+      </main>
+
+      <footer className="py-8 px-6 text-center border-t border-gray-50 opacity-40">
+        <p className="text-[9px] uppercase tracking-[0.5em] font-bold text-gray-400">Budega dos Concursos &copy; 2025</p>
       </footer>
     </div>
   );

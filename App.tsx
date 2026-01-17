@@ -14,14 +14,17 @@ const App: React.FC = () => {
   const [cadernoIds, setCadernoIds] = useState<string[]>([]);
   const [estaCarregado, setEstaCarregado] = useState(false);
 
-  // Carregar dados iniciais
+  // Sincronização com LocalStorage
   useEffect(() => {
     const salvas = localStorage.getItem('budega_questions');
     const configSalva = localStorage.getItem('budega_config_materias');
     const cadernoSalvo = localStorage.getItem('budega_caderno');
     
     if (salvas) {
-      try { setQuestoes(JSON.parse(salvas)); } catch (e) { setQuestoes(QUESTOES_EXEMPLO); }
+      try { 
+        const parsed = JSON.parse(salvas);
+        setQuestoes(parsed.length > 0 ? parsed : QUESTOES_EXEMPLO); 
+      } catch (e) { setQuestoes(QUESTOES_EXEMPLO); }
     } else {
       setQuestoes(QUESTOES_EXEMPLO);
     }
@@ -37,7 +40,6 @@ const App: React.FC = () => {
     setEstaCarregado(true);
   }, []);
 
-  // Salvar automaticamente
   useEffect(() => {
     if (estaCarregado) {
       localStorage.setItem('budega_questions', JSON.stringify(questoes));
@@ -46,6 +48,7 @@ const App: React.FC = () => {
     }
   }, [questoes, configMaterias, cadernoIds, estaCarregado]);
 
+  // Handlers de Admin
   const adicionarQuestao = (q: Questao | Questao[]) => {
     if (Array.isArray(q)) {
       setQuestoes(prev => [...q, ...prev]);
@@ -55,55 +58,49 @@ const App: React.FC = () => {
   };
 
   const removerQuestao = (id: string) => {
-    if (confirm('Deseja realmente excluir esta questão permanentemente?')) {
-      setQuestoes(prev => prev.filter(q => q.id !== id));
-      setCadernoIds(prev => prev.filter(cid => cid !== id));
-    }
-  };
-
-  const toggleCaderno = (id: string) => {
-    setCadernoIds(prev => 
-      prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]
-    );
+    setQuestoes(prev => prev.filter(q => q.id !== id));
+    setCadernoIds(prev => prev.filter(cid => cid !== id));
   };
 
   const atualizarEstrutura = (novaEstrutura: Record<string, string[]>) => {
     setConfigMaterias(novaEstrutura);
   };
 
+  const toggleCaderno = (id: string) => {
+    setCadernoIds(prev => prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]);
+  };
+
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen font-sans">
       {!estaCarregado ? (
-        <div className="min-h-screen flex items-center justify-center bg-[#F7F7F7]">
-          <div className="animate-pulse font-serif text-[#B58863]">Carregando Biblioteca Jurídica...</div>
+        <div className="min-h-screen flex items-center justify-center bg-white">
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-12 h-12 border-4 border-[#B58863] border-t-transparent rounded-full animate-spin"></div>
+            <span className="font-serif italic text-[#B58863]">Preparando seu Edital...</span>
+          </div>
         </div>
       ) : (
         <>
           {view === AppView.LANDING && (
             <LandingPage 
               onStart={() => setView(AppView.ESTUDO)} 
-              onManage={() => setView(AppView.ADMIN)}
               onOpenCaderno={() => setView(AppView.CADERNO)}
-              totalNoCaderno={cadernoIds.length}
+              onAdmin={() => setView(AppView.ADMIN)}
+              totalCaderno={cadernoIds.length}
             />
           )}
+          
           {view === AppView.ESTUDO && (
             <StudyApp 
               questoes={questoes}
               configMaterias={configMaterias}
               cadernoIds={cadernoIds}
               onToggleCaderno={toggleCaderno}
-              onBack={() => setView(AppView.LANDING)} 
-            />
-          )}
-          {view === AppView.CADERNO && (
-            <CadernoErros
-              questoes={questoes}
-              cadernoIds={cadernoIds}
-              onToggleCaderno={toggleCaderno}
               onBack={() => setView(AppView.LANDING)}
+              onOpenCaderno={() => setView(AppView.CADERNO)}
             />
           )}
+          
           {view === AppView.ADMIN && (
             <AdminPanel 
               questoes={questoes}
@@ -112,6 +109,15 @@ const App: React.FC = () => {
               onRemoveQuestao={removerQuestao}
               onUpdateEstrutura={atualizarEstrutura}
               onBack={() => setView(AppView.LANDING)}
+            />
+          )}
+
+          {view === AppView.CADERNO && (
+            <CadernoErros
+              questoes={questoes}
+              cadernoIds={cadernoIds}
+              onToggleCaderno={toggleCaderno}
+              onBack={() => setView(AppView.ESTUDO)}
             />
           )}
         </>

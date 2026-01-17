@@ -2,7 +2,6 @@
 export enum AppView {
   LANDING = 'landing',
   ESTUDO = 'estudo',
-  DASHBOARD = 'dashboard',
   ADMIN = 'admin',
   CADERNO = 'caderno'
 }
