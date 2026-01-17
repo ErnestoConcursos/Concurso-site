@@ -2,23 +2,23 @@
 import { Questao } from './types';
 
 export const TOPICOS_POR_MATERIA: Record<string, string[]> = {
-  "Direito Administrativo": [
-    "1.1 Princípios do Direito Administrativo",
-    "1.2 Organização Administrativa",
-    "1.3 Ato Administrativo",
-    "1.4 Poderes Administrativos",
-    "1.5 Licitação e Contratos (Lei 14.133/21)",
-    "1.6 Agentes Públicos",
-    "1.7 Responsabilidade Civil do Estado",
-    "1.8 Improbidade Administrativa"
-  ],
   "Direito Constitucional": [
-    "2.1 Teoria da Constituição",
-    "2.2 Direitos e Garantias Fundamentais",
-    "2.3 Organização do Estado",
-    "2.4 Organização dos Poderes",
-    "2.5 Controle de Constitucionalidade"
+    "1 Teoria da Constituição",
+    "2 Direitos e Garantias Fundamentais",
+    "3 Organização do Estado",
+    "4 Organização dos Poderes",
+    "5 Controle de Constitucionalidade"
   ],
+  "Direito Administrativo": [
+    "1 Princípios do Direito Administrativo",
+    "2 Organização Administrativa",
+    "3 Ato Administrativo",
+    "4 Poderes Administrativos",
+    "5 Licitação e Contratos (Lei 14.133/21)",
+    "6 Agentes Públicos",
+    "7 Responsabilidade Civil do Estado",
+    "8 Improbidade Administrativa"
+  ],  
   "Direito Penal": [
     "1. Teoria do Crime",
     "2. Tipicidade",
